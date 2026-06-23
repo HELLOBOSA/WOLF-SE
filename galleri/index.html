@@ -106,6 +106,10 @@
   #btt{position:fixed;bottom:32px;right:32px;width:40px;height:40px;border:1px solid var(--accent);color:var(--accent);display:flex;align-items:center;justify-content:center;z-index:1000;background:transparent;cursor:pointer;opacity:0;visibility:hidden;transition:all .3s}
   #btt.visible{opacity:1;visibility:visible}
   #btt:hover{background:var(--accent);color:var(--bg)}
+
+  .lm-wrap{display:flex;justify-content:center;padding:48px 0 16px}
+  .lm-btn{font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:var(--text2);background:transparent;border:1px solid var(--line);padding:14px 36px;cursor:pointer;transition:color .3s,border-color .3s}
+  .lm-btn:hover{color:var(--accent);border-color:var(--accent)}
 </style>
 </head>
 <body>
@@ -161,6 +165,9 @@
     <span class="fcount"><span id="proj-count">11</span> <span data-sv="projekt" data-en="projects">projekt</span></span>
   </div>
   <div class="grid3" id="gallery-grid"></div>
+  <div id="lm-wrap" class="lm-wrap" style="display:none">
+    <button type="button" id="lm-btn" class="lm-btn" data-sv="Visa fler projekt" data-en="Show more projects">Visa fler projekt</button>
+  </div>
 </main>
 
 <section class="cta-section">
@@ -233,17 +240,26 @@
   burger.addEventListener('click',function(){setMenu(!menuOpen);});
   mobMenu.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){setMenu(false);});});
 
+  var INITIAL=9;
+  var showAll=false;
   var projects=[
-    {img:'../assets/work-horizon-exterior.webp',tag:'Horizon / Bostad',tagEn:'Horizon / Residential',title:'Privat kustboende',titleEn:'Private coastal home',cat:'Bostad'},
+    {img:'../assets/work-horizon-exterior.webp',tag:'Horizon / Bostad',tagEn:'Horizon / Residence',title:'Privat kustboende',titleEn:'Private coastal home',cat:'Bostad'},
+    {img:'../assets/work-horizon-interior.webp',tag:'Horizon / Bostad',tagEn:'Horizon / Residence',title:'Interiör — ljus och volym',titleEn:'Interior — light and volume',cat:'Bostad'},
     {img:'../assets/work-boadilla-exterior.webp',tag:'Boadilla / Bostad',tagEn:'Boadilla / Residential',title:'Bostaden som metod',titleEn:'Home as method',cat:'Bostad'},
+    {img:'../assets/work-boadilla-interior.webp',tag:'Boadilla / Bostad',tagEn:'Boadilla / Residential',title:'Rumslighet och material',titleEn:'Space and material',cat:'Bostad'},
     {img:'../assets/work-a75-living.webp',tag:'A75 / Renovering',tagEn:'A75 / Renovation',title:'Ljus och logik',titleEn:'Light and logic',cat:'Renovering'},
+    {img:'../assets/work-a75-plan.webp',tag:'A75 / Renovering',tagEn:'A75 / Renovation',title:'Strukturell klarhet',titleEn:'Structural clarity',cat:'Renovering'},
     {img:'../assets/work-k38-living.webp',tag:'K38 / Investering',tagEn:'K38 / Investment',title:'Investeringslogik',titleEn:'Investment logic',cat:'Investering'},
+    {img:'../assets/work-k38-terrace.webp',tag:'K38 / Investering',tagEn:'K38 / Investment',title:'Uterum och värde',titleEn:'Outdoor space and value',cat:'Investering'},
+    {img:'../assets/work-k12-interior.webp',tag:'K12 / Korttidsuthyrning',tagEn:'K12 / Short-term rental',title:'Optimerad yta',titleEn:'Optimised footprint',cat:'Investering'},
     {img:'../assets/work-plato-masterplan.webp',tag:"Plato's Academy / Stadsplanering",tagEn:"Plato's Academy / Urban",title:'Stadsdelsstrategi',titleEn:'District strategy',cat:'Stadsplanering'},
+    {img:'../assets/work-plato-street.webp',tag:"Plato's Academy / Stadsplanering",tagEn:"Plato's Academy / Urban",title:'Gatunivå och rörelse',titleEn:'Street level and movement',cat:'Stadsplanering'},
     {img:'../assets/work-axis-urban.webp',tag:'Axis / Stadsplanering',tagEn:'Axis / Urban',title:'Urban struktur',titleEn:'Urban structure',cat:'Stadsplanering'},
     {img:'../assets/work-nexus-facade.webp',tag:'Nexus / Kulturarv',tagEn:'Nexus / Heritage',title:'Urban kontinuitet',titleEn:'Urban continuity',cat:'Stadsplanering'},
-    {img:'../assets/work-norrsken-office.webp',tag:'Norrsken / Arbetsplats',tagEn:'Norrsken / Workplace',title:'Nordisk precision',titleEn:'Nordic precision',cat:'Hospitality'},
+    {img:'../assets/work-norrsken-office.webp',tag:'Norrsken / Arbetsplats',tagEn:'Norrsken / Workspace',title:'Nordisk precision',titleEn:'Nordic precision',cat:'Hospitality'},
     {img:'../assets/work-selva-entry.webp',tag:'Selva / Hospitality',tagEn:'Selva / Hospitality',title:'Hospitality-atmosfär',titleEn:'Hospitality atmosphere',cat:'Hospitality'},
-    {img:'../assets/work-granolita-counter.webp',tag:'Granolita / Gastronomi',tagEn:'Granolita / Gastronomy',title:'Estetisk rumsupplevelse',titleEn:'Aesthetic space experience',cat:'Hospitality'},
+    {img:'../assets/work-selva-lounge.webp',tag:'Selva / Hospitality',tagEn:'Selva / Hospitality',title:'Lounge och sinnlighet',titleEn:'Lounge and sensory space',cat:'Hospitality'},
+    {img:'../assets/work-granolita-counter.webp',tag:'Granolita / Gastronomi',tagEn:'Granolita / Hospitality',title:'Estetisk rumsupplevelse',titleEn:'Spatial aesthetic',cat:'Hospitality'},
     {img:'../assets/work-dterra-hall.webp',tag:'Bistró Dterra / Restaurang',tagEn:'Bistró Dterra / Restaurant',title:'Värme genom design',titleEn:'Warmth through design',cat:'Hospitality'}
   ];
 
@@ -262,7 +278,7 @@
       btn.className='fbtn'+(c===activecat?' on':'');
       btn.textContent=lang==='en'?catNamesEn[i]:c;
       btn.addEventListener('click',function(){
-        activecat=c;
+        activecat=c;showAll=false;
         renderFilters();
         renderGrid();
       });
@@ -270,11 +286,15 @@
     });
   }
 
+  var lmWrap=document.getElementById('lm-wrap');
+  var lmBtn=document.getElementById('lm-btn');
+
   function renderGrid(){
     var filtered=activecat==='Alla'?projects:projects.filter(function(p){return p.cat===activecat;});
     if(countEl)countEl.textContent=String(filtered.length).padStart(2,'0');
+    var visible=showAll?filtered:filtered.slice(0,INITIAL);
     grid.innerHTML='';
-    filtered.forEach(function(p,i){
+    visible.forEach(function(p,i){
       var art=document.createElement('article');
       art.className='tile';
       var tag=lang==='en'?p.tagEn:p.tag;
@@ -284,7 +304,11 @@
       (function(cl,ci){art.addEventListener('click',function(){openLb(cl,ci);});})(filtered,i);
       grid.appendChild(art);
     });
+    if(lmWrap)lmWrap.style.display=(!showAll&&filtered.length>INITIAL)?'flex':'none';
+    if(lmBtn)lmBtn.textContent=lang==='en'?'Show more projects':'Visa fler projekt';
   }
+
+  if(lmBtn)lmBtn.addEventListener('click',function(){showAll=true;renderGrid();});
 
   renderFilters();
   renderGrid();
