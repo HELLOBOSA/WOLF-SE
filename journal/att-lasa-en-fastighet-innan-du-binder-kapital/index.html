@@ -104,7 +104,12 @@
       footer{flex-direction:column;gap:18px;padding:1.5rem 1.25rem}
     }
     @media(min-width:561px) and (max-width:860px){.rel-grid{grid-template-columns:1fr 1fr}}
-  </style>
+  
+  /* Back to top */
+  #btt{position:fixed;bottom:32px;right:32px;width:40px;height:40px;border:1px solid var(--accent);color:var(--accent);display:flex;align-items:center;justify-content:center;z-index:1000;background:transparent;cursor:pointer;opacity:0;visibility:hidden;transition:all .3s}
+  #btt.visible{opacity:1;visibility:visible}
+  #btt:hover{background:var(--accent);color:var(--bg)}
+</style>
 </head>
 <body>
 
@@ -116,6 +121,7 @@
         <a href="../../index.html#om-studion" class="nb-link" data-sv="STUDIO" data-en="STUDIO">STUDIO</a>
         <a href="../../galleri/" class="nb-link" data-sv="GALLERI" data-en="GALLERY">GALLERI</a>
         <a href="../../index.html#tjanster" class="nb-link" data-sv="TJÄNSTER" data-en="SERVICES">TJÄNSTER</a>
+        <a href="../../index.html#process" class="nb-link" data-sv="PROCESS" data-en="PROCESS">PROCESS</a>
         <a href="../" class="nb-link active" data-sv="JOURNAL" data-en="JOURNAL">JOURNAL</a>
         <a href="../../index.html#kontakt" class="nb-link" data-sv="KONTAKT" data-en="CONTACT">KONTAKT</a>
       </div>
@@ -137,6 +143,7 @@
     <a href="../../index.html#om-studion" data-sv="STUDIO" data-en="STUDIO">STUDIO</a>
     <a href="../../galleri/" data-sv="GALLERI" data-en="GALLERY">GALLERI</a>
     <a href="../../index.html#tjanster" data-sv="TJÄNSTER" data-en="SERVICES">TJÄNSTER</a>
+    <a href="../../index.html#process" data-sv="PROCESS" data-en="PROCESS">PROCESS</a>
     <a href="../" style="color:var(--accent)" data-sv="JOURNAL" data-en="JOURNAL">JOURNAL</a>
     <a href="../../index.html#kontakt" data-sv="KONTAKT" data-en="CONTACT">KONTAKT</a>
   </div>
@@ -231,13 +238,9 @@
 </section>
 
 <footer>
-  <span data-sv="WOLFBLANC® ARCHITECTS · Stockholm · © 2026" data-en="WOLFBLANC® ARCHITECTS · Stockholm · © 2026">WOLFBLANC® ARCHITECTS · Stockholm · © 2026</span>
-  <div class="foot-links">
-    <a href="../../galleri/" data-sv="Galleri" data-en="Gallery">Galleri</a>
-    <a href="../" data-sv="Journal" data-en="Journal">Journal</a>
-    <a href="mailto:info@wolfblanc.com">info@wolfblanc.com</a>
-    <a href="https://wolfblanc.se">wolfblanc.se</a>
-  </div>
+  <span data-sv="WOLFBLANC® ARCHITECTS · Stockholm · Godkänd för F-skatt · © 2026" data-en="WOLFBLANC® ARCHITECTS · Stockholm · Approved for F-tax · © 2026">WOLFBLANC® ARCHITECTS · Stockholm · Godkänd för F-skatt · © 2026</span>
+  <a href="https://eolos.se" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;opacity:.65">WEB BY EOLOS DESIGN LAB</a>
+  <span><a href="mailto:info@wolfblanc.com" style="color:inherit;text-decoration:none">info@wolfblanc.com</a> · <a href="https://wolfblanc.com" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none">wolfblanc.com</a></span>
 </footer>
 
 <script>
@@ -282,5 +285,6 @@
   mobMenu.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){setMenu(false);});});
 })();
 </script>
+<button id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg></button>
 </body>
 </html>
