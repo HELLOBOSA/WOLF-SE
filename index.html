@@ -239,29 +239,22 @@
     .cta-inner{position:relative;z-index:1}
     .cta-inner p{font-size:clamp(1rem,2.5vw,1.6rem);font-weight:300;margin-bottom:40px}
 
-    /* Work Gallery */
-    .work-marquee{border-top:1px solid var(--line);border-bottom:1px solid var(--line);overflow:hidden;background:var(--glass-bg)}
-    .work-track{display:flex;gap:1px;width:max-content;animation:work-marquee 90s linear infinite}
-    @keyframes work-marquee{to{transform:translateX(-50%)}}
-    @media(prefers-reduced-motion:reduce){.work-track{animation:none}}
-    .work-tile{position:relative;width:clamp(260px,32vw,480px);aspect-ratio:4/3;overflow:hidden;border-inline:1px solid var(--line);background:var(--glass-bg)}
-    .work-tile picture,.work-tile img{display:block;width:100%;height:100%}
-    .work-tile img{object-fit:cover;filter:saturate(.94) contrast(1.02);transform:translateZ(0)}
-    .work-tile span{position:absolute;left:14px;bottom:14px;padding:9px 12px;background:rgba(9,9,11,.62);color:#f0f0f2;font-size:.58rem;letter-spacing:.16em;text-transform:uppercase;backdrop-filter:blur(12px)}
-    .project-gallery{display:grid;grid-template-columns:repeat(12,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
-    .project{position:relative;min-height:350px;grid-column:span 4;overflow:hidden;background:var(--bg)}
-    .project.large{grid-column:span 8;min-height:520px}
-    .project.tall{min-height:520px}
-    .project picture,.project img{display:block;width:100%;height:100%}
-    .project img{object-fit:cover;filter:saturate(.95) contrast(1.02);transition:transform .7s ease,filter .7s ease}
-    .project:hover img{transform:scale(1.035);filter:saturate(1) contrast(1.04)}
-    .project-meta{position:absolute;left:18px;right:18px;bottom:18px;padding:16px;background:rgba(240,242,245,.84);color:#09090b;backdrop-filter:blur(14px)}
-    .project-meta span{display:block;margin-bottom:8px;color:#5a6878;font-size:.58rem;letter-spacing:.16em;text-transform:uppercase}
-    .project-meta h3{font-size:.88rem;letter-spacing:.12em;margin:0;text-transform:uppercase;font-weight:300}
-    .project-meta p{margin:10px 0 0;color:#4a4a5a;font-size:.84rem;line-height:1.55}
-    html.dark .project-meta{background:rgba(9,9,11,.76);color:#f0f0f2}
-    html.dark .project-meta p{color:#a4a4af}
-    html.dark .project-meta span{color:#9ba8b8}
+    /* Project Grid */
+    .pg-filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:40px}
+    .pg-fbtn{background:none;border:1px solid var(--line);color:var(--text-secondary);padding:7px 18px;font-size:.6rem;letter-spacing:.16em;text-transform:uppercase;cursor:pointer;transition:border-color .25s,color .25s}
+    .pg-fbtn.on,.pg-fbtn:hover{border-color:var(--accent);color:var(--accent)}
+    .pg-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line)}
+    .pg-tile{position:relative;aspect-ratio:4/3;overflow:hidden;background:var(--glass-bg);cursor:pointer}
+    .pg-tile img{display:block;width:100%;height:100%;object-fit:cover;filter:saturate(.95) contrast(1.02);transition:transform .7s ease,filter .7s ease}
+    .pg-tile:hover img{transform:scale(1.04);filter:saturate(1) contrast(1.04)}
+    .pg-meta{position:absolute;left:0;right:0;bottom:0;padding:16px 18px 18px;background:linear-gradient(to top,rgba(9,9,11,.78) 0%,transparent 100%);color:#f0f0f2}
+    .pg-meta span{display:block;font-size:.56rem;letter-spacing:.16em;text-transform:uppercase;opacity:.72;margin-bottom:5px}
+    .pg-meta h3{font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;font-weight:300;margin:0}
+    .pg-more{display:flex;justify-content:center;margin-top:40px}
+    .pg-more-btn{background:none;border:1px solid var(--accent);color:var(--accent);padding:12px 44px;font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;cursor:pointer;transition:background .25s,color .25s}
+    .pg-more-btn:hover{background:var(--accent);color:var(--bg)}
+    @media(max-width:860px){.pg-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:480px){.pg-grid{grid-template-columns:1fr}}
     .compact-cards{grid-template-columns:repeat(4,1fr)}
     .compact-cards .gc{min-height:176px;padding:24px}
     .compact-cards .ct{font-size:.78rem;line-height:1.42;margin-bottom:12px}
@@ -269,8 +262,7 @@
     .compact-cards .cl{margin-bottom:18px}
     @media(max-width:900px){.compact-cards{grid-template-columns:repeat(2,1fr)}}
     @media(max-width:640px){.compact-cards{grid-template-columns:1fr}.compact-cards .gc{min-height:auto}}
-    @media(max-width:900px){.project,.project.large{grid-column:span 6}.project.large,.project.tall{min-height:440px}}
-    @media(max-width:640px){.project-gallery{grid-template-columns:1fr}.project,.project.large,.project.tall{grid-column:1;min-height:390px}.work-tile{width:78vw}.project-meta{left:12px;right:12px;bottom:12px}}
+
 
     /* Contact */
     .contact-grid{display:grid;grid-template-columns:1fr;gap:48px;margin-bottom:64px;max-width:560px}
@@ -390,7 +382,7 @@
   <div class="nav-right">
     <div class="nav-links">
       <a href="#om-studion" class="nav-link" onclick="ss(event,'om-studion')" data-s="om-studion" data-sv="STUDIO" data-en="STUDIO">STUDIO</a>
-      <a href="galleri/" class="nav-link" data-sv="GALLERI" data-en="GALLERY">GALLERI</a>
+      <a href="#projekt" class="nav-link" onclick="ss(event,'projekt')" data-s="projekt" data-sv="GALLERI" data-en="GALLERY">GALLERI</a>
       <a href="#tjanster" class="nav-link" onclick="ss(event,'tjanster')" data-s="tjanster" data-sv="TJÄNSTER" data-en="SERVICES">TJÄNSTER</a>
       <a href="#process" class="nav-link" onclick="ss(event,'process')" data-s="process" data-sv="PROCESS" data-en="PROCESS">PROCESS</a>
       <a href="journal/" class="nav-link" data-sv="JOURNAL" data-en="JOURNAL">JOURNAL</a>
@@ -414,7 +406,7 @@
   </div>
   <div class="mob-menu" id="mob-menu">
     <a href="#om-studion" onclick="ss(event,'om-studion');closeMobMenu()" data-sv="STUDIO" data-en="STUDIO">STUDIO</a>
-    <a href="galleri/" data-sv="GALLERI" data-en="GALLERY">GALLERI</a>
+    <a href="#projekt" onclick="ss(event,'projekt');closeMobMenu()" data-sv="GALLERI" data-en="GALLERY">GALLERI</a>
     <a href="#tjanster" onclick="ss(event,'tjanster');closeMobMenu()" data-sv="TJÄNSTER" data-en="SERVICES">TJÄNSTER</a>
     <a href="#process" onclick="ss(event,'process');closeMobMenu()" data-sv="PROCESS" data-en="PROCESS">PROCESS</a>
     <a href="journal/" data-sv="JOURNAL" data-en="JOURNAL">JOURNAL</a>
@@ -468,65 +460,15 @@
 <section id="projekt">
   <div class="si">
     <span class="eyebrow" data-sv="UTVALDA PROJEKT" data-en="SELECTED WORK">UTVALDA PROJEKT</span>
-    <h2 style="font-size:clamp(1.2rem,2.5vw,1.875rem);margin-bottom:32px" data-sv="En noggrant utvald bild av hur vi arbetar" data-en="A tightly selected view of how we work">En noggrant utvald bild av hur vi arbetar</h2>
-    <p style="max-width:720px;color:var(--text-secondary);margin-bottom:56px" data-sv="Galleriet är inget komplett arkiv. Det är en kort, tydlig avläsning av kvaliteten: bostad, renovering, investeringsfastighet, urban studie och hospitality." data-en="This gallery is not a full archive. It is a short, clear reading of the quality: home, renovation, investment property, urban study and hospitality.">Galleriet är inget komplett arkiv. Det är en kort, tydlig avläsning av kvaliteten: bostad, renovering, investeringsfastighet, urban studie och hospitality.</p>
-    <div class="project-gallery">
-      <article onclick="openLb(this)" class="project large reveal"><picture><source srcset="assets/work-horizon-exterior.avif" type="image/avif"><img src="assets/work-horizon-exterior.webp" alt="Horizon residence by Wolfblanc Architects" loading="lazy" decoding="async"></picture><div class="project-meta"><span data-sv="Horizon / Bostad" data-en="Horizon / Residence">Horizon / Bostad</span><h3 data-sv="Privat kustboende" data-en="Private coastal living">Privat kustboende</h3><p data-sv="En bostad där landskap, skugga och vardagsbruk bildar ett system." data-en="A residence where landscape, shade and daily use become one system.">En bostad där landskap, skugga och vardagsbruk bildar ett system.</p></div></article>
-      <article onclick="openLb(this)" class="project reveal"><picture><source srcset="assets/work-k38-living.avif" type="image/avif"><img src="assets/work-k38-living.webp" alt="K38 investment apartment" loading="lazy" decoding="async"></picture><div class="project-meta"><span data-sv="K38 / Investering" data-en="K38 / Investment">K38 / Investering</span><h3 data-sv="Investeringslogik" data-en="Investment logic">Investeringslogik</h3></div></article>
-      <article onclick="openLb(this)" class="project reveal"><picture><source srcset="assets/work-plato-masterplan.avif" type="image/avif"><img src="assets/work-plato-masterplan.webp" alt="Plato's Academy urban study" loading="lazy" decoding="async"></picture><div class="project-meta"><span data-sv="Plato's Academy" data-en="Plato's Academy">Plato's Academy</span><h3 data-sv="Stadsdelsstrategi" data-en="Urban district strategy">Stadsdelsstrategi</h3></div></article>
-      <article onclick="openLb(this)" class="project reveal"><picture><source srcset="assets/work-a75-living.avif" type="image/avif"><img src="assets/work-a75-living.webp" alt="A75 renovation" loading="lazy" decoding="async"></picture><div class="project-meta"><span data-sv="A75 / Renovering" data-en="A75 / Renovation">A75 / Renovering</span><h3 data-sv="Ljus och logik för återförsäljning" data-en="Light and resale logic">Ljus och logik för återförsäljning</h3></div></article>
-      <article onclick="openLb(this)" class="project tall reveal"><picture><source srcset="assets/work-norrsken-office.avif" type="image/avif"><img src="assets/work-norrsken-office.webp" alt="Norrsken office workspace by Wolfblanc" loading="lazy" decoding="async"></picture><div class="project-meta"><span data-sv="Norrsken / Arbetsplats" data-en="Norrsken / Workspace">Norrsken / Arbetsplats</span><h3 data-sv="Nordisk precision i praktiken" data-en="Nordic precision in practice">Nordisk precision i praktiken</h3></div></article>
-      <article onclick="openLb(this)" class="project reveal"><picture><source srcset="assets/work-selva-entry.avif" type="image/avif"><img src="assets/work-selva-entry.webp" alt="Selva hospitality concept by Wolfblanc" loading="lazy" decoding="async"></picture><div class="project-meta"><span data-sv="Selva / Hospitality" data-en="Selva / Hospitality">Selva / Hospitality</span><h3 data-sv="Hospitality-atmosfär" data-en="Hospitality atmosphere">Hospitality-atmosfär</h3></div></article>
-      <article onclick="openLb(this)" class="project reveal"><picture><source srcset="assets/work-boadilla-exterior.avif" type="image/avif"><img src="assets/work-boadilla-exterior.webp" alt="Boadilla residence exterior" loading="lazy" decoding="async"></picture><div class="project-meta"><span data-sv="Boadilla / Bostad" data-en="Boadilla / Residential">Boadilla / Bostad</span><h3 data-sv="Bostaden som metod" data-en="Residential method">Bostaden som metod</h3></div></article>
-      <article onclick="openLb(this)" class="project reveal"><picture><source srcset="assets/work-nexus-facade.avif" type="image/avif"><img src="assets/work-nexus-facade.webp" alt="Nexus heritage project by Wolfblanc" loading="lazy" decoding="async"></picture><div class="project-meta"><span data-sv="Nexus / Kulturarv" data-en="Nexus / Heritage">Nexus / Kulturarv</span><h3 data-sv="Urban kontinuitet och minne" data-en="Urban continuity and memory">Urban kontinuitet och minne</h3></div></article>
-      <article onclick="openLb(this)" class="project large reveal"><picture><source srcset="assets/work-granolita-counter.avif" type="image/avif"><img src="assets/work-granolita-counter.webp" alt="Granolita coffee boutique by Wolfblanc" loading="lazy" decoding="async"></picture><div class="project-meta"><span data-sv="Granolita / Gastronomi" data-en="Granolita / Hospitality">Granolita / Gastronomi</span><h3 data-sv="Estetisk rumsupplevelse" data-en="Spatial aesthetic experience">Estetisk rumsupplevelse</h3></div></article>
-      <article onclick="openLb(this)" class="project reveal"><picture><source srcset="assets/work-dterra-hall.avif" type="image/avif"><img src="assets/work-dterra-hall.webp" alt="Bistró Dterra by Wolfblanc" loading="lazy" decoding="async"></picture><div class="project-meta"><span data-sv="Bistró Dterra / Restaurang" data-en="Bistró Dterra / Restaurant">Bistró Dterra / Restaurang</span><h3 data-sv="Värme genom design" data-en="Warmth through design">Värme genom design</h3></div></article>
+    <h2 style="font-size:clamp(1.2rem,2.5vw,1.875rem);margin-bottom:40px" data-sv="En noggrant utvald bild av hur vi arbetar" data-en="A tightly selected view of how we work">En noggrant utvald bild av hur vi arbetar</h2>
+    <div id="pg-filters" class="pg-filters"></div>
+    <div id="pg-grid" class="pg-grid"></div>
+    <div class="pg-more" id="pg-more" style="display:none">
+      <button class="pg-more-btn" id="pg-more-btn" data-sv="VISA FLER PROJEKT" data-en="SHOW MORE PROJECTS">VISA FLER PROJEKT</button>
     </div>
   </div>
 </section>
 
-<div class="work-marquee" aria-label="Selected project images">
-  <div class="work-track">
-    <div class="work-tile"><picture><source srcset="assets/work-horizon-exterior.avif" type="image/avif"><img src="assets/work-horizon-exterior.webp" alt="Horizon exterior" loading="lazy"></picture><span data-sv="Horizon / Bostad" data-en="Horizon / Residence">Horizon / Bostad</span></div>
-    <div class="work-tile"><picture><source srcset="assets/work-horizon-interior.avif" type="image/avif"><img src="assets/work-horizon-interior.webp" alt="Horizon interior" loading="lazy"></picture><span data-sv="Horizon / Bostad" data-en="Horizon / Residence">Horizon / Bostad</span></div>
-    <div class="work-tile"><picture><source srcset="assets/work-boadilla-exterior.avif" type="image/avif"><img src="assets/work-boadilla-exterior.webp" alt="Boadilla exterior" loading="lazy"></picture><span data-sv="Boadilla / Bostad" data-en="Boadilla / Residential">Boadilla / Bostad</span></div>
-    <div class="work-tile"><picture><source srcset="assets/work-boadilla-interior.avif" type="image/avif"><img src="assets/work-boadilla-interior.webp" alt="Boadilla interior" loading="lazy"></picture><span data-sv="Boadilla / Bostad" data-en="Boadilla / Residential">Boadilla / Bostad</span></div>
-    <div class="work-tile"><picture><source srcset="assets/work-a75-living.avif" type="image/avif"><img src="assets/work-a75-living.webp" alt="A75 living" loading="lazy"></picture><span data-sv="A75 / Renovering" data-en="A75 / Renovation">A75 / Renovering</span></div>
-    <div class="work-tile"><picture><source srcset="assets/work-a75-plan.avif" type="image/avif"><img src="assets/work-a75-plan.webp" alt="A75 plan" loading="lazy"></picture><span data-sv="A75 / Renovering" data-en="A75 / Renovation">A75 / Renovering</span></div>
-    <div class="work-tile"><picture><source srcset="assets/work-k38-living.avif" type="image/avif"><img src="assets/work-k38-living.webp" alt="K38 living" loading="lazy"></picture><span data-sv="K38 / Investering" data-en="K38 / Investment">K38 / Investering</span></div>
-    <div class="work-tile"><picture><source srcset="assets/work-k38-terrace.avif" type="image/avif"><img src="assets/work-k38-terrace.webp" alt="K38 terrace" loading="lazy"></picture><span data-sv="K38 / Investering" data-en="K38 / Investment">K38 / Investering</span></div>
-    <div class="work-tile"><picture><source srcset="assets/work-plato-masterplan.avif" type="image/avif"><img src="assets/work-plato-masterplan.webp" alt="Plato's Academy masterplan" loading="lazy"></picture><span data-sv="Plato's Academy / Stadsplanering" data-en="Plato's Academy / Urban">Plato's Academy / Stadsplanering</span></div>
-    <div class="work-tile"><picture><source srcset="assets/work-plato-street.avif" type="image/avif"><img src="assets/work-plato-street.webp" alt="Plato's Academy street level" loading="lazy"></picture><span data-sv="Plato's Academy / Stadsplanering" data-en="Plato's Academy / Urban">Plato's Academy / Stadsplanering</span></div>
-    <div class="work-tile"><picture><source srcset="assets/work-axis-urban.avif" type="image/avif"><img src="assets/work-axis-urban.webp" alt="Axis urban" loading="lazy"></picture><span data-sv="Axis / Stadsplanering" data-en="Axis / Urban">Axis / Stadsplanering</span></div>
-    <div class="work-tile"><picture><source srcset="assets/work-selva-entry.avif" type="image/avif"><img src="assets/work-selva-entry.webp" alt="Selva entry" loading="lazy"></picture><span data-sv="Selva / Hospitality" data-en="Selva / Hospitality">Selva / Hospitality</span></div>
-    <div class="work-tile"><picture><source srcset="assets/work-norrsken-office.avif" type="image/avif"><img src="assets/work-norrsken-office.webp" alt="Norrsken office" loading="lazy"></picture><span data-sv="Norrsken / Arbetsplats" data-en="Norrsken / Workspace">Norrsken / Arbetsplats</span></div>
-    <div class="work-tile"><picture><source srcset="assets/work-nexus-facade.avif" type="image/avif"><img src="assets/work-nexus-facade.webp" alt="Nexus facade" loading="lazy"></picture><span data-sv="Nexus / Kulturarv" data-en="Nexus / Heritage">Nexus / Kulturarv</span></div>
-    <div class="work-tile"><picture><source srcset="assets/work-granolita-counter.avif" type="image/avif"><img src="assets/work-granolita-counter.webp" alt="Granolita" loading="lazy"></picture><span data-sv="Granolita / Gastronomi" data-en="Granolita / Hospitality">Granolita / Gastronomi</span></div>
-    <div class="work-tile"><picture><source srcset="assets/work-dterra-hall.avif" type="image/avif"><img src="assets/work-dterra-hall.webp" alt="Dterra" loading="lazy"></picture><span data-sv="Bistró Dterra / Restaurang" data-en="Bistró Dterra / Restaurant">Bistró Dterra / Restaurang</span></div>
-    <div class="work-tile"><picture><source srcset="assets/work-k12-interior.avif" type="image/avif"><img src="assets/work-k12-interior.webp" alt="K12" loading="lazy"></picture><span data-sv="K12 / Korttidsuthyrning" data-en="K12 / Short-term rental">K12 / Korttidsuthyrning</span></div>
-    <div class="work-tile"><picture><source srcset="assets/work-norrsken-living.avif" type="image/avif"><img src="assets/work-norrsken-living.webp" alt="Boutique Apt V1" loading="lazy"></picture><span data-sv="Boutique Apt. V1 / Investering" data-en="Boutique Apt. V1 / Investment">Boutique Apt. V1 / Investering</span></div>
-    <div class="work-tile"><picture><source srcset="assets/work-selva-lounge.avif" type="image/avif"><img src="assets/work-selva-lounge.webp" alt="Selva lounge" loading="lazy"></picture><span data-sv="Selva / Hospitality" data-en="Selva / Hospitality">Selva / Hospitality</span></div>
-    <div class="work-tile"><picture><source srcset="assets/work-horizon-exterior.avif" type="image/avif"><img src="assets/work-horizon-exterior.webp" alt="" loading="lazy"></picture><span data-sv="Horizon / Bostad" data-en="Horizon / Residence">Horizon / Bostad</span></div>
-    <div class="work-tile"><picture><source srcset="assets/work-horizon-interior.avif" type="image/avif"><img src="assets/work-horizon-interior.webp" alt="" loading="lazy"></picture><span data-sv="Horizon / Bostad" data-en="Horizon / Residence">Horizon / Bostad</span></div>
-    <div class="work-tile"><picture><source srcset="assets/work-boadilla-exterior.avif" type="image/avif"><img src="assets/work-boadilla-exterior.webp" alt="" loading="lazy"></picture><span data-sv="Boadilla / Bostad" data-en="Boadilla / Residential">Boadilla / Bostad</span></div>
-    <div class="work-tile"><picture><source srcset="assets/work-boadilla-interior.avif" type="image/avif"><img src="assets/work-boadilla-interior.webp" alt="" loading="lazy"></picture><span data-sv="Boadilla / Bostad" data-en="Boadilla / Residential">Boadilla / Bostad</span></div>
-    <div class="work-tile"><picture><source srcset="assets/work-a75-living.avif" type="image/avif"><img src="assets/work-a75-living.webp" alt="" loading="lazy"></picture><span data-sv="A75 / Renovering" data-en="A75 / Renovation">A75 / Renovering</span></div>
-    <div class="work-tile"><picture><source srcset="assets/work-a75-plan.avif" type="image/avif"><img src="assets/work-a75-plan.webp" alt="" loading="lazy"></picture><span data-sv="A75 / Renovering" data-en="A75 / Renovation">A75 / Renovering</span></div>
-    <div class="work-tile"><picture><source srcset="assets/work-k38-living.avif" type="image/avif"><img src="assets/work-k38-living.webp" alt="" loading="lazy"></picture><span data-sv="K38 / Investering" data-en="K38 / Investment">K38 / Investering</span></div>
-    <div class="work-tile"><picture><source srcset="assets/work-k38-terrace.avif" type="image/avif"><img src="assets/work-k38-terrace.webp" alt="" loading="lazy"></picture><span data-sv="K38 / Investering" data-en="K38 / Investment">K38 / Investering</span></div>
-    <div class="work-tile"><picture><source srcset="assets/work-plato-masterplan.avif" type="image/avif"><img src="assets/work-plato-masterplan.webp" alt="" loading="lazy"></picture><span data-sv="Plato's Academy / Stadsplanering" data-en="Plato's Academy / Urban">Plato's Academy / Stadsplanering</span></div>
-    <div class="work-tile"><picture><source srcset="assets/work-plato-street.avif" type="image/avif"><img src="assets/work-plato-street.webp" alt="" loading="lazy"></picture><span data-sv="Plato's Academy / Stadsplanering" data-en="Plato's Academy / Urban">Plato's Academy / Stadsplanering</span></div>
-    <div class="work-tile"><picture><source srcset="assets/work-axis-urban.avif" type="image/avif"><img src="assets/work-axis-urban.webp" alt="" loading="lazy"></picture><span data-sv="Axis / Stadsplanering" data-en="Axis / Urban">Axis / Stadsplanering</span></div>
-    <div class="work-tile"><picture><source srcset="assets/work-selva-entry.avif" type="image/avif"><img src="assets/work-selva-entry.webp" alt="" loading="lazy"></picture><span data-sv="Selva / Hospitality" data-en="Selva / Hospitality">Selva / Hospitality</span></div>
-    <div class="work-tile"><picture><source srcset="assets/work-norrsken-office.avif" type="image/avif"><img src="assets/work-norrsken-office.webp" alt="" loading="lazy"></picture><span data-sv="Norrsken / Arbetsplats" data-en="Norrsken / Workspace">Norrsken / Arbetsplats</span></div>
-    <div class="work-tile"><picture><source srcset="assets/work-nexus-facade.avif" type="image/avif"><img src="assets/work-nexus-facade.webp" alt="" loading="lazy"></picture><span data-sv="Nexus / Kulturarv" data-en="Nexus / Heritage">Nexus / Kulturarv</span></div>
-    <div class="work-tile"><picture><source srcset="assets/work-granolita-counter.avif" type="image/avif"><img src="assets/work-granolita-counter.webp" alt="" loading="lazy"></picture><span data-sv="Granolita / Gastronomi" data-en="Granolita / Hospitality">Granolita / Gastronomi</span></div>
-    <div class="work-tile"><picture><source srcset="assets/work-dterra-hall.avif" type="image/avif"><img src="assets/work-dterra-hall.webp" alt="" loading="lazy"></picture><span data-sv="Bistró Dterra / Restaurang" data-en="Bistró Dterra / Restaurant">Bistró Dterra / Restaurang</span></div>
-    <div class="work-tile"><picture><source srcset="assets/work-k12-interior.avif" type="image/avif"><img src="assets/work-k12-interior.webp" alt="" loading="lazy"></picture><span data-sv="K12 / Korttidsuthyrning" data-en="K12 / Short-term rental">K12 / Korttidsuthyrning</span></div>
-    <div class="work-tile"><picture><source srcset="assets/work-norrsken-living.avif" type="image/avif"><img src="assets/work-norrsken-living.webp" alt="" loading="lazy"></picture><span data-sv="Boutique Apt. V1 / Investering" data-en="Boutique Apt. V1 / Investment">Boutique Apt. V1 / Investering</span></div>
-    <div class="work-tile"><picture><source srcset="assets/work-selva-lounge.avif" type="image/avif"><img src="assets/work-selva-lounge.webp" alt="" loading="lazy"></picture><span data-sv="Selva / Hospitality" data-en="Selva / Hospitality">Selva / Hospitality</span></div>
-  </div>
-</div>
 
 <!-- Services -->
 <section id="tjanster">
@@ -810,45 +752,115 @@
 </div>
 <script>
 (function(){
+  /* ── Project data ── */
+  var PROJECTS=[
+    {img:'assets/work-horizon-exterior.webp',avif:'assets/work-horizon-exterior.avif',tag:'Horizon / Bostad',tagEn:'Horizon / Residence',title:'Privat kustboende',titleEn:'Private coastal home',cat:'Bostad'},
+    {img:'assets/work-horizon-interior.webp',avif:'assets/work-horizon-interior.avif',tag:'Horizon / Bostad',tagEn:'Horizon / Residence',title:'Interiör — ljus och volym',titleEn:'Interior — light and volume',cat:'Bostad'},
+    {img:'assets/work-boadilla-exterior.webp',avif:'assets/work-boadilla-exterior.avif',tag:'Boadilla / Bostad',tagEn:'Boadilla / Residential',title:'Bostaden som metod',titleEn:'Home as method',cat:'Bostad'},
+    {img:'assets/work-boadilla-interior.webp',avif:'assets/work-boadilla-interior.avif',tag:'Boadilla / Bostad',tagEn:'Boadilla / Residential',title:'Rumslighet och material',titleEn:'Space and material',cat:'Bostad'},
+    {img:'assets/work-a75-living.webp',avif:'assets/work-a75-living.avif',tag:'A75 / Renovering',tagEn:'A75 / Renovation',title:'Ljus och logik',titleEn:'Light and logic',cat:'Renovering'},
+    {img:'assets/work-a75-plan.webp',avif:'assets/work-a75-plan.avif',tag:'A75 / Renovering',tagEn:'A75 / Renovation',title:'Strukturell klarhet',titleEn:'Structural clarity',cat:'Renovering'},
+    {img:'assets/work-k38-living.webp',avif:'assets/work-k38-living.avif',tag:'K38 / Investering',tagEn:'K38 / Investment',title:'Investeringslogik',titleEn:'Investment logic',cat:'Investering'},
+    {img:'assets/work-k38-terrace.webp',avif:'assets/work-k38-terrace.avif',tag:'K38 / Investering',tagEn:'K38 / Investment',title:'Uterum och värde',titleEn:'Outdoor space and value',cat:'Investering'},
+    {img:'assets/work-k12-interior.webp',avif:'assets/work-k12-interior.avif',tag:'K12 / Korttidsuthyrning',tagEn:'K12 / Short-term rental',title:'Optimerad yta',titleEn:'Optimised footprint',cat:'Investering'},
+    {img:'assets/work-plato-masterplan.webp',avif:'assets/work-plato-masterplan.avif',tag:"Plato's Academy / Stadsplanering",tagEn:"Plato's Academy / Urban",title:'Stadsdelsstrategi',titleEn:'District strategy',cat:'Stadsplanering'},
+    {img:'assets/work-plato-street.webp',avif:'assets/work-plato-street.avif',tag:"Plato's Academy / Stadsplanering",tagEn:"Plato's Academy / Urban",title:'Gatunivå och rörelse',titleEn:'Street level and movement',cat:'Stadsplanering'},
+    {img:'assets/work-axis-urban.webp',avif:'assets/work-axis-urban.avif',tag:'Axis / Stadsplanering',tagEn:'Axis / Urban',title:'Urban struktur',titleEn:'Urban structure',cat:'Stadsplanering'},
+    {img:'assets/work-nexus-facade.webp',avif:'assets/work-nexus-facade.avif',tag:'Nexus / Kulturarv',tagEn:'Nexus / Heritage',title:'Urban kontinuitet',titleEn:'Urban continuity',cat:'Stadsplanering'},
+    {img:'assets/work-norrsken-office.webp',avif:'assets/work-norrsken-office.avif',tag:'Norrsken / Arbetsplats',tagEn:'Norrsken / Workspace',title:'Nordisk precision',titleEn:'Nordic precision',cat:'Hospitality'},
+    {img:'assets/work-selva-entry.webp',avif:'assets/work-selva-entry.avif',tag:'Selva / Hospitality',tagEn:'Selva / Hospitality',title:'Hospitality-atmosfär',titleEn:'Hospitality atmosphere',cat:'Hospitality'},
+    {img:'assets/work-selva-lounge.webp',avif:'assets/work-selva-lounge.avif',tag:'Selva / Hospitality',tagEn:'Selva / Hospitality',title:'Lounge och sinnlighet',titleEn:'Lounge and sensory space',cat:'Hospitality'},
+    {img:'assets/work-granolita-counter.webp',avif:'assets/work-granolita-counter.avif',tag:'Granolita / Gastronomi',tagEn:'Granolita / Hospitality',title:'Estetisk rumsupplevelse',titleEn:'Spatial aesthetic',cat:'Hospitality'},
+    {img:'assets/work-dterra-hall.webp',avif:'assets/work-dterra-hall.avif',tag:'Bistró Dterra / Restaurang',tagEn:'Bistró Dterra / Restaurant',title:'Värme genom design',titleEn:'Warmth through design',cat:'Hospitality'}
+  ];
+  var CATS=['Alla','Bostad','Renovering','Investering','Stadsplanering','Hospitality'];
+  var CATS_EN=['All','Residential','Renovation','Investment','Urban','Hospitality'];
+  var INITIAL=9;
+
+  var pgFilters=document.getElementById('pg-filters');
+  var pgGrid=document.getElementById('pg-grid');
+  var pgMore=document.getElementById('pg-more');
+  var pgMoreBtn=document.getElementById('pg-more-btn');
+  var activeCat='Alla';
+  var showAll=false;
+  var filteredList=[];
+
+  /* Read lang from page's existing lang system */
+  var pgLang=(localStorage.getItem('wb-se-lang')||'sv');
+  document.addEventListener('langChanged',function(e){pgLang=e.detail;renderFilters();renderGrid();});
+
+  function renderFilters(){
+    pgFilters.innerHTML='';
+    CATS.forEach(function(c,i){
+      var btn=document.createElement('button');
+      btn.className='pg-fbtn'+(c===activeCat?' on':'');
+      btn.textContent=pgLang==='en'?CATS_EN[i]:c;
+      btn.setAttribute('data-sv',c);
+      btn.setAttribute('data-en',CATS_EN[i]);
+      btn.addEventListener('click',function(){activeCat=c;showAll=false;renderFilters();renderGrid();});
+      pgFilters.appendChild(btn);
+    });
+  }
+
+  function renderGrid(){
+    filteredList=activeCat==='Alla'?PROJECTS:PROJECTS.filter(function(p){return p.cat===activeCat;});
+    var visible=showAll?filteredList:filteredList.slice(0,INITIAL);
+    pgGrid.innerHTML='';
+    visible.forEach(function(p,i){
+      var tile=document.createElement('article');
+      tile.className='pg-tile reveal';
+      var tag=pgLang==='en'?p.tagEn:p.tag;
+      var title=pgLang==='en'?p.titleEn:p.title;
+      tile.innerHTML='<picture><source srcset="'+p.avif+'" type="image/avif"><img src="'+p.img+'" alt="'+title+'" loading="lazy" decoding="async"></picture>'
+        +'<div class="pg-meta"><span>'+tag+'</span><h3>'+title+'</h3></div>';
+      (function(list,idx){tile.addEventListener('click',function(){openPgLb(list,idx);});})(filteredList,i);
+      pgGrid.appendChild(tile);
+    });
+    /* Re-trigger reveal observer for new tiles */
+    pgGrid.querySelectorAll('.reveal').forEach(function(el){revealObs&&revealObs.observe(el);});
+    /* Show/hide "Visa fler" */
+    if(!showAll&&filteredList.length>INITIAL){
+      pgMore.style.display='flex';
+      pgMoreBtn.textContent=pgLang==='en'?'SHOW MORE PROJECTS':'VISA FLER PROJEKT';
+    } else {
+      pgMore.style.display='none';
+    }
+  }
+
+  pgMoreBtn.addEventListener('click',function(){showAll=true;renderGrid();});
+
+  /* ── Lightbox ── */
   var lbEl=document.getElementById('lb');
   var lbImg=document.getElementById('lb-img');
   var lbCap=document.getElementById('lb-cap');
-  var lbItems=[];
-  var lbIdx=0;
-  function collectItems(){
-    return Array.from(document.querySelectorAll('.project-gallery .project')).map(function(a){
-      var img=a.querySelector('img');
-      var h3=a.querySelector('h3');
-      return{src:img?img.src:'',alt:img?img.alt:'',title:h3?h3.textContent:''};
-    });
-  }
-  window.openLb=function(el){
-    lbItems=collectItems();
-    var arts=Array.from(document.querySelectorAll('.project-gallery .project'));
-    lbIdx=arts.indexOf(el);
-    showLb();
-  };
+  var lbList=[],lbIdx=0;
+  function openPgLb(list,idx){lbList=list;lbIdx=idx;showLb();}
   function showLb(){
-    var it=lbItems[lbIdx];
-    lbImg.src=it.src;
-    lbImg.alt=it.alt;
-    lbCap.textContent=it.title;
+    var p=lbList[lbIdx];
+    lbImg.src=p.img;
+    lbImg.alt=pgLang==='en'?p.titleEn:p.title;
+    lbCap.textContent=(pgLang==='en'?p.tagEn:p.tag)+' — '+(pgLang==='en'?p.titleEn:p.title);
     lbEl.classList.add('open');
     document.body.style.overflow='hidden';
   }
-  window.closeLb=function(){
-    lbEl.classList.remove('open');
-    document.body.style.overflow='';
-  };
-  window.lbNav=function(dir){
-    lbIdx=(lbIdx+dir+lbItems.length)%lbItems.length;
-    showLb();
-  };
+  window.closeLb=function(){lbEl.classList.remove('open');document.body.style.overflow='';};
+  window.lbNav=function(dir){lbIdx=(lbIdx+dir+lbList.length)%lbList.length;showLb();};
   document.addEventListener('keydown',function(e){
     if(!lbEl.classList.contains('open'))return;
-    if(e.key==='ArrowLeft'){lbNav(-1);}
-    else if(e.key==='ArrowRight'){lbNav(1);}
-    else if(e.key==='Escape'){closeLb();}
+    if(e.key==='ArrowLeft')lbNav(-1);
+    else if(e.key==='ArrowRight')lbNav(1);
+    else if(e.key==='Escape')closeLb();
+  });
+
+  renderFilters();
+  renderGrid();
+
+  /* Hook into existing lang-switch so grid re-renders on language change */
+  document.querySelectorAll('[data-lang-switch]').forEach(function(b){
+    b.addEventListener('click',function(){
+      pgLang=b.getAttribute('data-lang-switch');
+      renderFilters();renderGrid();
+    });
   });
 })();
 </script>
