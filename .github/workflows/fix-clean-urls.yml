@@ -22,7 +22,8 @@ jobs:
         run: |
           if [ -d journal ]; then
             find journal -name 'index.html' -type f -print0 | xargs -0 sed -i \
-              -e 's#href="../../index.html#href="../../#g'
+              -e 's#href="../../index.html#href="../../#g' \
+              -e 's#href="../index.html#href="../#g'
           fi
 
       - name: Commit clean URL fix
