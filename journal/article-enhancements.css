@@ -9,4 +9,10 @@
 .faq-item p{padding:0 36px 20px 0;margin:0;font-size:.9rem;line-height:1.75}
 .byline-avatar{overflow:hidden;background:transparent!important;opacity:1!important}
 .byline-avatar img{width:100%;height:100%;display:block;object-fit:cover;border-radius:50%}
+.wb-body{font-size:1.04rem!important;line-height:1.88!important;letter-spacing:.005em!important}
+.wb-body p{margin-bottom:1.35em}
+.wb-body h2.section-h{line-height:1.42;letter-spacing:.065em}
+.article-faq p{font-size:.96rem;line-height:1.8;letter-spacing:.005em}
+.article-faq summary{font-size:.96rem;letter-spacing:.005em}
 @media(max-width:860px){.article-faq{padding-left:24px;padding-right:24px}}
+@media(max-width:640px){.wb-body{font-size:1rem!important;line-height:1.82!important}.article-faq summary,.article-faq p{font-size:.94rem}}
