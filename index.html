@@ -134,9 +134,11 @@
       background-image:
         repeating-linear-gradient(0deg,var(--line) 0px,transparent 1px,transparent 80px),
         repeating-linear-gradient(90deg,var(--line) 0px,transparent 1px,transparent 80px);
-      animation:grid-drift 20s linear infinite
+      background-size:80px 80px;
+      animation:grid-drift 20s linear infinite;
+      will-change:background-position
     }
-    @keyframes grid-drift{from{transform:translate(0,0)}to{transform:translate(80px,80px)}}
+    @keyframes grid-drift{from{background-position:0 0}to{background-position:80px 80px}}
     .hero-bg-letter{
       position:absolute;right:-10vw;top:50%;transform:translateY(-50%);
       pointer-events:none;user-select:none;opacity:.025;color:var(--accent);
@@ -145,15 +147,18 @@
     .hero-content{max-width:1100px;width:100%;padding:0 48px;margin:0 auto;position:relative;z-index:1}
     @media(max-width:768px){.hero-content{padding:0 24px}}
 
-    .fade-in{opacity:1;transform:none}
-    .reveal{opacity:1;transform:none}
+    @keyframes fade-up{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+    .fade-in{opacity:0;transform:translateY(14px);animation:fade-up .75s ease forwards}
+    .d0{animation-delay:.05s}.d1{animation-delay:.2s}.d2{animation-delay:.35s}
+    .d3{animation-delay:.5s}.d4{animation-delay:.65s}
+    .reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
     .reveal.visible{opacity:1;transform:none}
 
     .eyebrow{display:block;font-size:.6rem;letter-spacing:.3em;text-transform:uppercase;color:var(--text-secondary);margin-bottom:1rem}
     .btn-outline{
       display:inline-block;border:1px solid var(--accent);color:var(--accent);
       padding:12px 24px;font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;
-      background:transparent;transition:all .3s;cursor:none
+      background:transparent;transition:all .3s;cursor:pointer
     }
     .btn-outline:hover{background:var(--accent);color:var(--bg)}
 
@@ -633,7 +638,12 @@
     }
   },{passive:true});
 
-  document.querySelectorAll('.reveal').forEach(el=>el.classList.add('visible'));
+  var revealObs = ('IntersectionObserver' in window)
+    ? new IntersectionObserver(function(entries){
+        entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visible');revealObs.unobserve(e.target);}});
+      },{threshold:0.1,rootMargin:'0px 0px -32px 0px'})
+    : null;
+  document.querySelectorAll('.reveal').forEach(function(el){revealObs?revealObs.observe(el):el.classList.add('visible');});
 
   const burgerBtn = document.getElementById('burger-btn');
   const mobMenu = document.getElementById('mob-menu');
@@ -778,7 +788,7 @@
       (function(list,idx){tile.addEventListener('click',function(){openPgLb(list,idx);});})(filteredList,i);
       pgGrid.appendChild(tile);
     });
-    /* Re-trigger reveal observer for new tiles */
+    pgGrid.querySelectorAll('.reveal').forEach(function(el){if(typeof revealObs!=='undefined'&&revealObs)revealObs.observe(el);});
     /* Show/hide "Visa fler" */
     if(!showAll&&filteredList.length>INITIAL){
       pgMore.style.display='flex';
