@@ -17,7 +17,7 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="robots" content="index, follow">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
 
   <title>Arkitekt Stockholm - WOLFBLANC ARCHITECTS</title>
   <meta name="description" content="Arkitektkontor i Stockholm med nordisk metodik och internationell erfarenhet. Bostäder, renoveringar och investeringsprojekt. BIM-dokumentation. SAR/MSA registrerad · WELL AP. Boka kostnadsfritt samtal.">
@@ -34,6 +34,8 @@
   <meta property="og:url" content="https://wolfblanc.se">
   <meta property="og:site_name" content="Wolfblanc Architects">
   <meta property="og:image" content="https://wolfblanc.se/images/Horizon%20House%2001.webp">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="800">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Arkitekt Stockholm - WOLFBLANC ARCHITECTS">
@@ -111,7 +113,7 @@
         "name": "Behöver jag bygglov för renovering i Stockholm?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Det beror på åtgärden. Inre ombyggnation kräver sällan bygglov men kan kräva bygganmälan, till exempel vid ändring av bärande konstruktion eller väsentlig ändring av ventilation. Fasadändringar, tillbyggnader och attefallsåtgärder har egna regler. Vi guidar dig genom hela processens krav."
+          "text": "Det beror på åtgärden. Inre ombyggnation kräver sällan bygglov men kan kräva bygganmälan, till exempel vid ändring av bärande konstruktion eller väsentlig ändring av ventilation. Fasadändringar och tillbyggnader bedöms enligt reglerna som gäller sedan den 1 december 2025."
         }
       },
       {
@@ -119,7 +121,7 @@
         "name": "Vad gör en SAR/MSA-registrerad arkitekt?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "SAR/MSA är Sveriges Arkitekters yrkesregistrering och garanterar att arkitekten uppfyller utbildnings- och etikkraven. En registrerad arkitekt kan underteckna handlingar och ta fullt projektansvar, vilket krävs av Stadsbyggnadskontoret vid de flesta bygglovsärenden."
+          "text": "SAR/MSA är Sveriges Arkitekters yrkestitel för kvalificerade arkitekter som uppfyller organisationens krav. Titeln är inte samma sak som certifierad kontrollansvarig. När en kontrollansvarig krävs ska personen ha separat, giltig certifiering för uppdraget."
         }
       },
       {
@@ -197,6 +199,7 @@
       .burger-btn{display:flex}
       .nav-logo{font-size:.72rem;letter-spacing:.16em}
       .nav-link{font-size:.54rem;letter-spacing:.1em}
+      .hero-grid{animation:none;will-change:auto}
     }
 
     /* Hero */
@@ -225,6 +228,9 @@
     .d3{animation-delay:.5s}.d4{animation-delay:.65s}
     .reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
     .reveal.visible{opacity:1;transform:none}
+    @media(prefers-reduced-motion:reduce){
+      *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+    }
 
     .eyebrow{display:block;font-size:.6rem;letter-spacing:.3em;text-transform:uppercase;color:var(--text-secondary);margin-bottom:1rem}
     .btn-outline{
@@ -380,6 +386,16 @@
     .form-actions .submit:disabled{opacity:.4;cursor:not-allowed}
     .form-actions .submit .arrow{transition:transform .25s cubic-bezier(.2,.7,.2,1)}
     .form-actions .submit:hover .arrow{transform:translateX(4px)}
+    .faq-home{border-top:1px solid var(--line)}
+    .faq-home-grid{display:grid;grid-template-columns:minmax(220px,.7fr) 1.3fr;gap:64px;align-items:start}
+    .faq-home-list{border-bottom:1px solid var(--line)}
+    .faq-home details{border-top:1px solid var(--line)}
+    .faq-home summary{position:relative;list-style:none;cursor:pointer;padding:18px 42px 18px 0;font-size:.92rem;color:var(--text-primary)}
+    .faq-home summary::-webkit-details-marker{display:none}
+    .faq-home summary::after{content:'+';position:absolute;right:4px;color:var(--accent)}
+    .faq-home details[open] summary::after{content:'\2212'}
+    .faq-home details p{padding:0 36px 20px 0;color:var(--text-secondary);font-size:.9rem;line-height:1.75}
+    @media(max-width:768px){.faq-home-grid{grid-template-columns:1fr;gap:28px}}
     .intake-confirmed{display:none;padding:48px 0}
     .intake-confirmed h3{font-size:1.3rem;font-weight:300;margin-bottom:12px}
     .intake-confirmed p{color:var(--text-secondary);font-size:.85rem}
@@ -443,7 +459,7 @@
   <div class="nav-right">
     <div class="nav-links">
       <a href="#om-studion" class="nav-link" onclick="ss(event,'om-studion')" data-s="om-studion" data-sv="STUDIO" data-en="STUDIO">STUDIO</a>
-      <a href="#projekt" class="nav-link" onclick="ss(event,'projekt')" data-s="projekt" data-sv="GALLERI" data-en="GALLERY">GALLERI</a>
+      <a href="galleri/" class="nav-link" data-sv="GALLERI" data-en="GALLERY">GALLERI</a>
       <a href="#tjanster" class="nav-link" onclick="ss(event,'tjanster')" data-s="tjanster" data-sv="TJÄNSTER" data-en="SERVICES">TJÄNSTER</a>
       <a href="#process" class="nav-link" onclick="ss(event,'process')" data-s="process" data-sv="PROCESS" data-en="PROCESS">PROCESS</a>
       <a href="journal/" class="nav-link" data-sv="JOURNAL" data-en="JOURNAL">JOURNAL</a>
@@ -467,7 +483,7 @@
   </div>
   <div class="mob-menu" id="mob-menu">
     <a href="#om-studion" onclick="ss(event,'om-studion');closeMobMenu()" data-sv="STUDIO" data-en="STUDIO">STUDIO</a>
-    <a href="#projekt" onclick="ss(event,'projekt');closeMobMenu()" data-sv="GALLERI" data-en="GALLERY">GALLERI</a>
+    <a href="galleri/" data-sv="GALLERI" data-en="GALLERY">GALLERI</a>
     <a href="#tjanster" onclick="ss(event,'tjanster');closeMobMenu()" data-sv="TJÄNSTER" data-en="SERVICES">TJÄNSTER</a>
     <a href="#process" onclick="ss(event,'process');closeMobMenu()" data-sv="PROCESS" data-en="PROCESS">PROCESS</a>
     <a href="journal/" data-sv="JOURNAL" data-en="JOURNAL">JOURNAL</a>
@@ -602,6 +618,21 @@
 </div>
 
 <!-- Contact -->
+<section class="faq-home" aria-labelledby="faq-home-title">
+  <div class="wrap faq-home-grid">
+    <div>
+      <span class="eyebrow" data-sv="VANLIGA FRÅGOR" data-en="FREQUENTLY ASKED QUESTIONS">VANLIGA FRÅGOR</span>
+      <h2 id="faq-home-title" data-sv="Inför ett arkitektuppdrag" data-en="Before engaging an architect">Inför ett arkitektuppdrag</h2>
+    </div>
+    <div class="faq-home-list">
+      <details><summary data-sv="Vad kostar en arkitekt i Stockholm?" data-en="What does an architect cost in Stockholm?">Vad kostar en arkitekt i Stockholm?</summary><p data-sv="Timpriset för en SAR/MSA-registrerad arkitekt i Stockholm ligger normalt mellan 1 200 och 2 200 kr exkl. moms. Många uppdrag prissätts som fast arvode baserat på projektets komplexitet och area. Boka ett kostnadsfritt inledande samtal för en indikativ kalkyl." data-en="Hourly fees for qualified architects in Stockholm vary with experience and scope. Many projects use a fixed fee based on complexity and area. Book an initial conversation for a project-specific indication.">Timpriset för en SAR/MSA-registrerad arkitekt i Stockholm ligger normalt mellan 1 200 och 2 200 kr exkl. moms. Många uppdrag prissätts som fast arvode baserat på projektets komplexitet och area. Boka ett kostnadsfritt inledande samtal för en indikativ kalkyl.</p></details>
+      <details><summary data-sv="Behöver jag bygglov för renovering i Stockholm?" data-en="Do I need a building permit for renovation in Stockholm?">Behöver jag bygglov för renovering i Stockholm?</summary><p data-sv="Det beror på åtgärden. Inre ombyggnation kräver sällan bygglov men kan kräva bygganmälan, till exempel vid ändring av bärande konstruktion eller väsentlig ändring av ventilation. Fasadändringar och tillbyggnader bedöms enligt reglerna som gäller sedan den 1 december 2025." data-en="It depends on the work. Interior alterations rarely require a permit but may require notification, for example when load-bearing construction or ventilation changes materially. Facade changes and extensions are assessed under the rules applying since 1 December 2025.">Det beror på åtgärden. Inre ombyggnation kräver sällan bygglov men kan kräva bygganmälan, till exempel vid ändring av bärande konstruktion eller väsentlig ändring av ventilation. Fasadändringar och tillbyggnader bedöms enligt reglerna som gäller sedan den 1 december 2025.</p></details>
+      <details><summary data-sv="Vad gör en SAR/MSA-registrerad arkitekt?" data-en="What does a SAR/MSA architect do?">Vad gör en SAR/MSA-registrerad arkitekt?</summary><p data-sv="SAR/MSA är Sveriges Arkitekters yrkestitel för kvalificerade arkitekter som uppfyller organisationens krav. Titeln är inte samma sak som certifierad kontrollansvarig. När en kontrollansvarig krävs ska personen ha separat, giltig certifiering för uppdraget." data-en="SAR/MSA is the professional title used by Architects Sweden for qualified architects meeting its requirements. It is not the same as a certified control manager. When a control manager is required, that person needs separate valid certification.">SAR/MSA är Sveriges Arkitekters yrkestitel för kvalificerade arkitekter som uppfyller organisationens krav. Titeln är inte samma sak som certifierad kontrollansvarig. När en kontrollansvarig krävs ska personen ha separat, giltig certifiering för uppdraget.</p></details>
+      <details><summary data-sv="Hur lång tid tar ett arkitektuppdrag?" data-en="How long does an architectural commission take?">Hur lång tid tar ett arkitektuppdrag?</summary><p data-sv="En förstudie eller skissuppdrag tar normalt 2 till 6 veckor. Ett fullständigt uppdrag med bygglovshandlingar och bygghandlingar kan ta 3 till 9 månader beroende på projektets storlek. Kommunens handläggningstid tillkommer." data-en="A feasibility or concept stage often takes 2 to 6 weeks. A full commission with permit and construction documents may take 3 to 9 months depending on project size. Municipal processing time is additional.">En förstudie eller skissuppdrag tar normalt 2 till 6 veckor. Ett fullständigt uppdrag med bygglovshandlingar och bygghandlingar kan ta 3 till 9 månader beroende på projektets storlek. Kommunens handläggningstid tillkommer.</p></details>
+    </div>
+  </div>
+</section>
+
 <section id="kontakt">
   <div class="si">
     <span class="eyebrow" data-sv="KONTAKT" data-en="CONTACT">KONTAKT</span>
@@ -620,7 +651,7 @@
     </div>
 
     <div class="map reveal">
-      <iframe src="https://maps.google.com/maps?q=Kungsgatan+9,+Stockholm+11143,+Sweden&t=&z=16&ie=UTF8&iwloc=&output=embed" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Wolfblanc Architects - Stockholm"></iframe>
+      <iframe src="https://maps.google.com/maps?q=Kungsgatan+9,+Stockholm+11143,+Sweden&t=&z=16&ie=UTF8&iwloc=&output=embed" allowfullscreen loading="lazy" decoding="async" referrerpolicy="no-referrer-when-downgrade" title="Wolfblanc Architects - Stockholm"></iframe>
     </div>
 
     <div class="sp reveal">
@@ -629,6 +660,7 @@
 
       <form class="intake-form" id="intake-form" action="https://formspree.io/f/mdajwanb" method="POST">
         <input type="hidden" name="_subject" value="Nytt projekt, wolfblanc.se">
+        <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
         <input type="hidden" name="services" id="selected-services" value="">
         <div class="field"><label><span data-sv="Namn" data-en="Name">Namn</span><span class="ix">01</span></label><input type="text" name="name" placeholder="Anna Lindström" required></div>
         <div class="field"><label><span data-sv="E-post" data-en="Email">E-post</span><span class="ix">02</span></label><input type="email" name="email" placeholder="anna@example.com" required></div>
@@ -638,11 +670,11 @@
         <div class="field full"><label><span data-sv="Beskriv projektet" data-en="Tell us more">Beskriv projektet</span><span class="ix">06</span></label><textarea name="brief" rows="3" placeholder="" required data-sv-placeholder="Vad handlar projektet om och var är ni i processen?" data-en-placeholder="What's the project about and where are you in the process?"></textarea></div>
         <div class="form-actions">
           <p class="legal" data-sv="Vi använder detta enbart för att svara angående ditt projekt." data-en="We use this only to respond about your project.">Vi använder detta enbart för att svara angående ditt projekt.</p>
-          <button type="button" class="submit" id="intake-submit"><span data-sv="Skicka" data-en="Submit">Skicka</span><span class="arrow">→</span></button>
+          <button type="submit" class="submit" id="intake-submit"><span data-sv="Skicka" data-en="Submit">Skicka</span><span class="arrow">→</span></button>
         </div>
       </form>
 
-      <div class="intake-confirmed" id="intake-confirmed">
+      <div class="intake-confirmed" id="intake-confirmed" role="status" aria-live="polite">
         <h3 data-sv="Tack. Vi återkommer inom två arbetsdagar." data-en="Thank you. We'll be in touch within two working days.">Tack. Vi återkommer inom två arbetsdagar.</h3>
         <p data-sv="En senior partner läser varje förfrågan." data-en="A senior partner reads every inquiry.">En senior partner läser varje förfrågan.</p>
       </div>
@@ -763,7 +795,8 @@
       });
       obs.observe(document.documentElement, {attributes:true, attributeFilter:['lang']});
     }
-    submitBtn.addEventListener('click', async () => {
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault();
       if(!form.checkValidity()){ form.reportValidity(); return; }
       submitBtn.disabled = true;
       submitBtn.querySelector('span').textContent = '...';
@@ -774,6 +807,7 @@
         if(res.ok){
           form.style.display = 'none';
           confirmed.style.display = 'block';
+          if(typeof gtag==='function')gtag('event','generate_lead',{event_category:'contact',event_label:'project_enquiry'});
         } else {
           alert('Something went wrong. Please email info@wolfblanc.com directly.');
           submitBtn.disabled = false;

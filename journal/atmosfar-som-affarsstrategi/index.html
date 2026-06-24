@@ -6,18 +6,26 @@
   <link rel="preconnect" href="https://www.googletagmanager.com">
   <link rel="icon" type="image/x-icon" href="../../favicon.ico">
   <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
+  <link rel="stylesheet" href="../article-enhancements.css">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-E4P7B0KJ1B"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-E4P7B0KJ1B');</script>
   <title>Atmosfär som affärsstrategi inom hospitality | Wolfblanc Journal</title>
   <meta name="description" content="I hotell och restaurang är rummet produkten. Hur design driver återbesök, genomsnittspris och lojalitet. Wolfblanc Architects om arkitektur i hospitality-sektorn.">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
   <meta property="og:title" content="Atmosfär som affärsstrategi inom hospitality | Wolfblanc">
-  <meta property="og:description" content="I hotell och restaurang är rummet produkten. Hur design driver återbesök, genomsnittspris och lojalitet. Wolfblanc Archi">
+  <meta property="og:description" content="I hotell och restaurang är rummet produkten. Hur design driver återbesök, genomsnittspris och lojalitet. Wolfblanc Architects om arkitektur i hospitality-sektorn.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://wolfblanc.se/journal/atmosfar-som-affarsstrategi/">
   <meta property="og:image" content="https://wolfblanc.se/images/Selva%20Hotel%2001.webp">
+  <meta property="og:site_name" content="Wolfblanc Architects">
+  <meta property="og:locale" content="sv_SE">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Atmosfär som affärsstrategi inom hospitality | Wolfblanc">
+  <meta name="twitter:image" content="https://wolfblanc.se/images/Selva%20Hotel%2001.webp">
   <meta name="twitter:description" content="In hospitality, the room is the product. How design drives repeat visits, average price and guest loyalty.">
   <link rel="canonical" href="https://wolfblanc.se/journal/atmosfar-som-affarsstrategi/">
+  <link rel="alternate" hreflang="sv" href="https://wolfblanc.se/journal/atmosfar-som-affarsstrategi/">
+  <link rel="alternate" hreflang="x-default" href="https://wolfblanc.se/journal/atmosfar-som-affarsstrategi/">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -227,7 +235,7 @@
 
   <div class="hero-img">
     <div class="hero-img-wrap">
-      <img src="../../images/Selva Hotel 01.webp" alt="Selva Hotel: atmosfär som produkt och varumärkesargument" loading="eager">
+      <img src="../../images/Selva Hotel 01.webp" alt="Selva Hotel: atmosfär som produkt och varumärkesargument" loading="eager" fetchpriority="high" decoding="async">
     </div>
     <p class="img-caption" data-sv="Selva Hotel: atmosfär som produkt och varumärkesargument" data-en="Selva Hotel: atmosphere as product and brand argument">Selva Hotel: atmosfär som produkt och varumärkesargument</p>
   </div>
@@ -247,7 +255,7 @@
 
 
     <div class="inline-img">
-      <img src="../../images/Selva Hotel 02.webp" alt="Hotell och restaurangdesign atmosfär arkitektur" loading="lazy">
+      <img src="../../images/Selva Hotel 02.webp" alt="Hotell och restaurangdesign atmosfär arkitektur" loading="lazy" decoding="async">
     </div>
 
     <blockquote>
@@ -275,21 +283,21 @@
       <span class="rel-ey" data-sv="FLER ARTIKLAR" data-en="MORE ARTICLES">FLER ARTIKLAR</span>
       <div class="rel-grid">
         <a href="../kontoret-som-vill-bli-besokt/" class="rel-card">
-          <div class="rel-img-wrap"><img class="rel-img" src="../../images/Norrsken Office 01.webp" alt="" loading="lazy"></div>
+          <div class="rel-img-wrap"><img class="rel-img" src="../../images/Norrsken Office 01.webp" alt="" loading="lazy" decoding="async"></div>
           <div class="rel-body">
             <p class="rel-cat" data-sv="ARBETSPLATS" data-en="WORKPLACE">ARBETSPLATS</p>
             <p class="rel-title" data-sv="Kontoret som vill bli besökt" data-en="The office that wants to be visited">Kontoret som vill bli besökt</p>
           </div>
         </a>
         <a href="../fran-lokal-till-upplevelse/" class="rel-card">
-          <div class="rel-img-wrap"><img class="rel-img" src="../../images/Granolita Coffee Brand 01.webp" alt="" loading="lazy"></div>
+          <div class="rel-img-wrap"><img class="rel-img" src="../../images/Granolita Coffee Brand 01.webp" alt="" loading="lazy" decoding="async"></div>
           <div class="rel-body">
             <p class="rel-cat" data-sv="HOSPITALITY" data-en="HOSPITALITY">HOSPITALITY</p>
             <p class="rel-title" data-sv="Från lokal till upplevelse" data-en="From premises to experience">Från lokal till upplevelse</p>
           </div>
         </a>
         <a href="../arkitektritat-kok-badrum-stockholm/" class="rel-card">
-          <div class="rel-img-wrap"><img class="rel-img" src="../../images/Luxury Renovation A75_03.webp" alt="" loading="lazy"></div>
+          <div class="rel-img-wrap"><img class="rel-img" src="../../images/Luxury Renovation A75_03.webp" alt="" loading="lazy" decoding="async"></div>
           <div class="rel-body">
             <p class="rel-cat" data-sv="ARKITEKTUR" data-en="ARCHITECTURE">ARKITEKTUR</p>
             <p class="rel-title" data-sv="Arkitektritat kök och badrum i Stockholm" data-en="Architect-designed kitchen and bathroom">Arkitektritat kök och badrum i Stockholm</p>
@@ -339,7 +347,7 @@
   function applyLang(lang){
     document.querySelectorAll('[data-sv],[data-en]').forEach(function(el){
       var val=lang==='en'?el.getAttribute('data-en'):el.getAttribute('data-sv');
-      if(val!==null)el.textContent=val;
+      if(val!==null)el.innerHTML=val;
     });
     lbs.forEach(function(b){b.classList.toggle('active',b.getAttribute('data-lang-switch')===lang);});
     localStorage.setItem(LS_LANG,lang);
@@ -364,5 +372,6 @@
   }
 })();
 </script>
+<script src="../article-enhancements.js" defer></script>
 </body>
 </html>
