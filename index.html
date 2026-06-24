@@ -779,7 +779,6 @@
       pgGrid.appendChild(tile);
     });
     /* Re-trigger reveal observer for new tiles */
-    pgGrid.querySelectorAll('.reveal').forEach(function(el){revealObs&&revealObs.observe(el);});
     /* Show/hide "Visa fler" */
     if(!showAll&&filteredList.length>INITIAL){
       pgMore.style.display='flex';
