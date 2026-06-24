@@ -88,21 +88,7 @@
     img{display:block;max-width:100%}
     address{font-style:normal}
 
-    /* Cursor */
-    @media(hover:hover){body{cursor:none}a,button{cursor:none}}
-    #cursor-dot{
-      width:6px;height:6px;background:var(--accent);border-radius:50%;
-      position:fixed;pointer-events:none;z-index:9999;
-      transform:translate(-50%,-50%);
-    }
-    #cursor-ring{
-      width:28px;height:28px;border:1px solid var(--accent);opacity:0.5;
-      border-radius:50%;position:fixed;pointer-events:none;z-index:9998;
-      transform:translate(-50%,-50%);
-      transition:width 0.2s,height 0.2s,opacity 0.2s;
-    }
-    body.cursor-hover #cursor-ring{width:44px;height:44px;opacity:1}
-    @media(hover:none){#cursor-dot,#cursor-ring{display:none}}
+
 
     /* Nav */
     nav{
@@ -118,17 +104,17 @@
     .nav-link{font-size:.58rem;letter-spacing:.14em;text-transform:uppercase;font-weight:300;color:var(--text-secondary)}
     .nav-link:hover,.nav-link.active{color:var(--text-primary)}
     .nav-mobile{display:none;align-items:center;gap:12px}
-    .burger-btn{display:none;background:none;border:none;cursor:none;color:var(--text-primary);align-items:center;justify-content:center;padding:8px;width:40px;height:40px}
+    .burger-btn{display:none;background:none;border:none;cursor:pointer;color:var(--text-primary);align-items:center;justify-content:center;padding:8px;width:40px;height:40px}
     .burger-btn:hover{color:var(--accent)}
     .mob-menu{display:none;border-top:1px solid var(--line);background:var(--nav-bg);backdrop-filter:blur(12px)}
     .mob-menu a{display:block;font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--text-primary);padding:16px 1.1rem;border-bottom:1px solid var(--line);text-decoration:none;transition:color .3s}
     .mob-menu a:last-child{border-bottom:0}
     .mob-menu a:hover{color:var(--accent)}
     .language-switch{display:inline-flex;align-items:center;gap:4px;border:1px solid var(--line);padding:3px}
-    .lang-btn{background:transparent;border:0;color:var(--text-secondary);font-size:.58rem;letter-spacing:.16em;text-transform:uppercase;padding:4px 6px;cursor:none;transition:color .3s}
+    .lang-btn{background:transparent;border:0;color:var(--text-secondary);font-size:.58rem;letter-spacing:.16em;text-transform:uppercase;padding:4px 6px;cursor:pointer;transition:color .3s}
     .lang-btn:hover,.lang-btn.active{color:var(--accent)}
     .theme-btn{
-      background:none;border:none;cursor:none;color:var(--text-secondary);
+      background:none;border:none;cursor:pointer;color:var(--text-secondary);
       display:flex;align-items:center;padding:8px;transition:color .3s
     }
     .theme-btn:hover{color:var(--text-primary)}
@@ -330,7 +316,7 @@
       position:fixed;bottom:32px;right:32px;width:40px;height:40px;
       border:1px solid var(--accent);color:var(--accent);display:flex;
       align-items:center;justify-content:center;z-index:1000;
-      background:transparent;cursor:none;opacity:0;visibility:hidden;transition:all .3s
+      background:transparent;cursor:pointer;opacity:0;visibility:hidden;transition:all .3s
     }
     #btt.visible{opacity:1;visibility:visible}
     #btt:hover{background:var(--accent);color:var(--bg)}
@@ -373,8 +359,6 @@
 </head>
 <body>
 
-<div id="cursor-dot"></div>
-<div id="cursor-ring"></div>
 
 <nav id="nav">
   <div class="nav-bar">
@@ -671,29 +655,7 @@
     });
   }
 
-  const dot=document.getElementById('cursor-dot');
-  const ring=document.getElementById('cursor-ring');
-  let mouseX=0,mouseY=0,ringX=0,ringY=0;
-  window.addEventListener('mousemove',e=>{
-    mouseX=e.clientX;mouseY=e.clientY;
-    dot.style.left=mouseX+'px';
-    dot.style.top=mouseY+'px';
-  });
-  (function animateRing(){
-    ringX+=(mouseX-ringX)*0.15;
-    ringY+=(mouseY-ringY)*0.15;
-    ring.style.left=ringX+'px';
-    ring.style.top=ringY+'px';
-    requestAnimationFrame(animateRing);
-  })();
-  document.querySelectorAll('a,button').forEach(el=>{
-    el.addEventListener('mouseenter',()=>document.body.classList.add('cursor-hover'));
-    el.addEventListener('mouseleave',()=>document.body.classList.remove('cursor-hover'));
-  });
-  window.addEventListener('mousedown',()=>{
-    dot.style.transform='translate(-50%,-50%) scale(2)';
-    setTimeout(()=>{dot.style.transform='translate(-50%,-50%) scale(1)';},150);
-  });
+
 
   (function(){
     const form = document.getElementById('intake-form');
