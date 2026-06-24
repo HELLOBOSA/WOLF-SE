@@ -12,7 +12,7 @@
 .art-header{max-width:800px!important}
 .art-lead{font-size:1.18rem!important;line-height:1.72!important}
 .wb-body{max-width:720px!important;font-size:1.1rem!important;line-height:1.9!important;letter-spacing:0!important}
-.wb-body p{margin-bottom:1.35em}
+.wb-body > p,.wb-body > .article-longform > p{font-size:1em!important;line-height:inherit!important;color:inherit!important;margin-bottom:1.35em}
 .wb-body h2.section-h{font-size:1.22rem!important;line-height:1.42;letter-spacing:.055em}
 .article-faq{max-width:720px}
 .article-faq p{font-size:.96rem;line-height:1.8;letter-spacing:.005em}
