@@ -44,21 +44,93 @@
   {
     "@context": "https://schema.org",
     "@type": ["LocalBusiness", "Architect"],
+    "@id": "https://wolfblanc.se/#business",
     "name": "Wolfblanc Architects",
     "url": "https://wolfblanc.se",
+    "logo": "https://wolfblanc.se/apple-touch-icon.png",
+    "image": "https://wolfblanc.se/images/Horizon%20House%2001.webp",
+    "description": "Arkitektkontor i Stockholm med nordisk metodik och internationell erfarenhet. Bostäder, renoveringar, investeringsprojekt och stadsplanering. SAR/MSA registrerad, WELL AP certifierad.",
+    "email": "info@wolfblanc.com",
+    "telephone": "+46736566489",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Kungsgatan 9",
       "addressLocality": "Stockholm",
-      "postalCode": "11143",
+      "postalCode": "111 43",
       "addressCountry": "SE"
     },
-    "telephone": "+46736566489",
-    "email": "info@wolfblanc.com",
-    "description": "Arkitektkontor i Stockholm med nordisk metodik och internationell erfarenhet. Bostäder, kommersiella projekt och renoveringar.",
-    "areaServed": ["Sverige", "Stockholm", "Göteborg", "Malmö", "Uppsala", "Östermalm", "Djursholm", "Lidingö", "Nacka", "Danderyd", "Marbella", "Spanien"],
-    "hasCredential": "SAR/MSA",
-    "openingHours": ["Mo-Fr 09:00-18:00"]
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 59.3346,
+      "longitude": 18.0632
+    },
+    "areaServed": [
+      {"@type": "City", "name": "Stockholm"},
+      {"@type": "AdministrativeArea", "name": "Stockholms län"},
+      {"@type": "Place", "name": "Östermalm, Stockholm"},
+      {"@type": "Place", "name": "Djursholm"},
+      {"@type": "Place", "name": "Lidingö"},
+      {"@type": "Place", "name": "Nacka"},
+      {"@type": "Place", "name": "Danderyd"},
+      {"@type": "Place", "name": "Vasastan, Stockholm"},
+      {"@type": "Place", "name": "Södermalm, Stockholm"},
+      {"@type": "Place", "name": "Kungsholmen, Stockholm"},
+      {"@type": "City", "name": "Uppsala"},
+      {"@type": "City", "name": "Göteborg"},
+      {"@type": "City", "name": "Malmö"}
+    ],
+    "hasCredential": ["SAR/MSA", "WELL AP"],
+    "priceRange": "$$$",
+    "openingHours": ["Mo-Fr 09:00-18:00"],
+    "knowsLanguage": ["sv", "en"],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "customer support",
+      "telephone": "+46736566489",
+      "email": "info@wolfblanc.com",
+      "areaServed": "SE",
+      "availableLanguage": ["Swedish", "English"]
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Vad kostar en arkitekt i Stockholm?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Timpriset för en SAR/MSA-registrerad arkitekt i Stockholm ligger normalt mellan 1 200 och 2 200 kr exkl. moms. Många uppdrag prissätts som fast arvode baserat på projektets komplexitet och area. Boka ett kostnadsfritt inledande samtal för en indikativ kalkyl."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Behöver jag bygglov för renovering i Stockholm?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Det beror på åtgärden. Inre ombyggnation kräver sällan bygglov men kan kräva bygganmälan, till exempel vid ändring av bärande konstruktion eller väsentlig ändring av ventilation. Fasadändringar, tillbyggnader och attefallsåtgärder har egna regler. Vi guidar dig genom hela processens krav."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Vad gör en SAR/MSA-registrerad arkitekt?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "SAR/MSA är Sveriges Arkitekters yrkesregistrering och garanterar att arkitekten uppfyller utbildnings- och etikkraven. En registrerad arkitekt kan underteckna handlingar och ta fullt projektansvar, vilket krävs av Stadsbyggnadskontoret vid de flesta bygglovsärenden."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Hur lång tid tar ett arkitektuppdrag?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "En förstudie eller skissuppdrag tar normalt 2 till 6 veckor. Ett fullständigt uppdrag med bygglovshandlingar och bygghandlingar kan ta 3 till 9 månader beroende på projektets storlek. Handläggningstid hos kommunen tillkommer och varierar."
+        }
+      }
+    ]
   }
   </script>
 
