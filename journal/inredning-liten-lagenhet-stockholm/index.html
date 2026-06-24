@@ -134,7 +134,8 @@
     h1{font-size:clamp(1.7rem,4vw,2.8rem);font-weight:200;text-transform:uppercase;letter-spacing:.05em;line-height:1.2;margin:0 0 28px}
     .art-lead{font-size:1.1rem;line-height:1.65;color:var(--text2);margin:0 0 32px}
     .art-byline{display:flex;align-items:center;gap:12px;padding-top:24px;border-top:1px solid var(--line)}
-    .byline-avatar{width:34px;height:34px;border-radius:50%;background:var(--accent);opacity:.18}
+    .byline-avatar{width:34px;height:34px;border-radius:50%;overflow:hidden;flex-shrink:0}
+    .byline-avatar img{width:100%;height:100%;object-fit:cover;border-radius:50%;display:block}
     .byline-text{font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:var(--text2)}
     .byline-text strong{color:var(--text)}
     .hero-img{max-width:1100px;margin:0 auto 64px;padding:0 32px}
@@ -240,7 +241,7 @@
     <h1 data-sv="Liten lägenhet i Stockholm: arkitekturens roll för att maximera ytan" data-en="Small apartment in Stockholm: the role of architecture in maximising space">Liten lägenhet i Stockholm: arkitekturens roll för att maximera ytan</h1>
     <p class="art-lead" data-sv="En liten lägenhet är inte ett problem att lösa med fler hyllor. Det är ett planeringsproblem. Rätt planlösning, rätt ljussättning och väldesignad förvaring gör 35 kvm till en bostad som upplevs dubbelt så stor." data-en="A small apartment is not a problem to solve with more shelves. It is a planning problem. The right floor plan, the right lighting and well-designed storage make 35 sqm feel twice as large.">En liten lägenhet är inte ett problem att lösa med fler hyllor. Det är ett planeringsproblem. Rätt planlösning, rätt ljussättning och väldesignad förvaring gör 35 kvm till en bostad som upplevs dubbelt så stor.</p>
     <div class="art-byline">
-      <div class="byline-avatar"></div>
+      <div class="byline-avatar"><img src="../../images/210 sq_white-02.webp" alt="Wolfblanc Architects" width="34" height="34" loading="lazy" decoding="async"></div>
       <div class="byline-text"><strong data-sv="Wolfblanc Architects" data-en="Wolfblanc Architects">Wolfblanc Architects</strong> &nbsp;/&nbsp; Stockholm</div>
     </div>
   </header>
@@ -294,6 +295,25 @@
     </section>
 </div>
 
+  <section class="article-faq" aria-labelledby="article-faq-title">
+    <h2 id="article-faq-title" data-sv="Vanliga fr&aring;gor" data-en="Frequently asked questions">Vanliga fr&aring;gor</h2>
+    <details class="faq-item">
+      <summary data-sv="Vad kostar inredning av liten lägenhet med arkitekt i Stockholm?" data-en="What does interior design for a small apartment with an architect cost in Stockholm?">Vad kostar inredning av liten lägenhet med arkitekt i Stockholm?</summary>
+      <p data-sv="En arkitektinsats för en liten lägenhet i Stockholm kostar normalt 20 000 till 80 000 kr beroende på scope. Det inkluderar planlösningsanalys, rumsbeskrivning, möbleringsplan och eventuellt bygglovshandlingar om väggar ska rivas eller dörrar flyttas." data-en="An architect's input for a small apartment in Stockholm normally costs 20,000 to 80,000 SEK depending on scope. It includes layout analysis, room description, furniture plan and possibly permit documents if walls are to be removed or doors moved.">En arkitektinsats för en liten lägenhet i Stockholm kostar normalt 20 000 till 80 000 kr beroende på scope. Det inkluderar planlösningsanalys, rumsbeskrivning, möbleringsplan och eventuellt bygglovshandlingar om väggar ska rivas eller dörrar flyttas.</p>
+    </details>
+    <details class="faq-item">
+      <summary data-sv="Kan man ta bort väggar i en liten lägenhet i bostadsrätt?" data-en="Can you remove walls in a small apartment in a housing cooperative?">Kan man ta bort väggar i en liten lägenhet i bostadsrätt?</summary>
+      <p data-sv="Icke-bärande väggar kan tas bort med bygganmälan och BRF:ens godkännande. Bärande väggar kräver konstruktörsgranskning, bygganmälan och alltid BRF:ens tillstånd. En arkitekt bedömer vilka väggar som är bärande och ritar den nya planlösningen." data-en="Non-load-bearing walls can be removed with a building notification and the association's approval. Load-bearing walls require a structural engineer's review, a notification and always the association's permission. An architect assesses which walls are load-bearing and draws the new layout.">Icke-bärande väggar kan tas bort med bygganmälan och BRF:ens godkännande. Bärande väggar kräver konstruktörsgranskning, bygganmälan och alltid BRF:ens tillstånd. En arkitekt bedömer vilka väggar som är bärande och ritar den nya planlösningen.</p>
+    </details>
+    <details class="faq-item">
+      <summary data-sv="Vilka förändringar gör störst skillnad i en liten lägenhet?" data-en="Which changes make the biggest difference in a small apartment?">Vilka förändringar gör störst skillnad i en liten lägenhet?</summary>
+      <p data-sv="Planlösning och ljus är de två faktorer som har störst effekt per investerad krona. Att öppna upp en blockerad ljusöppning, kortkorta en korridor eller lägga till ett glasparti i en inre dörr förändrar upplevelsen av rummet mer än dyr inredning." data-en="Layout and light are the two factors with the greatest effect per krona invested. Opening a blocked light source, shortening a corridor or adding a glazed panel in an internal door changes the experience of the room more than expensive furnishing.">Planlösning och ljus är de två faktorer som har störst effekt per investerad krona. Att öppna upp en blockerad ljusöppning, kortkorta en korridor eller lägga till ett glasparti i en inre dörr förändrar upplevelsen av rummet mer än dyr inredning.</p>
+    </details>
+    <details class="faq-item">
+      <summary data-sv="Vad är compact living och hur fungerar det?" data-en="What is compact living and how does it work?">Vad är compact living och hur fungerar det?</summary>
+      <p data-sv="Compact living är ett designbegrepp för bostäder under 50 kvm som optimeras för alla livsfunktioner. Det innebär multifunktionella möbler, välplanerad förvaring och genomtänkt flöde. En arkitekt med compact living-erfarenhet kan projektera en bostad som upplevs dubbelt så stor som dess area." data-en="Compact living is a design concept for homes under 50 sqm optimised for all living functions. It involves multifunctional furniture, well-planned storage and considered flow. An architect with compact living experience can design a home that feels twice as large as its area.">Compact living är ett designbegrepp för bostäder under 50 kvm som optimeras för alla livsfunktioner. Det innebär multifunktionella möbler, välplanerad förvaring och genomtänkt flöde. En arkitekt med compact living-erfarenhet kan projektera en bostad som upplevs dubbelt så stor som dess area.</p>
+    </details>
+  </section>
   <section class="cta-section">
     <div class="cta-bg">W</div>
     <div class="cta-inner">
@@ -339,13 +359,9 @@
 </main>
 
 <footer>
-  <span data-sv="&copy; 2025 Wolfblanc Architects" data-en="&copy; 2025 Wolfblanc Architects">&copy; 2025 Wolfblanc Architects</span>
-  <div class="foot-links">
-    <a href="../../index.html" data-sv="Hem" data-en="Home">Hem</a>
-    <a href="../../index.html#projekt" data-sv="Galleri" data-en="Gallery">Galleri</a>
-    <a href="../" data-sv="Journal" data-en="Journal">Journal</a>
-    <a href="../../index.html#kontakt" data-sv="Kontakt" data-en="Contact">Kontakt</a>
-  </div>
+  <span data-sv="WOLFBLANC&reg; ARCHITECTS &middot; Stockholm &middot; Godk&auml;nd f&ouml;r F-skatt &middot; &copy; 2026" data-en="WOLFBLANC&reg; ARCHITECTS &middot; Stockholm &middot; Approved for F-tax &middot; &copy; 2026">WOLFBLANC&reg; ARCHITECTS &middot; Stockholm &middot; Godk&auml;nd f&ouml;r F-skatt &middot; &copy; 2026</span>
+  <a href="../../index.html" target="_self" rel="noopener" style="color:inherit;text-decoration:none;opacity:.65">WEB BY EOLOS DESIGN LAB</a>
+  <span><a href="mailto:info@wolfblanc.com" style="color:inherit;text-decoration:none">info@wolfblanc.com</a> &middot; <a href="https://wolfblanc.com" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none">wolfblanc.com</a></span>
 </footer>
 
 <button id="btt" aria-label="Till toppen">

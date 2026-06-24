@@ -126,7 +126,8 @@
     h1{font-size:clamp(1.7rem,4vw,2.8rem);font-weight:200;text-transform:uppercase;letter-spacing:.05em;line-height:1.2;margin:0 0 28px}
     .art-lead{font-size:1.1rem;line-height:1.65;color:var(--text2);margin:0 0 32px}
     .art-byline{display:flex;align-items:center;gap:12px;padding-top:24px;border-top:1px solid var(--line)}
-    .byline-avatar{width:34px;height:34px;border-radius:50%;background:var(--accent);opacity:.18}
+    .byline-avatar{width:34px;height:34px;border-radius:50%;overflow:hidden;flex-shrink:0}
+    .byline-avatar img{width:100%;height:100%;object-fit:cover;border-radius:50%;display:block}
     .byline-text{font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:var(--text2)}
     .byline-text strong{color:var(--text)}
     .hero-img{max-width:1100px;margin:0 auto 64px;padding:0 32px}
@@ -232,7 +233,7 @@
     <h1 data-sv="BIM i praktiken: vad det innebär för ditt projekt" data-en="BIM in practice: what it means for your project">BIM i praktiken: vad det innebär för ditt projekt</h1>
     <p class="art-lead" data-sv="BIM, Building Information Modelling, är inte ett ritprogram. Det är ett digitalt arbetsflöde som samlar alla projektets discipliner, arkitekt, konstruktör, VVS och el, i en gemensam modell. Det minskar antalet kollisioner, missförstånd och ändringsorder." data-en="BIM, Building Information Modelling, is not a drawing program. It is a digital workflow that gathers all the project's disciplines, architect, structural engineer, MEP and electrical, in a shared model. It reduces the number of collisions, misunderstandings and change orders.">BIM, Building Information Modelling, är inte ett ritprogram. Det är ett digitalt arbetsflöde som samlar alla projektets discipliner, arkitekt, konstruktör, VVS och el, i en gemensam modell. Det minskar antalet kollisioner, missförstånd och ändringsorder.</p>
     <div class="art-byline">
-      <div class="byline-avatar"></div>
+      <div class="byline-avatar"><img src="../../images/210 sq_white-02.webp" alt="Wolfblanc Architects" width="34" height="34" loading="lazy" decoding="async"></div>
       <div class="byline-text"><strong data-sv="Wolfblanc Architects" data-en="Wolfblanc Architects">Wolfblanc Architects</strong> &nbsp;/&nbsp; Stockholm</div>
     </div>
   </header>
@@ -280,6 +281,21 @@
     </section>
 </div>
 
+  <section class="article-faq" aria-labelledby="article-faq-title">
+    <h2 id="article-faq-title" data-sv="Vanliga fr&aring;gor" data-en="Frequently asked questions">Vanliga fr&aring;gor</h2>
+    <details class="faq-item">
+      <summary data-sv="Vad är BIM och varför är det viktigt?" data-en="What is BIM and why is it important?">Vad är BIM och varför är det viktigt?</summary>
+      <p data-sv="BIM, Building Information Modelling, är ett digitalt arbetsflöde där byggnaden modelleras i 3D med information kopplad till varje objekt. Det möjliggör kollisionskontroll, mängdberäkning och koordinering mellan alla discipliner. Det minskar antalet ändringsorder och byggfel." data-en="BIM, Building Information Modelling, is a digital workflow where the building is modelled in 3D with information linked to each object. It enables clash detection, quantity take-off and coordination between all disciplines. It reduces the number of change orders and construction errors.">BIM, Building Information Modelling, är ett digitalt arbetsflöde där byggnaden modelleras i 3D med information kopplad till varje objekt. Det möjliggör kollisionskontroll, mängdberäkning och koordinering mellan alla discipliner. Det minskar antalet ändringsorder och byggfel.</p>
+    </details>
+    <details class="faq-item">
+      <summary data-sv="Måste mitt projekt projekteras i BIM?" data-en="Must my project be designed in BIM?">Måste mitt projekt projekteras i BIM?</summary>
+      <p data-sv="BIM är inget generellt lagkrav för byggprojekt i Sverige, men kan vara ett beställarkrav i offentlig upphandling och större kommersiella projekt. För privata projekt bör metod och detaljnivå anpassas till projektets komplexitet och de beslut modellen ska stödja." data-en="BIM is not a general legal requirement for building projects in Sweden, but it can be a client requirement in public procurement and larger commercial projects. For private projects, method and level of detail should be matched to the project's complexity and the decisions the model is to support.">BIM är inget generellt lagkrav för byggprojekt i Sverige, men kan vara ett beställarkrav i offentlig upphandling och större kommersiella projekt. För privata projekt bör metod och detaljnivå anpassas till projektets komplexitet och de beslut modellen ska stödja.</p>
+    </details>
+    <details class="faq-item">
+      <summary data-sv="Vad är en digital tvilling av en byggnad?" data-en="What is a digital twin of a building?">Vad är en digital tvilling av en byggnad?</summary>
+      <p data-sv="En digital tvilling är BIM-modellen efter projektet är avslutat. Den innehåller all information om byggnadens komponenter, material, system och geometri. Den används för förvaltning, planerade underhåll och framtida ombyggnadsarbeten och sparar tid och kostnad vid varje framtida ingrepp." data-en="A digital twin is the BIM model after the project is completed. It contains all information about the building's components, materials, systems and geometry. It is used for facility management, planned maintenance and future remodelling, saving time and cost at every future intervention.">En digital tvilling är BIM-modellen efter projektet är avslutat. Den innehåller all information om byggnadens komponenter, material, system och geometri. Den används för förvaltning, planerade underhåll och framtida ombyggnadsarbeten och sparar tid och kostnad vid varje framtida ingrepp.</p>
+    </details>
+  </section>
   <section class="cta-section">
     <div class="cta-bg">W</div>
     <div class="cta-inner">
@@ -325,13 +341,9 @@
 </main>
 
 <footer>
-  <span data-sv="&copy; 2025 Wolfblanc Architects" data-en="&copy; 2025 Wolfblanc Architects">&copy; 2025 Wolfblanc Architects</span>
-  <div class="foot-links">
-    <a href="../../index.html" data-sv="Hem" data-en="Home">Hem</a>
-    <a href="../../index.html#projekt" data-sv="Galleri" data-en="Gallery">Galleri</a>
-    <a href="../" data-sv="Journal" data-en="Journal">Journal</a>
-    <a href="../../index.html#kontakt" data-sv="Kontakt" data-en="Contact">Kontakt</a>
-  </div>
+  <span data-sv="WOLFBLANC&reg; ARCHITECTS &middot; Stockholm &middot; Godk&auml;nd f&ouml;r F-skatt &middot; &copy; 2026" data-en="WOLFBLANC&reg; ARCHITECTS &middot; Stockholm &middot; Approved for F-tax &middot; &copy; 2026">WOLFBLANC&reg; ARCHITECTS &middot; Stockholm &middot; Godk&auml;nd f&ouml;r F-skatt &middot; &copy; 2026</span>
+  <a href="../../index.html" target="_self" rel="noopener" style="color:inherit;text-decoration:none;opacity:.65">WEB BY EOLOS DESIGN LAB</a>
+  <span><a href="mailto:info@wolfblanc.com" style="color:inherit;text-decoration:none">info@wolfblanc.com</a> &middot; <a href="https://wolfblanc.com" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none">wolfblanc.com</a></span>
 </footer>
 
 <button id="btt" aria-label="Till toppen">

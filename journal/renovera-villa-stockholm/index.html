@@ -134,7 +134,8 @@
     h1{font-size:clamp(1.7rem,4vw,2.8rem);font-weight:200;text-transform:uppercase;letter-spacing:.05em;line-height:1.2;margin:0 0 28px}
     .art-lead{font-size:1.1rem;line-height:1.65;color:var(--text2);margin:0 0 32px}
     .art-byline{display:flex;align-items:center;gap:12px;padding-top:24px;border-top:1px solid var(--line)}
-    .byline-avatar{width:34px;height:34px;border-radius:50%;background:var(--accent);opacity:.18}
+    .byline-avatar{width:34px;height:34px;border-radius:50%;overflow:hidden;flex-shrink:0}
+    .byline-avatar img{width:100%;height:100%;object-fit:cover;border-radius:50%;display:block}
     .byline-text{font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:var(--text2)}
     .byline-text strong{color:var(--text)}
     .hero-img{max-width:1100px;margin:0 auto 64px;padding:0 32px}
@@ -240,7 +241,7 @@
     <h1 data-sv="Villarenovering i Stockholm: hur du planerar rätt" data-en="Villa renovation in Stockholm: how to plan correctly">Villarenovering i Stockholm: hur du planerar rätt</h1>
     <p class="art-lead" data-sv="En villarenovering i Stockholmsregionen handlar sällan om en enda åtgärd. Det handlar om att förstå husets logik, vad som faktiskt skapar värde och i vilken ordning åtgärderna ska genomföras." data-en="A villa renovation in the Stockholm region is rarely about a single measure. It is about understanding the logic of the house, what actually creates value and in what sequence the measures should be carried out.">En villarenovering i Stockholmsregionen handlar sällan om en enda åtgärd. Det handlar om att förstå husets logik, vad som faktiskt skapar värde och i vilken ordning åtgärderna ska genomföras.</p>
     <div class="art-byline">
-      <div class="byline-avatar"></div>
+      <div class="byline-avatar"><img src="../../images/210 sq_white-02.webp" alt="Wolfblanc Architects" width="34" height="34" loading="lazy" decoding="async"></div>
       <div class="byline-text"><strong data-sv="Wolfblanc Architects" data-en="Wolfblanc Architects">Wolfblanc Architects</strong> &nbsp;/&nbsp; Stockholm</div>
     </div>
   </header>
@@ -294,6 +295,25 @@
     </section>
 </div>
 
+  <section class="article-faq" aria-labelledby="article-faq-title">
+    <h2 id="article-faq-title" data-sv="Vanliga fr&aring;gor" data-en="Frequently asked questions">Vanliga fr&aring;gor</h2>
+    <details class="faq-item">
+      <summary data-sv="Vad kostar en villarenovering i Stockholm?" data-en="What does a villa renovation cost in Stockholm?">Vad kostar en villarenovering i Stockholm?</summary>
+      <p data-sv="Priset varierar kraftigt med ambitionsnivå och husets skick. Räkna med 15 000 till 35 000 kr per kvm för en genomgripande renovering. En partiell renovering av kök och badrum kan kosta 400 000 till 900 000 kr totalt." data-en="The price varies greatly with ambition and the house's condition. Allow 15,000 to 35,000 SEK per sqm for a thorough renovation. A partial renovation of kitchen and bathroom can cost 400,000 to 900,000 SEK in total.">Priset varierar kraftigt med ambitionsnivå och husets skick. Räkna med 15 000 till 35 000 kr per kvm för en genomgripande renovering. En partiell renovering av kök och badrum kan kosta 400 000 till 900 000 kr totalt.</p>
+    </details>
+    <details class="faq-item">
+      <summary data-sv="Behöver jag arkitekt för att renovera villan?" data-en="Do I need an architect to renovate the villa?">Behöver jag arkitekt för att renovera villan?</summary>
+      <p data-sv="Det är inte lagkrav för alla åtgärder, men en arkitekt säkerställer att renoveringen är rätt planerad, att bygglov söks korrekt och att värdehöjningen maximeras. De flesta fel i renoveringsprojekt beror på bristande planering i ett tidigt skede." data-en="It is not a legal requirement for all work, but an architect ensures the renovation is properly planned, that permits are applied for correctly and that the increase in value is maximised. Most errors in renovation projects stem from poor planning at an early stage.">Det är inte lagkrav för alla åtgärder, men en arkitekt säkerställer att renoveringen är rätt planerad, att bygglov söks korrekt och att värdehöjningen maximeras. De flesta fel i renoveringsprojekt beror på bristande planering i ett tidigt skede.</p>
+    </details>
+    <details class="faq-item">
+      <summary data-sv="Hur länge tar en villarenovering?" data-en="How long does a villa renovation take?">Hur länge tar en villarenovering?</summary>
+      <p data-sv="En genomgripande renovering av en villa på 200 kvm tar normalt 6 till 18 månader. Planerings- och projektfasen tar 2 till 4 månader, byggfasen 4 till 14 månader beroende på entreprenörens kapacitet och åtgärdernas komplexitet." data-en="A thorough renovation of a 200 sqm villa normally takes 6 to 18 months. The planning and design phase takes 2 to 4 months, the construction phase 4 to 14 months depending on the contractor's capacity and the complexity of the work.">En genomgripande renovering av en villa på 200 kvm tar normalt 6 till 18 månader. Planerings- och projektfasen tar 2 till 4 månader, byggfasen 4 till 14 månader beroende på entreprenörens kapacitet och åtgärdernas komplexitet.</p>
+    </details>
+    <details class="faq-item">
+      <summary data-sv="Kan jag bo kvar under renoveringen?" data-en="Can I stay during the renovation?">Kan jag bo kvar under renoveringen?</summary>
+      <p data-sv="Det beror på åtgärdernas art. Vid badrumsrenovering och köksbyte är det möjligt att bo kvar, men vid genomgripande stommarbeten och ombyggnationer är det ofta nödvändigt att flytta tillfälligt. Arkitekten kan planera etapper för att minimera störningen." data-en="It depends on the nature of the work. For a bathroom renovation and kitchen replacement it is possible to stay, but for thorough structural work and remodelling it is often necessary to move temporarily. The architect can plan phases to minimise disruption.">Det beror på åtgärdernas art. Vid badrumsrenovering och köksbyte är det möjligt att bo kvar, men vid genomgripande stommarbeten och ombyggnationer är det ofta nödvändigt att flytta tillfälligt. Arkitekten kan planera etapper för att minimera störningen.</p>
+    </details>
+  </section>
   <section class="cta-section">
     <div class="cta-bg">W</div>
     <div class="cta-inner">
@@ -339,13 +359,9 @@
 </main>
 
 <footer>
-  <span data-sv="&copy; 2025 Wolfblanc Architects" data-en="&copy; 2025 Wolfblanc Architects">&copy; 2025 Wolfblanc Architects</span>
-  <div class="foot-links">
-    <a href="../../index.html" data-sv="Hem" data-en="Home">Hem</a>
-    <a href="../../index.html#projekt" data-sv="Galleri" data-en="Gallery">Galleri</a>
-    <a href="../" data-sv="Journal" data-en="Journal">Journal</a>
-    <a href="../../index.html#kontakt" data-sv="Kontakt" data-en="Contact">Kontakt</a>
-  </div>
+  <span data-sv="WOLFBLANC&reg; ARCHITECTS &middot; Stockholm &middot; Godk&auml;nd f&ouml;r F-skatt &middot; &copy; 2026" data-en="WOLFBLANC&reg; ARCHITECTS &middot; Stockholm &middot; Approved for F-tax &middot; &copy; 2026">WOLFBLANC&reg; ARCHITECTS &middot; Stockholm &middot; Godk&auml;nd f&ouml;r F-skatt &middot; &copy; 2026</span>
+  <a href="../../index.html" target="_self" rel="noopener" style="color:inherit;text-decoration:none;opacity:.65">WEB BY EOLOS DESIGN LAB</a>
+  <span><a href="mailto:info@wolfblanc.com" style="color:inherit;text-decoration:none">info@wolfblanc.com</a> &middot; <a href="https://wolfblanc.com" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none">wolfblanc.com</a></span>
 </footer>
 
 <button id="btt" aria-label="Till toppen">

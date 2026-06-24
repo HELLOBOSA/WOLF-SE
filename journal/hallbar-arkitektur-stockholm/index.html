@@ -134,7 +134,8 @@
     h1{font-size:clamp(1.7rem,4vw,2.8rem);font-weight:200;text-transform:uppercase;letter-spacing:.05em;line-height:1.2;margin:0 0 28px}
     .art-lead{font-size:1.1rem;line-height:1.65;color:var(--text2);margin:0 0 32px}
     .art-byline{display:flex;align-items:center;gap:12px;padding-top:24px;border-top:1px solid var(--line)}
-    .byline-avatar{width:34px;height:34px;border-radius:50%;background:var(--accent);opacity:.18}
+    .byline-avatar{width:34px;height:34px;border-radius:50%;overflow:hidden;flex-shrink:0}
+    .byline-avatar img{width:100%;height:100%;object-fit:cover;border-radius:50%;display:block}
     .byline-text{font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:var(--text2)}
     .byline-text strong{color:var(--text)}
     .hero-img{max-width:1100px;margin:0 auto 64px;padding:0 32px}
@@ -240,7 +241,7 @@
     <h1 data-sv="Hållbar arkitektur i Stockholm: vad det faktiskt innebär" data-en="Sustainable architecture in Stockholm: what it actually means">Hållbar arkitektur i Stockholm: vad det faktiskt innebär</h1>
     <p class="art-lead" data-sv="Hållbarhet i arkitektur är inte ett tillägg, utan ett designbeslut som fattas tidigt och påverkar allt. Material, konstruktion, energisystem och inomhusmiljö hänger ihop. Att lägga till solceller på ett dåligt planerat hus är inte hållbar arkitektur." data-en="Sustainability in architecture is not an add-on, but a design decision made early that affects everything. Materials, construction, energy systems and indoor environment are connected. Adding solar panels to a poorly planned house is not sustainable architecture.">Hållbarhet i arkitektur är inte ett tillägg, utan ett designbeslut som fattas tidigt och påverkar allt. Material, konstruktion, energisystem och inomhusmiljö hänger ihop. Att lägga till solceller på ett dåligt planerat hus är inte hållbar arkitektur.</p>
     <div class="art-byline">
-      <div class="byline-avatar"></div>
+      <div class="byline-avatar"><img src="../../images/210 sq_white-02.webp" alt="Wolfblanc Architects" width="34" height="34" loading="lazy" decoding="async"></div>
       <div class="byline-text"><strong data-sv="Wolfblanc Architects" data-en="Wolfblanc Architects">Wolfblanc Architects</strong> &nbsp;/&nbsp; Stockholm</div>
     </div>
   </header>
@@ -294,6 +295,25 @@
     </section>
 </div>
 
+  <section class="article-faq" aria-labelledby="article-faq-title">
+    <h2 id="article-faq-title" data-sv="Vanliga fr&aring;gor" data-en="Frequently asked questions">Vanliga fr&aring;gor</h2>
+    <details class="faq-item">
+      <summary data-sv="Vad innebär WELL-certifiering för ett byggprojekt?" data-en="What does WELL certification mean for a building project?">Vad innebär WELL-certifiering för ett byggprojekt?</summary>
+      <p data-sv="WELL bedömer byggnaden utifrån sju kategorier kopplade till hälsa och välmående. En WELL-certifiering kräver dokumentation och tredjepartsgranskning av luftkvalitet, ljusförhållanden, vattenkvalitet och mer. Wolfblanc Architects är WELL AP-certifierade och stöttar i hela processen." data-en="WELL assesses the building across seven categories linked to health and wellbeing. A WELL certification requires documentation and third-party review of air quality, lighting, water quality and more. Wolfblanc Architects is WELL AP-certified and supports the whole process.">WELL bedömer byggnaden utifrån sju kategorier kopplade till hälsa och välmående. En WELL-certifiering kräver dokumentation och tredjepartsgranskning av luftkvalitet, ljusförhållanden, vattenkvalitet och mer. Wolfblanc Architects är WELL AP-certifierade och stöttar i hela processen.</p>
+    </details>
+    <details class="faq-item">
+      <summary data-sv="Är passivhus dyrt att bygga i Stockholm?" data-en="Is a passive house expensive to build in Stockholm?">Är passivhus dyrt att bygga i Stockholm?</summary>
+      <p data-sv="En passivhusbyggnad kostar normalt 5 till 15 procent mer att uppföra än ett standardhus. Men driftkostnaderna är 60 till 80 procent lägre, vilket gör det lönsamt sett i ett 20-30-årsperspektiv. I Stockholm med höga energipriser återbetalar sig investering på 8 till 12 år." data-en="A passive house normally costs 5 to 15 percent more to build than a standard house. But operating costs are 60 to 80 percent lower, which makes it profitable over a 20-30-year horizon. In Stockholm, with high energy prices, the investment pays off in 8 to 12 years.">En passivhusbyggnad kostar normalt 5 till 15 procent mer att uppföra än ett standardhus. Men driftkostnaderna är 60 till 80 procent lägre, vilket gör det lönsamt sett i ett 20-30-årsperspektiv. I Stockholm med höga energipriser återbetalar sig investering på 8 till 12 år.</p>
+    </details>
+    <details class="faq-item">
+      <summary data-sv="Vad är Miljöbyggnad och hur söker man certifiering?" data-en="What is Miljobyggnad and how do you apply for certification?">Vad är Miljöbyggnad och hur söker man certifiering?</summary>
+      <p data-sv="Miljöbyggnad är Sweden Green Building Councils certifiering för svenska byggnader. Den bedömer energi, innemiljö och material. Certifiering söks via SGBC och kräver dokumentation från projektets tidiga skeden. En certifierad arkitekt eller konsult guidar processen." data-en="Miljobyggnad is the Sweden Green Building Council's certification for Swedish buildings. It assesses energy, indoor environment and materials. Certification is applied for through SGBC and requires documentation from the project's early stages. A certified architect or consultant guides the process.">Miljöbyggnad är Sweden Green Building Councils certifiering för svenska byggnader. Den bedömer energi, innemiljö och material. Certifiering söks via SGBC och kräver dokumentation från projektets tidiga skeden. En certifierad arkitekt eller konsult guidar processen.</p>
+    </details>
+    <details class="faq-item">
+      <summary data-sv="Vilket material är mest hållbart för fasad i Stockholm?" data-en="Which material is most sustainable for a facade in Stockholm?">Vilket material är mest hållbart för fasad i Stockholm?</summary>
+      <p data-sv="Trä har det lägsta koldioxidavtrycket och kan vara obehandlat på gråna naturligt. Tegelfasader är extremt långlivade men kräver mer energi att producera. Putsade fasader kräver löpande underhåll. Valet beror på byggnadens livslängd, läge och estetiska mål." data-en="Wood has the lowest carbon footprint and can be left untreated to grey naturally. Brick facades are extremely long-lived but require more energy to produce. Rendered facades require ongoing maintenance. The choice depends on the building's lifespan, location and aesthetic goals.">Trä har det lägsta koldioxidavtrycket och kan vara obehandlat på gråna naturligt. Tegelfasader är extremt långlivade men kräver mer energi att producera. Putsade fasader kräver löpande underhåll. Valet beror på byggnadens livslängd, läge och estetiska mål.</p>
+    </details>
+  </section>
   <section class="cta-section">
     <div class="cta-bg">W</div>
     <div class="cta-inner">
@@ -339,13 +359,9 @@
 </main>
 
 <footer>
-  <span data-sv="&copy; 2025 Wolfblanc Architects" data-en="&copy; 2025 Wolfblanc Architects">&copy; 2025 Wolfblanc Architects</span>
-  <div class="foot-links">
-    <a href="../../index.html" data-sv="Hem" data-en="Home">Hem</a>
-    <a href="../../index.html#projekt" data-sv="Galleri" data-en="Gallery">Galleri</a>
-    <a href="../" data-sv="Journal" data-en="Journal">Journal</a>
-    <a href="../../index.html#kontakt" data-sv="Kontakt" data-en="Contact">Kontakt</a>
-  </div>
+  <span data-sv="WOLFBLANC&reg; ARCHITECTS &middot; Stockholm &middot; Godk&auml;nd f&ouml;r F-skatt &middot; &copy; 2026" data-en="WOLFBLANC&reg; ARCHITECTS &middot; Stockholm &middot; Approved for F-tax &middot; &copy; 2026">WOLFBLANC&reg; ARCHITECTS &middot; Stockholm &middot; Godk&auml;nd f&ouml;r F-skatt &middot; &copy; 2026</span>
+  <a href="../../index.html" target="_self" rel="noopener" style="color:inherit;text-decoration:none;opacity:.65">WEB BY EOLOS DESIGN LAB</a>
+  <span><a href="mailto:info@wolfblanc.com" style="color:inherit;text-decoration:none">info@wolfblanc.com</a> &middot; <a href="https://wolfblanc.com" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none">wolfblanc.com</a></span>
 </footer>
 
 <button id="btt" aria-label="Till toppen">

@@ -134,7 +134,8 @@
     h1{font-size:clamp(1.7rem,4vw,2.8rem);font-weight:200;text-transform:uppercase;letter-spacing:.05em;line-height:1.2;margin:0 0 28px}
     .art-lead{font-size:1.1rem;line-height:1.65;color:var(--text2);margin:0 0 32px}
     .art-byline{display:flex;align-items:center;gap:12px;padding-top:24px;border-top:1px solid var(--line)}
-    .byline-avatar{width:34px;height:34px;border-radius:50%;background:var(--accent);opacity:.18}
+    .byline-avatar{width:34px;height:34px;border-radius:50%;overflow:hidden;flex-shrink:0}
+    .byline-avatar img{width:100%;height:100%;object-fit:cover;border-radius:50%;display:block}
     .byline-text{font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:var(--text2)}
     .byline-text strong{color:var(--text)}
     .hero-img{max-width:1100px;margin:0 auto 64px;padding:0 32px}
@@ -240,7 +241,7 @@
     <h1 data-sv="Fritidshus i skärgården: vad du behöver veta" data-en="Vacation house in the archipelago: what you need to know">Fritidshus i skärgården: vad du behöver veta</h1>
     <p class="art-lead" data-sv="Att bygga eller renovera i Stockholms skärgård kombinerar naturens frihet med ett komplext regelverk. Strandskydd, kust- och havsplanering och klimatanpassade konstruktionslösningar kräver ett arkitektkontor med erfarenhet av just detta." data-en="Building or renovating in Stockholm's archipelago combines the freedom of nature with a complex set of rules. Shore protection, coastal and sea planning and climate-adapted construction solutions require an architectural office with specific experience in this.">Att bygga eller renovera i Stockholms skärgård kombinerar naturens frihet med ett komplext regelverk. Strandskydd, kust- och havsplanering och klimatanpassade konstruktionslösningar kräver ett arkitektkontor med erfarenhet av just detta.</p>
     <div class="art-byline">
-      <div class="byline-avatar"></div>
+      <div class="byline-avatar"><img src="../../images/210 sq_white-02.webp" alt="Wolfblanc Architects" width="34" height="34" loading="lazy" decoding="async"></div>
       <div class="byline-text"><strong data-sv="Wolfblanc Architects" data-en="Wolfblanc Architects">Wolfblanc Architects</strong> &nbsp;/&nbsp; Stockholm</div>
     </div>
   </header>
@@ -294,6 +295,25 @@
     </section>
 </div>
 
+  <section class="article-faq" aria-labelledby="article-faq-title">
+    <h2 id="article-faq-title" data-sv="Vanliga fr&aring;gor" data-en="Frequently asked questions">Vanliga fr&aring;gor</h2>
+    <details class="faq-item">
+      <summary data-sv="Kan jag bygga nytt fritidshus i Stockholms skärgård?" data-en="Can I build a new summer house in the Stockholm archipelago?">Kan jag bygga nytt fritidshus i Stockholms skärgård?</summary>
+      <p data-sv="Det är möjligt men kräver normalt dispens från strandskyddet och i de flesta fall bygglov. Strandskyddsdispens prövas av länsstyrelsen eller kommunen och tar 3 till 6 månader. En arkitekt med skärgårdserfarenhet ökar chansen för beviljad ansökan." data-en="It is possible but normally requires an exemption from shoreline protection and in most cases a building permit. Shoreline protection exemption is decided by the county board or municipality and takes 3 to 6 months. An architect with archipelago experience increases the chance of an approved application.">Det är möjligt men kräver normalt dispens från strandskyddet och i de flesta fall bygglov. Strandskyddsdispens prövas av länsstyrelsen eller kommunen och tar 3 till 6 månader. En arkitekt med skärgårdserfarenhet ökar chansen för beviljad ansökan.</p>
+    </details>
+    <details class="faq-item">
+      <summary data-sv="Vilka material passar bäst för fritidshus i skärgården?" data-en="Which materials suit summer houses in the archipelago best?">Vilka material passar bäst för fritidshus i skärgården?</summary>
+      <p data-sv="Obehandlad träpanel, zink- eller koppartak och aluminium- eller trä-aluminiumfönster är vanligast och mest underhållssnålt. Betong och putsade fasader är ovanliga i skärgårdssammanhang och passar sällan in i miljön." data-en="Untreated timber cladding, zinc or copper roofing and aluminium or timber-aluminium windows are most common and lowest maintenance. Concrete and rendered facades are unusual in archipelago settings and rarely fit the environment.">Obehandlad träpanel, zink- eller koppartak och aluminium- eller trä-aluminiumfönster är vanligast och mest underhållssnålt. Betong och putsade fasader är ovanliga i skärgårdssammanhang och passar sällan in i miljön.</p>
+    </details>
+    <details class="faq-item">
+      <summary data-sv="Behöver jag bygglov för att renovera ett befintligt fritidshus?" data-en="Do I need a permit to renovate an existing summer house?">Behöver jag bygglov för att renovera ett befintligt fritidshus?</summary>
+      <p data-sv="Inre renoveringar kräver sällan bygglov. Fasadändringar, tillbyggnader och åtgärder som ändrar byggnadens utseende kräver vanligtvis bygglov, och i strandskyddat område kan strandskyddsdispens behövas." data-en="Interior renovations rarely require a permit. Facade changes, extensions and work that changes the building's appearance usually require a permit, and in a shoreline protection area an exemption may be needed.">Inre renoveringar kräver sällan bygglov. Fasadändringar, tillbyggnader och åtgärder som ändrar byggnadens utseende kräver vanligtvis bygglov, och i strandskyddat område kan strandskyddsdispens behövas.</p>
+    </details>
+    <details class="faq-item">
+      <summary data-sv="Hur länge tar ett skärgårdsprojekt att genomföra?" data-en="How long does an archipelago project take to complete?">Hur länge tar ett skärgårdsprojekt att genomföra?</summary>
+      <p data-sv="Projektering tar 2 till 4 månader. Bygglovshandläggning och eventuell strandskyddsdispens tar 3 till 6 månader. Byggtid beror på projektets storlek och tillgängligheten till fastigheten. En ny skärgårdsbyggnad tar normalt 18 till 30 månader från idé till inflyttning." data-en="Design takes 2 to 4 months. Permit processing and any shoreline protection exemption take 3 to 6 months. Construction time depends on the project size and access to the property. A new archipelago building normally takes 18 to 30 months from idea to move-in.">Projektering tar 2 till 4 månader. Bygglovshandläggning och eventuell strandskyddsdispens tar 3 till 6 månader. Byggtid beror på projektets storlek och tillgängligheten till fastigheten. En ny skärgårdsbyggnad tar normalt 18 till 30 månader från idé till inflyttning.</p>
+    </details>
+  </section>
   <section class="cta-section">
     <div class="cta-bg">W</div>
     <div class="cta-inner">
@@ -339,13 +359,9 @@
 </main>
 
 <footer>
-  <span data-sv="&copy; 2025 Wolfblanc Architects" data-en="&copy; 2025 Wolfblanc Architects">&copy; 2025 Wolfblanc Architects</span>
-  <div class="foot-links">
-    <a href="../../index.html" data-sv="Hem" data-en="Home">Hem</a>
-    <a href="../../index.html#projekt" data-sv="Galleri" data-en="Gallery">Galleri</a>
-    <a href="../" data-sv="Journal" data-en="Journal">Journal</a>
-    <a href="../../index.html#kontakt" data-sv="Kontakt" data-en="Contact">Kontakt</a>
-  </div>
+  <span data-sv="WOLFBLANC&reg; ARCHITECTS &middot; Stockholm &middot; Godk&auml;nd f&ouml;r F-skatt &middot; &copy; 2026" data-en="WOLFBLANC&reg; ARCHITECTS &middot; Stockholm &middot; Approved for F-tax &middot; &copy; 2026">WOLFBLANC&reg; ARCHITECTS &middot; Stockholm &middot; Godk&auml;nd f&ouml;r F-skatt &middot; &copy; 2026</span>
+  <a href="../../index.html" target="_self" rel="noopener" style="color:inherit;text-decoration:none;opacity:.65">WEB BY EOLOS DESIGN LAB</a>
+  <span><a href="mailto:info@wolfblanc.com" style="color:inherit;text-decoration:none">info@wolfblanc.com</a> &middot; <a href="https://wolfblanc.com" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none">wolfblanc.com</a></span>
 </footer>
 
 <button id="btt" aria-label="Till toppen">

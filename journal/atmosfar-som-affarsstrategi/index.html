@@ -126,7 +126,8 @@
     h1{font-size:clamp(1.7rem,4vw,2.8rem);font-weight:200;text-transform:uppercase;letter-spacing:.05em;line-height:1.2;margin:0 0 28px}
     .art-lead{font-size:1.1rem;line-height:1.65;color:var(--text2);margin:0 0 32px}
     .art-byline{display:flex;align-items:center;gap:12px;padding-top:24px;border-top:1px solid var(--line)}
-    .byline-avatar{width:34px;height:34px;border-radius:50%;background:var(--accent);opacity:.18}
+    .byline-avatar{width:34px;height:34px;border-radius:50%;overflow:hidden;flex-shrink:0}
+    .byline-avatar img{width:100%;height:100%;object-fit:cover;border-radius:50%;display:block}
     .byline-text{font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:var(--text2)}
     .byline-text strong{color:var(--text)}
     .hero-img{max-width:1100px;margin:0 auto 64px;padding:0 32px}
@@ -232,7 +233,7 @@
     <h1 data-sv="I hotell och restaurang är rummet produkten" data-en="In hospitality the room is the product">I hotell och restaurang är rummet produkten</h1>
     <p class="art-lead" data-sv="En restaurang säljer mat och ett hotell säljer en säng. Men det som avgör om gästen återvänder och vad den berättar för sina vänner är hur det kändes att vara där. Det är atmosfären. Och atmosfären är designad, inte slumpmässig." data-en="A restaurant sells food and a hotel sells a bed. But what determines whether the guest returns and what they tell their friends is how it felt to be there. That is atmosphere. And atmosphere is designed, not accidental.">En restaurang säljer mat och ett hotell säljer en säng. Men det som avgör om gästen återvänder och vad den berättar för sina vänner är hur det kändes att vara där. Det är atmosfären. Och atmosfären är designad, inte slumpmässig.</p>
     <div class="art-byline">
-      <div class="byline-avatar"></div>
+      <div class="byline-avatar"><img src="../../images/210 sq_white-02.webp" alt="Wolfblanc Architects" width="34" height="34" loading="lazy" decoding="async"></div>
       <div class="byline-text"><strong data-sv="Wolfblanc Architects" data-en="Wolfblanc Architects">Wolfblanc Architects</strong> &nbsp;/&nbsp; Stockholm</div>
     </div>
   </header>
@@ -280,6 +281,22 @@
     </section>
 </div>
 
+  <section class="article-faq" aria-labelledby="article-faq-title">
+    <h2 id="article-faq-title" data-sv="Vanliga fr&aring;gor" data-en="Frequently asked questions">Vanliga fr&aring;gor</h2>
+    <details class="faq-item">
+      <summary data-sv="Vad kostar en restauranggestaltning i Stockholm?" data-en="What does a restaurant design cost in Stockholm?">Vad kostar en restauranggestaltning i Stockholm?</summary>
+      <p data-sv="En restauranginteriör i Stockholm kostar normalt 15 000 till 35 000 kr per kvm inklusive allt. Arkitektarvodet utgör 10 till 15 procent av det. Belysning och akustik är de två poster som ger mest effekt per investerad krona i en restaurangmiljö." data-en="A restaurant interior in Stockholm normally costs 15,000 to 35,000 SEK per sqm including everything. The architect fee is 10 to 15 percent of that. Lighting and acoustics are the two items that give the most effect per krona invested in a restaurant environment.">En restauranginteriör i Stockholm kostar normalt 15 000 till 35 000 kr per kvm inklusive allt. Arkitektarvodet utgör 10 till 15 procent av det. Belysning och akustik är de två poster som ger mest effekt per investerad krona i en restaurangmiljö.</p>
+    </details>
+    <details class="faq-item">
+      <summary data-sv="Hur viktig är akustiken i en restaurang?" data-en="How important is acoustics in a restaurant?">Hur viktig är akustiken i en restaurang?</summary>
+      <p data-sv="Mycket viktig. En efterklangstid över 1 sekund gör att gäster höjer rösten, vilket ökar bullernivån, vilket gör att alla höjer rösten ytterligare. Det kallas Lombard-effekten. En välplanerad akustik håller efterklangstiden under 0,8 sekunder och sänker upplevd bullernivå markant." data-en="Very important. A reverberation time over 1 second makes guests raise their voices, which increases the noise level, which makes everyone raise their voices further. This is called the Lombard effect. Well-planned acoustics keep the reverberation time below 0.8 seconds and noticeably reduce perceived noise.">Mycket viktig. En efterklangstid över 1 sekund gör att gäster höjer rösten, vilket ökar bullernivån, vilket gör att alla höjer rösten ytterligare. Det kallas Lombard-effekten. En välplanerad akustik håller efterklangstiden under 0,8 sekunder och sänker upplevd bullernivå markant.</p>
+    </details>
+    <details class="faq-item">
+      <summary data-sv="Vilka material åldras bäst i en restaurangmiljö?" data-en="Which materials age best in a restaurant environment?">Vilka material åldras bäst i en restaurangmiljö?</summary>
+      <p data-sv="Massivt trä, natursten, keramik och mässing åldras vackert och tål daglig slitage. Laminat, MDF med folie och syntetiska tyger ser slitna ut efter 3 till 4 år. Investering i hållbara material ger lägre underhållskostnad och ett starkare varumärke." data-en="Solid wood, natural stone, ceramics and brass age beautifully and withstand daily wear. Laminate, foil-wrapped MDF and synthetic fabrics look worn after 3 to 4 years. Investing in durable materials gives lower maintenance cost and a stronger brand.">Massivt trä, natursten, keramik och mässing åldras vackert och tål daglig slitage. Laminat, MDF med folie och syntetiska tyger ser slitna ut efter 3 till 4 år. Investering i hållbara material ger lägre underhållskostnad och ett starkare varumärke.</p>
+    </details>
+  </section>
+
   <section class="cta-section">
     <div class="cta-bg">W</div>
     <div class="cta-inner">
@@ -325,13 +342,9 @@
 </main>
 
 <footer>
-  <span data-sv="&copy; 2025 Wolfblanc Architects" data-en="&copy; 2025 Wolfblanc Architects">&copy; 2025 Wolfblanc Architects</span>
-  <div class="foot-links">
-    <a href="../../index.html" data-sv="Hem" data-en="Home">Hem</a>
-    <a href="../../index.html#projekt" data-sv="Galleri" data-en="Gallery">Galleri</a>
-    <a href="../" data-sv="Journal" data-en="Journal">Journal</a>
-    <a href="../../index.html#kontakt" data-sv="Kontakt" data-en="Contact">Kontakt</a>
-  </div>
+  <span data-sv="WOLFBLANC&reg; ARCHITECTS &middot; Stockholm &middot; Godk&auml;nd f&ouml;r F-skatt &middot; &copy; 2026" data-en="WOLFBLANC&reg; ARCHITECTS &middot; Stockholm &middot; Approved for F-tax &middot; &copy; 2026">WOLFBLANC&reg; ARCHITECTS &middot; Stockholm &middot; Godk&auml;nd f&ouml;r F-skatt &middot; &copy; 2026</span>
+  <a href="../../index.html" target="_self" rel="noopener" style="color:inherit;text-decoration:none;opacity:.65">WEB BY EOLOS DESIGN LAB</a>
+  <span><a href="mailto:info@wolfblanc.com" style="color:inherit;text-decoration:none">info@wolfblanc.com</a> &middot; <a href="https://wolfblanc.com" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none">wolfblanc.com</a></span>
 </footer>
 
 <button id="btt" aria-label="Till toppen">

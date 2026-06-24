@@ -126,7 +126,8 @@
     h1{font-size:clamp(1.7rem,4vw,2.8rem);font-weight:200;text-transform:uppercase;letter-spacing:.05em;line-height:1.2;margin:0 0 28px}
     .art-lead{font-size:1.1rem;line-height:1.65;color:var(--text2);margin:0 0 32px}
     .art-byline{display:flex;align-items:center;gap:12px;padding-top:24px;border-top:1px solid var(--line)}
-    .byline-avatar{width:34px;height:34px;border-radius:50%;background:var(--accent);opacity:.18}
+    .byline-avatar{width:34px;height:34px;border-radius:50%;overflow:hidden;flex-shrink:0}
+    .byline-avatar img{width:100%;height:100%;object-fit:cover;border-radius:50%;display:block}
     .byline-text{font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:var(--text2)}
     .byline-text strong{color:var(--text)}
     .hero-img{max-width:1100px;margin:0 auto 64px;padding:0 32px}
@@ -232,7 +233,7 @@
     <h1 data-sv="Nytt i gammalt: dialog mellan arkitekturepoker" data-en="New in old: dialogue between architectural eras">Nytt i gammalt: dialog mellan arkitekturepoker</h1>
     <p class="art-lead" data-sv="En historisk byggnad är inte ett museum. Den lever, används och förändras. Frågan är inte om man ska tillåta förändring, utan hur förändringen ska hanteras för att platsen ska bli rikare, inte fattigare." data-en="A historic building is not a museum. It lives, is used and changes. The question is not whether to permit change, but how to handle change so that the place becomes richer, not poorer.">En historisk byggnad är inte ett museum. Den lever, används och förändras. Frågan är inte om man ska tillåta förändring, utan hur förändringen ska hanteras för att platsen ska bli rikare, inte fattigare.</p>
     <div class="art-byline">
-      <div class="byline-avatar"></div>
+      <div class="byline-avatar"><img src="../../images/210 sq_white-02.webp" alt="Wolfblanc Architects" width="34" height="34" loading="lazy" decoding="async"></div>
       <div class="byline-text"><strong data-sv="Wolfblanc Architects" data-en="Wolfblanc Architects">Wolfblanc Architects</strong> &nbsp;/&nbsp; Stockholm</div>
     </div>
   </header>
@@ -281,6 +282,22 @@
     </section>
 </div>
 
+  <section class="article-faq" aria-labelledby="article-faq-title">
+    <h2 id="article-faq-title" data-sv="Vanliga fr&aring;gor" data-en="Frequently asked questions">Vanliga fr&aring;gor</h2>
+    <details class="faq-item">
+      <summary data-sv="Vad innebär blåklassning av en byggnad i Stockholm?" data-en="What does blue-classification of a building in Stockholm mean?">Vad innebär blåklassning av en byggnad i Stockholm?</summary>
+      <p data-sv="Blåklassade byggnader är de med högst kulturhistoriskt skydd i Stockholms Stadsmuseums klassificeringssystem. Inga ändringar som försämrar kulturhistoriska värden tillåts. Det innebär att fasadändringar, fönsterbyte och ingrepp i gemensamma utrymmen kräver tillstånd och antikvarisk granskning." data-en="Blue-classified buildings have the highest heritage protection in the Stockholm City Museum classification system. No changes that reduce cultural-historical values are allowed. This means facade changes, window replacement and work in shared spaces require permission and antiquarian review.">Blåklassade byggnader är de med högst kulturhistoriskt skydd i Stockholms Stadsmuseums klassificeringssystem. Inga ändringar som försämrar kulturhistoriska värden tillåts. Det innebär att fasadändringar, fönsterbyte och ingrepp i gemensamma utrymmen kräver tillstånd och antikvarisk granskning.</p>
+    </details>
+    <details class="faq-item">
+      <summary data-sv="Kan man bygga till en kulturhistorisk fastighet?" data-en="Can you extend a heritage property?">Kan man bygga till en kulturhistorisk fastighet?</summary>
+      <p data-sv="Ja, men tillägget kräver noga övervägd utformning och godkännande från Stadsbyggnadskontoret och eventuellt Stadsmuseet. Arkitektens förslag måste motivera hur tillägget förhåller sig till och respekterar den befintliga byggnadens kulturvärden." data-en="Yes, but the addition requires carefully considered design and approval from the City Planning Office and possibly the City Museum. The architect's proposal must justify how the addition relates to and respects the existing building's heritage values.">Ja, men tillägget kräver noga övervägd utformning och godkännande från Stadsbyggnadskontoret och eventuellt Stadsmuseet. Arkitektens förslag måste motivera hur tillägget förhåller sig till och respekterar den befintliga byggnadens kulturvärden.</p>
+    </details>
+    <details class="faq-item">
+      <summary data-sv="Vad är skillnaden mellan rivning och renovering ur klimatsynpunkt?" data-en="What is the difference between demolition and renovation from a climate perspective?">Vad är skillnaden mellan rivning och renovering ur klimatsynpunkt?</summary>
+      <p data-sv="Att riva och bygga nytt ger ett koldioxidavtryck från produktion av nya material som tar 30 till 80 år att kompensera med effektivare drift. Att renovera och bevara befintlig stomme sparar 50 till 80 procent av koldioxidutsläppen jämfört med nybyggnation." data-en="Demolishing and building new creates a carbon footprint from producing new materials that takes 30 to 80 years to offset through more efficient operation. Renovating and preserving the existing structure saves 50 to 80 percent of carbon emissions compared with new construction.">Att riva och bygga nytt ger ett koldioxidavtryck från produktion av nya material som tar 30 till 80 år att kompensera med effektivare drift. Att renovera och bevara befintlig stomme sparar 50 till 80 procent av koldioxidutsläppen jämfört med nybyggnation.</p>
+    </details>
+  </section>
+
   <section class="cta-section">
     <div class="cta-bg">W</div>
     <div class="cta-inner">
@@ -326,13 +343,9 @@
 </main>
 
 <footer>
-  <span data-sv="&copy; 2025 Wolfblanc Architects" data-en="&copy; 2025 Wolfblanc Architects">&copy; 2025 Wolfblanc Architects</span>
-  <div class="foot-links">
-    <a href="../../index.html" data-sv="Hem" data-en="Home">Hem</a>
-    <a href="../../index.html#projekt" data-sv="Galleri" data-en="Gallery">Galleri</a>
-    <a href="../" data-sv="Journal" data-en="Journal">Journal</a>
-    <a href="../../index.html#kontakt" data-sv="Kontakt" data-en="Contact">Kontakt</a>
-  </div>
+  <span data-sv="WOLFBLANC&reg; ARCHITECTS &middot; Stockholm &middot; Godk&auml;nd f&ouml;r F-skatt &middot; &copy; 2026" data-en="WOLFBLANC&reg; ARCHITECTS &middot; Stockholm &middot; Approved for F-tax &middot; &copy; 2026">WOLFBLANC&reg; ARCHITECTS &middot; Stockholm &middot; Godk&auml;nd f&ouml;r F-skatt &middot; &copy; 2026</span>
+  <a href="../../index.html" target="_self" rel="noopener" style="color:inherit;text-decoration:none;opacity:.65">WEB BY EOLOS DESIGN LAB</a>
+  <span><a href="mailto:info@wolfblanc.com" style="color:inherit;text-decoration:none">info@wolfblanc.com</a> &middot; <a href="https://wolfblanc.com" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none">wolfblanc.com</a></span>
 </footer>
 
 <button id="btt" aria-label="Till toppen">

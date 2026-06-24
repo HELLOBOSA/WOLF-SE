@@ -134,7 +134,8 @@
     h1{font-size:clamp(1.7rem,4vw,2.8rem);font-weight:200;text-transform:uppercase;letter-spacing:.05em;line-height:1.2;margin:0 0 28px}
     .art-lead{font-size:1.1rem;line-height:1.65;color:var(--text2);margin:0 0 32px}
     .art-byline{display:flex;align-items:center;gap:12px;padding-top:24px;border-top:1px solid var(--line)}
-    .byline-avatar{width:34px;height:34px;border-radius:50%;background:var(--accent);opacity:.18}
+    .byline-avatar{width:34px;height:34px;border-radius:50%;overflow:hidden;flex-shrink:0}
+    .byline-avatar img{width:100%;height:100%;object-fit:cover;border-radius:50%;display:block}
     .byline-text{font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:var(--text2)}
     .byline-text strong{color:var(--text)}
     .hero-img{max-width:1100px;margin:0 auto 64px;padding:0 32px}
@@ -240,7 +241,7 @@
     <h1 data-sv="Tillbyggnad av hus i Stockholm: guide 2026" data-en="House extension in Stockholm: guide 2026">Tillbyggnad av hus i Stockholm: guide 2026</h1>
     <p class="art-lead" data-sv="En tillbyggnad i Stockholmsregionen ger ofta mer värde per investerad krona än en ny bostad. Men processen kräver rätt planering: rätt åtgärdstyp, korrekta handlingar och en arkitekt som känner reglerna." data-en="A house extension in the Stockholm region often gives more value per invested crown than a new dwelling. But the process requires the right planning: the right type of measure, correct documents and an architect who knows the rules.">En tillbyggnad i Stockholmsregionen ger ofta mer värde per investerad krona än en ny bostad. Men processen kräver rätt planering: rätt åtgärdstyp, korrekta handlingar och en arkitekt som känner reglerna.</p>
     <div class="art-byline">
-      <div class="byline-avatar"></div>
+      <div class="byline-avatar"><img src="../../images/210 sq_white-02.webp" alt="Wolfblanc Architects" width="34" height="34" loading="lazy" decoding="async"></div>
       <div class="byline-text"><strong data-sv="Wolfblanc Architects" data-en="Wolfblanc Architects">Wolfblanc Architects</strong> &nbsp;/&nbsp; Stockholm</div>
     </div>
   </header>
@@ -294,6 +295,25 @@
     </section>
 </div>
 
+  <section class="article-faq" aria-labelledby="article-faq-title">
+    <h2 id="article-faq-title" data-sv="Vanliga fr&aring;gor" data-en="Frequently asked questions">Vanliga fr&aring;gor</h2>
+    <details class="faq-item">
+      <summary data-sv="Hur stor tillbyggnad kan jag göra utan bygglov i Stockholm?" data-en="How large an extension can I build without a permit in Stockholm?">Hur stor tillbyggnad kan jag göra utan bygglov i Stockholm?</summary>
+      <p data-sv="Upp till 15 kvm på ett enbostadshus kan göras som attefallsåtgärd med bygganmälan, utan bygglov. Åtgärden får inte leda till att byggnaden överstiger planens tillåtna byggnadsarea. I vissa detaljplaner är attefallsåtgärden inte möjlig." data-en="Up to 15 sqm on a single-family house can be done as an Attefall measure with a notification, without a permit. The work must not cause the building to exceed the plan's permitted building area. In some detailed plans the Attefall measure is not possible.">Upp till 15 kvm på ett enbostadshus kan göras som attefallsåtgärd med bygganmälan, utan bygglov. Åtgärden får inte leda till att byggnaden överstiger planens tillåtna byggnadsarea. I vissa detaljplaner är attefallsåtgärden inte möjlig.</p>
+    </details>
+    <details class="faq-item">
+      <summary data-sv="Vad kostar en tillbyggnad i Stockholm?" data-en="What does an extension cost in Stockholm?">Vad kostar en tillbyggnad i Stockholm?</summary>
+      <p data-sv="Räkna med 30 000 till 50 000 kr per kvm inklusive alla kostnader. Grundläggning, stomme, fasad, tak, interiör och arkitektarvode ingår. En 20 kvm tillbyggnad kostar typiskt 600 000 till 1 000 000 kr." data-en="Allow 30,000 to 50,000 SEK per sqm including all costs. Foundation, structure, facade, roof, interior and architect fee are included. A 20 sqm extension typically costs 600,000 to 1,000,000 SEK.">Räkna med 30 000 till 50 000 kr per kvm inklusive alla kostnader. Grundläggning, stomme, fasad, tak, interiör och arkitektarvode ingår. En 20 kvm tillbyggnad kostar typiskt 600 000 till 1 000 000 kr.</p>
+    </details>
+    <details class="faq-item">
+      <summary data-sv="Hur lång tid tar det att få bygglov för tillbyggnad?" data-en="How long does it take to get a permit for an extension?">Hur lång tid tar det att få bygglov för tillbyggnad?</summary>
+      <p data-sv="Handläggningstiden är 10 veckor från komplett ansökan. Med grannehörande och eventuella kompletteringar räkna med 4 till 6 månader från att ansökan lämnats in till att lovet vunnit laga kraft." data-en="Processing time is 10 weeks from a complete application. With neighbour consultation and any supplementary documents, allow 4 to 6 months from submission to the permit becoming legally effective.">Handläggningstiden är 10 veckor från komplett ansökan. Med grannehörande och eventuella kompletteringar räkna med 4 till 6 månader från att ansökan lämnats in till att lovet vunnit laga kraft.</p>
+    </details>
+    <details class="faq-item">
+      <summary data-sv="Kan jag bygga till i detaljplanelagda villaområden i Stockholm?" data-en="Can I extend in detailed-plan villa areas in Stockholm?">Kan jag bygga till i detaljplanelagda villaområden i Stockholm?</summary>
+      <p data-sv="Ja, men bestämmelserna varierar. Detaljplanen anger tillåten byggnadsarea, nockhöjd, avstånd till tomtgräns och ibland fasadmaterial. En arkitekt kontrollerar planbestämmelserna och ritar förslaget inom tillåtna gränser." data-en="Yes, but the provisions vary. The detailed plan states permitted building area, ridge height, distance to the boundary and sometimes facade material. An architect checks the plan provisions and draws the proposal within the permitted limits.">Ja, men bestämmelserna varierar. Detaljplanen anger tillåten byggnadsarea, nockhöjd, avstånd till tomtgräns och ibland fasadmaterial. En arkitekt kontrollerar planbestämmelserna och ritar förslaget inom tillåtna gränser.</p>
+    </details>
+  </section>
   <section class="cta-section">
     <div class="cta-bg">W</div>
     <div class="cta-inner">
@@ -339,13 +359,9 @@
 </main>
 
 <footer>
-  <span data-sv="&copy; 2025 Wolfblanc Architects" data-en="&copy; 2025 Wolfblanc Architects">&copy; 2025 Wolfblanc Architects</span>
-  <div class="foot-links">
-    <a href="../../index.html" data-sv="Hem" data-en="Home">Hem</a>
-    <a href="../../index.html#projekt" data-sv="Galleri" data-en="Gallery">Galleri</a>
-    <a href="../" data-sv="Journal" data-en="Journal">Journal</a>
-    <a href="../../index.html#kontakt" data-sv="Kontakt" data-en="Contact">Kontakt</a>
-  </div>
+  <span data-sv="WOLFBLANC&reg; ARCHITECTS &middot; Stockholm &middot; Godk&auml;nd f&ouml;r F-skatt &middot; &copy; 2026" data-en="WOLFBLANC&reg; ARCHITECTS &middot; Stockholm &middot; Approved for F-tax &middot; &copy; 2026">WOLFBLANC&reg; ARCHITECTS &middot; Stockholm &middot; Godk&auml;nd f&ouml;r F-skatt &middot; &copy; 2026</span>
+  <a href="../../index.html" target="_self" rel="noopener" style="color:inherit;text-decoration:none;opacity:.65">WEB BY EOLOS DESIGN LAB</a>
+  <span><a href="mailto:info@wolfblanc.com" style="color:inherit;text-decoration:none">info@wolfblanc.com</a> &middot; <a href="https://wolfblanc.com" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none">wolfblanc.com</a></span>
 </footer>
 
 <button id="btt" aria-label="Till toppen">

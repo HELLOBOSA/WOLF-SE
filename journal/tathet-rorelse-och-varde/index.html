@@ -126,7 +126,8 @@
     h1{font-size:clamp(1.7rem,4vw,2.8rem);font-weight:200;text-transform:uppercase;letter-spacing:.05em;line-height:1.2;margin:0 0 28px}
     .art-lead{font-size:1.1rem;line-height:1.65;color:var(--text2);margin:0 0 32px}
     .art-byline{display:flex;align-items:center;gap:12px;padding-top:24px;border-top:1px solid var(--line)}
-    .byline-avatar{width:34px;height:34px;border-radius:50%;background:var(--accent);opacity:.18}
+    .byline-avatar{width:34px;height:34px;border-radius:50%;overflow:hidden;flex-shrink:0}
+    .byline-avatar img{width:100%;height:100%;object-fit:cover;border-radius:50%;display:block}
     .byline-text{font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:var(--text2)}
     .byline-text strong{color:var(--text)}
     .hero-img{max-width:1100px;margin:0 auto 64px;padding:0 32px}
@@ -232,7 +233,7 @@
     <h1 data-sv="Vad gör en stadsdel värd att bo i?" data-en="What makes a district worth living in?">Vad gör en stadsdel värd att bo i?</h1>
     <p class="art-lead" data-sv="Täthetstal och exploateringstal är planeringsverktyg, inte mål. Det som avgör om en stadsdel är levande eller livlös efter 20 år är hur den hanterar rörelse, mötesplatser och förändring. Det är frågor som aldrig syns i ett kvantitativt planbeskrivning." data-en="Floor area ratios and plot ratios are planning tools, not goals. What determines whether a district is lively or lifeless after 20 years is how it handles movement, meeting places and change. These are questions that never appear in a quantitative planning description.">Täthetstal och exploateringstal är planeringsverktyg, inte mål. Det som avgör om en stadsdel är levande eller livlös efter 20 år är hur den hanterar rörelse, mötesplatser och förändring. Det är frågor som aldrig syns i ett kvantitativt planbeskrivning.</p>
     <div class="art-byline">
-      <div class="byline-avatar"></div>
+      <div class="byline-avatar"><img src="../../images/210 sq_white-02.webp" alt="Wolfblanc Architects" width="34" height="34" loading="lazy" decoding="async"></div>
       <div class="byline-text"><strong data-sv="Wolfblanc Architects" data-en="Wolfblanc Architects">Wolfblanc Architects</strong> &nbsp;/&nbsp; Stockholm</div>
     </div>
   </header>
@@ -280,6 +281,21 @@
     </section>
 </div>
 
+  <section class="article-faq" aria-labelledby="article-faq-title">
+    <h2 id="article-faq-title" data-sv="Vanliga fr&aring;gor" data-en="Frequently asked questions">Vanliga fr&aring;gor</h2>
+    <details class="faq-item">
+      <summary data-sv="Vad är täthet i stadsplanering?" data-en="What is density in urban planning?">Vad är täthet i stadsplanering?</summary>
+      <p data-sv="Täthet mäts normalt som exploateringstal (bruttoarea per tomtarea) eller invånare per hektar. Stockholms innerstad har ett exploateringstal på 1,5 till 3,0. Det är inte tätheten i sig som avgör livligheten utan gatustrukturen, blandningen av funktioner och mötesplatsernas kvalitet." data-en="Density is normally measured as plot ratio (gross floor area per plot area) or inhabitants per hectare. Inner Stockholm has a plot ratio of 1.5 to 3.0. It is not density itself that determines liveliness but the street structure, the mix of functions and the quality of meeting places.">Täthet mäts normalt som exploateringstal (bruttoarea per tomtarea) eller invånare per hektar. Stockholms innerstad har ett exploateringstal på 1,5 till 3,0. Det är inte tätheten i sig som avgör livligheten utan gatustrukturen, blandningen av funktioner och mötesplatsernas kvalitet.</p>
+    </details>
+    <details class="faq-item">
+      <summary data-sv="Vad menas med mixed use i stadsplanering?" data-en="What is meant by mixed use in urban planning?">Vad menas med mixed use i stadsplanering?</summary>
+      <p data-sv="Mixed use innebär att ett kvarter eller en byggnad har en blandning av bostäder, kontor, handel och service. Det skapar rörelse under hela dygnet och minskar beroendet av bil. Stockholms bäst fungerande stadsdelar som Södermalm och Östermalm är alla mixed use." data-en="Mixed use means a block or building has a mix of housing, offices, retail and services. It creates movement throughout the day and reduces dependence on cars. Stockholm's best-functioning districts such as Sodermalm and Ostermalm are all mixed use.">Mixed use innebär att ett kvarter eller en byggnad har en blandning av bostäder, kontor, handel och service. Det skapar rörelse under hela dygnet och minskar beroendet av bil. Stockholms bäst fungerande stadsdelar som Södermalm och Östermalm är alla mixed use.</p>
+    </details>
+    <details class="faq-item">
+      <summary data-sv="Hur engagerar man arkitekt i ett stadsutvecklingsprojekt?" data-en="How do you engage an architect in an urban development project?">Hur engagerar man arkitekt i ett stadsutvecklingsprojekt?</summary>
+      <p data-sv="Tidigt är svaret. En arkitekt med stadsplaneringskompetens kan delta i programskedet och påverka strukturella beslut om gators läge, kvartersstorlek och mötesplatser. Att engagera arkitekten när detaljplanen är klar ger en mycket smalare möjlighet att påverka resultatet." data-en="Early is the answer. An architect with urban planning expertise can take part in the programme stage and influence structural decisions on street layout, block size and meeting places. Engaging the architect once the detailed plan is complete gives a much narrower scope to influence the result.">Tidigt är svaret. En arkitekt med stadsplaneringskompetens kan delta i programskedet och påverka strukturella beslut om gators läge, kvartersstorlek och mötesplatser. Att engagera arkitekten när detaljplanen är klar ger en mycket smalare möjlighet att påverka resultatet.</p>
+    </details>
+  </section>
   <section class="cta-section">
     <div class="cta-bg">W</div>
     <div class="cta-inner">
@@ -325,13 +341,9 @@
 </main>
 
 <footer>
-  <span data-sv="&copy; 2025 Wolfblanc Architects" data-en="&copy; 2025 Wolfblanc Architects">&copy; 2025 Wolfblanc Architects</span>
-  <div class="foot-links">
-    <a href="../../index.html" data-sv="Hem" data-en="Home">Hem</a>
-    <a href="../../index.html#projekt" data-sv="Galleri" data-en="Gallery">Galleri</a>
-    <a href="../" data-sv="Journal" data-en="Journal">Journal</a>
-    <a href="../../index.html#kontakt" data-sv="Kontakt" data-en="Contact">Kontakt</a>
-  </div>
+  <span data-sv="WOLFBLANC&reg; ARCHITECTS &middot; Stockholm &middot; Godk&auml;nd f&ouml;r F-skatt &middot; &copy; 2026" data-en="WOLFBLANC&reg; ARCHITECTS &middot; Stockholm &middot; Approved for F-tax &middot; &copy; 2026">WOLFBLANC&reg; ARCHITECTS &middot; Stockholm &middot; Godk&auml;nd f&ouml;r F-skatt &middot; &copy; 2026</span>
+  <a href="../../index.html" target="_self" rel="noopener" style="color:inherit;text-decoration:none;opacity:.65">WEB BY EOLOS DESIGN LAB</a>
+  <span><a href="mailto:info@wolfblanc.com" style="color:inherit;text-decoration:none">info@wolfblanc.com</a> &middot; <a href="https://wolfblanc.com" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none">wolfblanc.com</a></span>
 </footer>
 
 <button id="btt" aria-label="Till toppen">

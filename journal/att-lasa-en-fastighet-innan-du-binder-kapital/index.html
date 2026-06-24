@@ -90,7 +90,8 @@
     h1{font-size:clamp(1.7rem,4vw,2.8rem);font-weight:200;text-transform:uppercase;letter-spacing:.05em;line-height:1.2;margin:0 0 28px}
     .art-lead{font-size:1.1rem;line-height:1.65;color:var(--text2);margin:0 0 32px}
     .art-byline{display:flex;align-items:center;gap:12px;padding-top:24px;border-top:1px solid var(--line)}
-    .byline-avatar{width:34px;height:34px;border-radius:50%;background:var(--accent);opacity:.18}
+    .byline-avatar{width:34px;height:34px;border-radius:50%;overflow:hidden;flex-shrink:0}
+    .byline-avatar img{width:100%;height:100%;object-fit:cover;border-radius:50%;display:block}
     .byline-text{font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:var(--text2)}
     .byline-text strong{color:var(--text)}
     .hero-img{max-width:1100px;margin:0 auto 64px;padding:0 32px}
@@ -199,7 +200,7 @@
     <h1 data-sv="Att läsa en fastighet innan du binder kapital" data-en="Reading a property before you commit capital">Att läsa en fastighet innan du binder kapital</h1>
     <p class="art-lead" data-sv="Teknisk due diligence handlar inte om besiktning, utan om att förstå rumslig potential, planrisk och vad som faktiskt skapar värde innan du skriver under." data-en="Technical due diligence isn't an inspection, it's understanding spatial potential, planning risk and what actually creates value before you sign.">Teknisk due diligence handlar inte om besiktning, utan om att förstå rumslig potential, planrisk och vad som faktiskt skapar värde innan du skriver under.</p>
     <div class="art-byline">
-      <div class="byline-avatar"></div>
+      <div class="byline-avatar"><img src="../../images/210 sq_white-02.webp" alt="Wolfblanc Architects" width="34" height="34" loading="lazy" decoding="async"></div>
       <div class="byline-text"><strong>Wolfblanc Studio</strong> · <span data-sv="Stockholm" data-en="Stockholm">Stockholm</span></div>
     </div>
   </div>
@@ -257,6 +258,21 @@
 </div>
 </article>
 
+  <section class="article-faq" aria-labelledby="article-faq-title">
+    <h2 id="article-faq-title" data-sv="Vanliga fr&aring;gor" data-en="Frequently asked questions">Vanliga fr&aring;gor</h2>
+    <details class="faq-item">
+      <summary data-sv="Vad ingår i teknisk due diligence inför ett fastighetsköp?" data-en="What is included in technical due diligence before a property purchase?">Vad ingår i teknisk due diligence inför ett fastighetsköp?</summary>
+      <p data-sv="En arkitektonisk och teknisk genomgång kan omfatta planförutsättningar, befintlig planlösning, installationsprinciper, kulturvärden, möjliga ombyggnader och risker som påverkar budget eller tidplan." data-en="An architectural and technical review can cover planning conditions, the existing layout, services principles, heritage values, possible remodelling and risks that affect budget or programme.">En arkitektonisk och teknisk genomgång kan omfatta planförutsättningar, befintlig planlösning, installationsprinciper, kulturvärden, möjliga ombyggnader och risker som påverkar budget eller tidplan.</p>
+    </details>
+    <details class="faq-item">
+      <summary data-sv="När bör en arkitekt kopplas in före ett förvärv?" data-en="When should an architect be engaged before an acquisition?">När bör en arkitekt kopplas in före ett förvärv?</summary>
+      <p data-sv="Helst innan bindande avtal. Då finns möjlighet att kontrollera om den tänkta användningen ryms inom detaljplan, byggnadens struktur och projektets realistiska investeringsram." data-en="Preferably before a binding agreement. That allows checking whether the intended use fits within the detailed plan, the building's structure and the project's realistic investment framework.">Helst innan bindande avtal. Då finns möjlighet att kontrollera om den tänkta användningen ryms inom detaljplan, byggnadens struktur och projektets realistiska investeringsram.</p>
+    </details>
+    <details class="faq-item">
+      <summary data-sv="Ersätter arkitektens analys en teknisk besiktning?" data-en="Does the architect's analysis replace a technical survey?">Ersätter arkitektens analys en teknisk besiktning?</summary>
+      <p data-sv="Nej. Analysen kompletterar en teknisk besiktning genom att bedöma rumslig potential, myndighetsfrågor och projektlogik. Vid behov samordnas arbetet med konstruktör, installationskonsult och besiktningsman." data-en="No. The analysis complements a technical survey by assessing spatial potential, regulatory matters and project logic. Where needed, the work is coordinated with a structural engineer, services consultant and surveyor.">Nej. Analysen kompletterar en teknisk besiktning genom att bedöma rumslig potential, myndighetsfrågor och projektlogik. Vid behov samordnas arbetet med konstruktör, installationskonsult och besiktningsman.</p>
+    </details>
+  </section>
 <section class="cta-section">
   <div class="cta-bg">SAMTAL</div>
   <div class="cta-inner">
@@ -300,9 +316,9 @@
 </section>
 
 <footer>
-  <span data-sv="WOLFBLANC® ARCHITECTS · Stockholm · Godkänd för F-skatt · © 2026" data-en="WOLFBLANC® ARCHITECTS · Stockholm · Approved for F-tax · © 2026">WOLFBLANC® ARCHITECTS · Stockholm · Godkänd för F-skatt · © 2026</span>
-  <a href="https://eolos.se" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;opacity:.65">WEB BY EOLOS DESIGN LAB</a>
-  <span><a href="mailto:info@wolfblanc.com" style="color:inherit;text-decoration:none">info@wolfblanc.com</a> · <a href="https://wolfblanc.com" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none">wolfblanc.com</a></span>
+  <span data-sv="WOLFBLANC&reg; ARCHITECTS &middot; Stockholm &middot; Godk&auml;nd f&ouml;r F-skatt &middot; &copy; 2026" data-en="WOLFBLANC&reg; ARCHITECTS &middot; Stockholm &middot; Approved for F-tax &middot; &copy; 2026">WOLFBLANC&reg; ARCHITECTS &middot; Stockholm &middot; Godk&auml;nd f&ouml;r F-skatt &middot; &copy; 2026</span>
+  <a href="../../index.html" target="_self" rel="noopener" style="color:inherit;text-decoration:none;opacity:.65">WEB BY EOLOS DESIGN LAB</a>
+  <span><a href="mailto:info@wolfblanc.com" style="color:inherit;text-decoration:none">info@wolfblanc.com</a> &middot; <a href="https://wolfblanc.com" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none">wolfblanc.com</a></span>
 </footer>
 
 <script>

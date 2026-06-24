@@ -126,7 +126,8 @@
     h1{font-size:clamp(1.7rem,4vw,2.8rem);font-weight:200;text-transform:uppercase;letter-spacing:.05em;line-height:1.2;margin:0 0 28px}
     .art-lead{font-size:1.1rem;line-height:1.65;color:var(--text2);margin:0 0 32px}
     .art-byline{display:flex;align-items:center;gap:12px;padding-top:24px;border-top:1px solid var(--line)}
-    .byline-avatar{width:34px;height:34px;border-radius:50%;background:var(--accent);opacity:.18}
+    .byline-avatar{width:34px;height:34px;border-radius:50%;overflow:hidden;flex-shrink:0}
+    .byline-avatar img{width:100%;height:100%;object-fit:cover;border-radius:50%;display:block}
     .byline-text{font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:var(--text2)}
     .byline-text strong{color:var(--text)}
     .hero-img{max-width:1100px;margin:0 auto 64px;padding:0 32px}
@@ -232,7 +233,7 @@
     <h1 data-sv="Ljus i den nordiska bostaden: ett designproblem med ett svar" data-en="Light in the Nordic home: a design problem with an answer">Ljus i den nordiska bostaden: ett designproblem med ett svar</h1>
     <p class="art-lead" data-sv="Stockholm har 18 timmar mörker per dygn i december. Det är inte ett problem att lösa med fler lampor. Det är ett designproblem som börjar i orienteringen av huset, val av fönsterstorlek och materialens förmåga att reflektera och lagra ljus." data-en="Stockholm has 18 hours of darkness per day in December. That is not a problem to solve with more lamps. It is a design problem that begins with the orientation of the house, the choice of window size and the ability of materials to reflect and store light.">Stockholm har 18 timmar mörker per dygn i december. Det är inte ett problem att lösa med fler lampor. Det är ett designproblem som börjar i orienteringen av huset, val av fönsterstorlek och materialens förmåga att reflektera och lagra ljus.</p>
     <div class="art-byline">
-      <div class="byline-avatar"></div>
+      <div class="byline-avatar"><img src="../../images/210 sq_white-02.webp" alt="Wolfblanc Architects" width="34" height="34" loading="lazy" decoding="async"></div>
       <div class="byline-text"><strong data-sv="Wolfblanc Architects" data-en="Wolfblanc Architects">Wolfblanc Architects</strong> &nbsp;/&nbsp; Stockholm</div>
     </div>
   </header>
@@ -280,6 +281,21 @@
     </section>
 </div>
 
+  <section class="article-faq" aria-labelledby="article-faq-title">
+    <h2 id="article-faq-title" data-sv="Vanliga fr&aring;gor" data-en="Frequently asked questions">Vanliga fr&aring;gor</h2>
+    <details class="faq-item">
+      <summary data-sv="Hur mycket ljus behöver ett bostadsrum i Stockholm?" data-en="How much light does a living space in Stockholm need?">Hur mycket ljus behöver ett bostadsrum i Stockholm?</summary>
+      <p data-sv="Boverket rekommenderar en dagsljusfaktor om minst 1 procent. För trivsel och välmående under svenska vintrar är 1,5 till 2 procent mer lämpligt. Arkitekten beräknar dagsljusfaktorn under projektering och kan föreslå förändringar i fönstersättning om den är för låg." data-en="Boverket recommends a daylight factor of at least 1 percent. For comfort and wellbeing during Swedish winters, 1.5 to 2 percent is more suitable. The architect calculates the daylight factor during design and can propose changes to window placement if it is too low.">Boverket rekommenderar en dagsljusfaktor om minst 1 procent. För trivsel och välmående under svenska vintrar är 1,5 till 2 procent mer lämpligt. Arkitekten beräknar dagsljusfaktorn under projektering och kan föreslå förändringar i fönstersättning om den är för låg.</p>
+    </details>
+    <details class="faq-item">
+      <summary data-sv="Vad är skillnaden mellan takfönster och vanliga fönster ur ljussynpunkt?" data-en="What is the difference between roof windows and ordinary windows in terms of light?">Vad är skillnaden mellan takfönster och vanliga fönster ur ljussynpunkt?</summary>
+      <p data-sv="Takfönster ger upp till tre gånger mer ljus per kvadratmeter glasyta eftersom ljuset kommer direkt uppifrån istället för snett in genom en vägg. I täta stadskvarter är takfönster ofta avgörande för att uppfylla dagsljuskraven i inre rum." data-en="Roof windows give up to three times more light per square metre of glass because the light comes directly from above instead of obliquely through a wall. In dense urban blocks, roof windows are often decisive for meeting daylight requirements in inner rooms.">Takfönster ger upp till tre gånger mer ljus per kvadratmeter glasyta eftersom ljuset kommer direkt uppifrån istället för snett in genom en vägg. I täta stadskvarter är takfönster ofta avgörande för att uppfylla dagsljuskraven i inre rum.</p>
+    </details>
+    <details class="faq-item">
+      <summary data-sv="Vilket material reflekterar ljus bäst i en mörk lägenhet?" data-en="Which material reflects light best in a dark apartment?">Vilket material reflekterar ljus bäst i en mörk lägenhet?</summary>
+      <p data-sv="Kalkputs och linoljemålade ytor ger ett organiskt ljus som inte bländar. Vita eller ljusgrå lergolvplattor på golv reflekterar ljuset uppåt i rummet. Spegelglas och högglansiga ytor ger mer ljus men skapar bländning och är svårare att kombinera med annan inredning." data-en="Lime plaster and linseed-oil-painted surfaces give an organic light that does not glare. White or light-grey clay floor tiles reflect light upward into the room. Mirror glass and high-gloss surfaces give more light but create glare and are harder to combine with other furnishings.">Kalkputs och linoljemålade ytor ger ett organiskt ljus som inte bländar. Vita eller ljusgrå lergolvplattor på golv reflekterar ljuset uppåt i rummet. Spegelglas och högglansiga ytor ger mer ljus men skapar bländning och är svårare att kombinera med annan inredning.</p>
+    </details>
+  </section>
   <section class="cta-section">
     <div class="cta-bg">W</div>
     <div class="cta-inner">
@@ -325,13 +341,9 @@
 </main>
 
 <footer>
-  <span data-sv="&copy; 2025 Wolfblanc Architects" data-en="&copy; 2025 Wolfblanc Architects">&copy; 2025 Wolfblanc Architects</span>
-  <div class="foot-links">
-    <a href="../../index.html" data-sv="Hem" data-en="Home">Hem</a>
-    <a href="../../index.html#projekt" data-sv="Galleri" data-en="Gallery">Galleri</a>
-    <a href="../" data-sv="Journal" data-en="Journal">Journal</a>
-    <a href="../../index.html#kontakt" data-sv="Kontakt" data-en="Contact">Kontakt</a>
-  </div>
+  <span data-sv="WOLFBLANC&reg; ARCHITECTS &middot; Stockholm &middot; Godk&auml;nd f&ouml;r F-skatt &middot; &copy; 2026" data-en="WOLFBLANC&reg; ARCHITECTS &middot; Stockholm &middot; Approved for F-tax &middot; &copy; 2026">WOLFBLANC&reg; ARCHITECTS &middot; Stockholm &middot; Godk&auml;nd f&ouml;r F-skatt &middot; &copy; 2026</span>
+  <a href="../../index.html" target="_self" rel="noopener" style="color:inherit;text-decoration:none;opacity:.65">WEB BY EOLOS DESIGN LAB</a>
+  <span><a href="mailto:info@wolfblanc.com" style="color:inherit;text-decoration:none">info@wolfblanc.com</a> &middot; <a href="https://wolfblanc.com" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none">wolfblanc.com</a></span>
 </footer>
 
 <button id="btt" aria-label="Till toppen">

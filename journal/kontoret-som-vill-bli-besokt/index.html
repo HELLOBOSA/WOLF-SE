@@ -126,7 +126,8 @@
     h1{font-size:clamp(1.7rem,4vw,2.8rem);font-weight:200;text-transform:uppercase;letter-spacing:.05em;line-height:1.2;margin:0 0 28px}
     .art-lead{font-size:1.1rem;line-height:1.65;color:var(--text2);margin:0 0 32px}
     .art-byline{display:flex;align-items:center;gap:12px;padding-top:24px;border-top:1px solid var(--line)}
-    .byline-avatar{width:34px;height:34px;border-radius:50%;background:var(--accent);opacity:.18}
+    .byline-avatar{width:34px;height:34px;border-radius:50%;overflow:hidden;flex-shrink:0}
+    .byline-avatar img{width:100%;height:100%;object-fit:cover;border-radius:50%;display:block}
     .byline-text{font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:var(--text2)}
     .byline-text strong{color:var(--text)}
     .hero-img{max-width:1100px;margin:0 auto 64px;padding:0 32px}
@@ -232,7 +233,7 @@
     <h1 data-sv="Arbetsplatsen efter hybridarbetet: design som driver närvaro" data-en="The workplace after hybrid work: design that drives attendance">Arbetsplatsen efter hybridarbetet: design som driver närvaro</h1>
     <p class="art-lead" data-sv="Pandemin slog ett finger i marken: man kan jobba hemifrån. Kontorets svar på det kan inte vara tre fler videomötesrum. Det måste vara ett bättre erbjudande. Det erbjudandet är arkitektur." data-en="The pandemic established a fact: you can work from home. The office's response to that cannot be three more video meeting rooms. It must be a better offer. That offer is architecture.">Pandemin slog ett finger i marken: man kan jobba hemifrån. Kontorets svar på det kan inte vara tre fler videomötesrum. Det måste vara ett bättre erbjudande. Det erbjudandet är arkitektur.</p>
     <div class="art-byline">
-      <div class="byline-avatar"></div>
+      <div class="byline-avatar"><img src="../../images/210 sq_white-02.webp" alt="Wolfblanc Architects" width="34" height="34" loading="lazy" decoding="async"></div>
       <div class="byline-text"><strong data-sv="Wolfblanc Architects" data-en="Wolfblanc Architects">Wolfblanc Architects</strong> &nbsp;/&nbsp; Stockholm</div>
     </div>
   </header>
@@ -280,6 +281,21 @@
     </section>
 </div>
 
+  <section class="article-faq" aria-labelledby="article-faq-title">
+    <h2 id="article-faq-title" data-sv="Vanliga fr&aring;gor" data-en="Frequently asked questions">Vanliga fr&aring;gor</h2>
+    <details class="faq-item">
+      <summary data-sv="Vad kostar en kontorsrenovering i Stockholm?" data-en="What does an office renovation cost in Stockholm?">Vad kostar en kontorsrenovering i Stockholm?</summary>
+      <p data-sv="En genomgripande kontorsrenovering i Stockholm kostar 8 000 till 20 000 kr per kvm beroende på ambitionsnivå och befintligt skick. En partiell omgestaltning med fokus på ljus, akustik och möblering kan ge stor effekt för 3 000 till 6 000 kr per kvm." data-en="A thorough office renovation in Stockholm costs 8,000 to 20,000 SEK per sqm depending on ambition and existing condition. A partial redesign focused on light, acoustics and furnishing can give great effect for 3,000 to 6,000 SEK per sqm.">En genomgripande kontorsrenovering i Stockholm kostar 8 000 till 20 000 kr per kvm beroende på ambitionsnivå och befintligt skick. En partiell omgestaltning med fokus på ljus, akustik och möblering kan ge stor effekt för 3 000 till 6 000 kr per kvm.</p>
+    </details>
+    <details class="faq-item">
+      <summary data-sv="Vad är activity-based working och passar det alla företag?" data-en="What is activity-based working and does it suit every company?">Vad är activity-based working och passar det alla företag?</summary>
+      <p data-sv="ABW innebär att anställda inte har fasta platser utan väljer arbetsplats utifrån dagens uppgifter. Det fungerar bäst i organisationer med hög rörlighet och digitala arbetssätt. Traditionella advokatbyråer och bokföretag med mycket konfidentiellt material kan behöva anpassade lösningar." data-en="ABW means employees do not have fixed desks but choose a workspace based on the day's tasks. It works best in organisations with high mobility and digital ways of working. Traditional law firms and accountancy practices with much confidential material may need adapted solutions.">ABW innebär att anställda inte har fasta platser utan väljer arbetsplats utifrån dagens uppgifter. Det fungerar bäst i organisationer med hög rörlighet och digitala arbetssätt. Traditionella advokatbyråer och bokföretag med mycket konfidentiellt material kan behöva anpassade lösningar.</p>
+    </details>
+    <details class="faq-item">
+      <summary data-sv="Hur förbättrar man akustiken på ett öppet kontor?" data-en="How do you improve acoustics in an open-plan office?">Hur förbättrar man akustiken på ett öppet kontor?</summary>
+      <p data-sv="Akustiska tak- och väggpaneler i absorbentmaterial, rumsavdelare med akustisk effekt och strategisk möbelplacering kan minska efterklangstiden från 1,2 till under 0,6 sekunder. Arkitekten specificerar akustikklassen och väljer produkter som passar miljön estetiskt." data-en="Acoustic ceiling and wall panels in absorbent material, room dividers with acoustic effect and strategic furniture placement can reduce reverberation time from 1.2 to under 0.6 seconds. The architect specifies the acoustic class and selects products that suit the environment aesthetically.">Akustiska tak- och väggpaneler i absorbentmaterial, rumsavdelare med akustisk effekt och strategisk möbelplacering kan minska efterklangstiden från 1,2 till under 0,6 sekunder. Arkitekten specificerar akustikklassen och väljer produkter som passar miljön estetiskt.</p>
+    </details>
+  </section>
   <section class="cta-section">
     <div class="cta-bg">W</div>
     <div class="cta-inner">
@@ -325,13 +341,9 @@
 </main>
 
 <footer>
-  <span data-sv="&copy; 2025 Wolfblanc Architects" data-en="&copy; 2025 Wolfblanc Architects">&copy; 2025 Wolfblanc Architects</span>
-  <div class="foot-links">
-    <a href="../../index.html" data-sv="Hem" data-en="Home">Hem</a>
-    <a href="../../index.html#projekt" data-sv="Galleri" data-en="Gallery">Galleri</a>
-    <a href="../" data-sv="Journal" data-en="Journal">Journal</a>
-    <a href="../../index.html#kontakt" data-sv="Kontakt" data-en="Contact">Kontakt</a>
-  </div>
+  <span data-sv="WOLFBLANC&reg; ARCHITECTS &middot; Stockholm &middot; Godk&auml;nd f&ouml;r F-skatt &middot; &copy; 2026" data-en="WOLFBLANC&reg; ARCHITECTS &middot; Stockholm &middot; Approved for F-tax &middot; &copy; 2026">WOLFBLANC&reg; ARCHITECTS &middot; Stockholm &middot; Godk&auml;nd f&ouml;r F-skatt &middot; &copy; 2026</span>
+  <a href="../../index.html" target="_self" rel="noopener" style="color:inherit;text-decoration:none;opacity:.65">WEB BY EOLOS DESIGN LAB</a>
+  <span><a href="mailto:info@wolfblanc.com" style="color:inherit;text-decoration:none">info@wolfblanc.com</a> &middot; <a href="https://wolfblanc.com" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none">wolfblanc.com</a></span>
 </footer>
 
 <button id="btt" aria-label="Till toppen">

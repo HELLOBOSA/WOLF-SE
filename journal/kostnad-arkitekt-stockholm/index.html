@@ -134,7 +134,8 @@
     h1{font-size:clamp(1.7rem,4vw,2.8rem);font-weight:200;text-transform:uppercase;letter-spacing:.05em;line-height:1.2;margin:0 0 28px}
     .art-lead{font-size:1.1rem;line-height:1.65;color:var(--text2);margin:0 0 32px}
     .art-byline{display:flex;align-items:center;gap:12px;padding-top:24px;border-top:1px solid var(--line)}
-    .byline-avatar{width:34px;height:34px;border-radius:50%;background:var(--accent);opacity:.18}
+    .byline-avatar{width:34px;height:34px;border-radius:50%;overflow:hidden;flex-shrink:0}
+    .byline-avatar img{width:100%;height:100%;object-fit:cover;border-radius:50%;display:block}
     .byline-text{font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:var(--text2)}
     .byline-text strong{color:var(--text)}
     .hero-img{max-width:1100px;margin:0 auto 64px;padding:0 32px}
@@ -240,7 +241,7 @@
     <h1 data-sv="Arkitektpris i Stockholm: vad du betalar och varför" data-en="Architect fees in Stockholm: what you pay and why">Arkitektpris i Stockholm: vad du betalar och varför</h1>
     <p class="art-lead" data-sv="Priset på en arkitekt i Stockholm varierar med uppdragets art, arkitektens erfarenhet och hur uppdraget prissätts. Det finns tre vanliga modeller: timpris, fast arvode och procent av byggkostnad." data-en="The price of an architect in Stockholm varies with the type of assignment, the architect's experience and how the assignment is priced. There are three common models: hourly rate, fixed fee and percentage of construction cost.">Priset på en arkitekt i Stockholm varierar med uppdragets art, arkitektens erfarenhet och hur uppdraget prissätts. Det finns tre vanliga modeller: timpris, fast arvode och procent av byggkostnad.</p>
     <div class="art-byline">
-      <div class="byline-avatar"></div>
+      <div class="byline-avatar"><img src="../../images/210 sq_white-02.webp" alt="Wolfblanc Architects" width="34" height="34" loading="lazy" decoding="async"></div>
       <div class="byline-text"><strong data-sv="Wolfblanc Architects" data-en="Wolfblanc Architects">Wolfblanc Architects</strong> &nbsp;/&nbsp; Stockholm</div>
     </div>
   </header>
@@ -294,6 +295,25 @@
     </section>
 </div>
 
+  <section class="article-faq" aria-labelledby="article-faq-title">
+    <h2 id="article-faq-title" data-sv="Vanliga fr&aring;gor" data-en="Frequently asked questions">Vanliga fr&aring;gor</h2>
+    <details class="faq-item">
+      <summary data-sv="Vad är timpriset för en arkitekt i Stockholm?" data-en="What is the hourly rate for an architect in Stockholm?">Vad är timpriset för en arkitekt i Stockholm?</summary>
+      <p data-sv="En SAR/MSA-registrerad arkitekt i Stockholm tar normalt 1 200 till 2 200 kr per timme exkl. moms. Partners och specialister inom nischade områden kan ta mer. Junior arkitekter under handledning tar 900 till 1 400 kr per timme." data-en="A SAR/MSA-registered architect in Stockholm normally charges 1,200 to 2,200 SEK per hour excluding VAT. Partners and specialists in niche areas may charge more. Junior architects under supervision charge 900 to 1,400 SEK per hour.">En SAR/MSA-registrerad arkitekt i Stockholm tar normalt 1 200 till 2 200 kr per timme exkl. moms. Partners och specialister inom nischade områden kan ta mer. Junior arkitekter under handledning tar 900 till 1 400 kr per timme.</p>
+    </details>
+    <details class="faq-item">
+      <summary data-sv="Hur mycket kostar bygglovshandlingar för ett enbostadshus?" data-en="How much do permit documents for a single-family house cost?">Hur mycket kostar bygglovshandlingar för ett enbostadshus?</summary>
+      <p data-sv="Bygglovshandlingar för ett enbostadshus i Stockholm kostar vanligtvis 35 000 till 120 000 kr beroende på åtgärdens komplexitet. En enkel tillbyggnad kostar i det lägre intervallet, en fasadändring i kulturmiljö i det övre." data-en="Permit documents for a single-family house in Stockholm usually cost 35,000 to 120,000 SEK depending on the complexity of the work. A simple extension costs in the lower range, a facade change in a heritage setting in the upper.">Bygglovshandlingar för ett enbostadshus i Stockholm kostar vanligtvis 35 000 till 120 000 kr beroende på åtgärdens komplexitet. En enkel tillbyggnad kostar i det lägre intervallet, en fasadändring i kulturmiljö i det övre.</p>
+    </details>
+    <details class="faq-item">
+      <summary data-sv="Kan man förhandla om arkitektarvodet?" data-en="Can you negotiate the architect fee?">Kan man förhandla om arkitektarvodet?</summary>
+      <p data-sv="Det är möjligt att förhandla, men fokusera på scope snarare än timpriser. Att begränsa uppdraget till det nödvändiga, att ha tydliga handlingar och att besluta snabbt minskar kostnaden mer effektivt än att pressa priset." data-en="It is possible to negotiate, but focus on scope rather than hourly rates. Limiting the commission to the essential, having clear documents and deciding quickly reduces the cost more effectively than pushing the price.">Det är möjligt att förhandla, men fokusera på scope snarare än timpriser. Att begränsa uppdraget till det nödvändiga, att ha tydliga handlingar och att besluta snabbt minskar kostnaden mer effektivt än att pressa priset.</p>
+    </details>
+    <details class="faq-item">
+      <summary data-sv="Vad är skillnaden mellan en SAR/MSA-arkitekt och en inredningsarkitekt?" data-en="What is the difference between a SAR/MSA architect and an interior architect?">Vad är skillnaden mellan en SAR/MSA-arkitekt och en inredningsarkitekt?</summary>
+      <p data-sv="SAR/MSA är Sveriges Arkitekters yrkestitel för kvalificerade arkitekter. En inredningsarkitekt arbetar främst med interiöra miljöer. Kontrollansvarig är en separat roll med egna certifieringskrav och följer inte automatiskt av SAR/MSA-titeln." data-en="SAR/MSA is the Swedish Association of Architects' professional title for qualified architects. An interior architect works mainly with interior environments. The control manager is a separate role with its own certification requirements and does not follow automatically from the SAR/MSA title.">SAR/MSA är Sveriges Arkitekters yrkestitel för kvalificerade arkitekter. En inredningsarkitekt arbetar främst med interiöra miljöer. Kontrollansvarig är en separat roll med egna certifieringskrav och följer inte automatiskt av SAR/MSA-titeln.</p>
+    </details>
+  </section>
   <section class="cta-section">
     <div class="cta-bg">W</div>
     <div class="cta-inner">
@@ -339,13 +359,9 @@
 </main>
 
 <footer>
-  <span data-sv="&copy; 2025 Wolfblanc Architects" data-en="&copy; 2025 Wolfblanc Architects">&copy; 2025 Wolfblanc Architects</span>
-  <div class="foot-links">
-    <a href="../../index.html" data-sv="Hem" data-en="Home">Hem</a>
-    <a href="../../index.html#projekt" data-sv="Galleri" data-en="Gallery">Galleri</a>
-    <a href="../" data-sv="Journal" data-en="Journal">Journal</a>
-    <a href="../../index.html#kontakt" data-sv="Kontakt" data-en="Contact">Kontakt</a>
-  </div>
+  <span data-sv="WOLFBLANC&reg; ARCHITECTS &middot; Stockholm &middot; Godk&auml;nd f&ouml;r F-skatt &middot; &copy; 2026" data-en="WOLFBLANC&reg; ARCHITECTS &middot; Stockholm &middot; Approved for F-tax &middot; &copy; 2026">WOLFBLANC&reg; ARCHITECTS &middot; Stockholm &middot; Godk&auml;nd f&ouml;r F-skatt &middot; &copy; 2026</span>
+  <a href="../../index.html" target="_self" rel="noopener" style="color:inherit;text-decoration:none;opacity:.65">WEB BY EOLOS DESIGN LAB</a>
+  <span><a href="mailto:info@wolfblanc.com" style="color:inherit;text-decoration:none">info@wolfblanc.com</a> &middot; <a href="https://wolfblanc.com" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none">wolfblanc.com</a></span>
 </footer>
 
 <button id="btt" aria-label="Till toppen">

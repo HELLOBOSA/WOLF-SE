@@ -134,7 +134,8 @@
     h1{font-size:clamp(1.7rem,4vw,2.8rem);font-weight:200;text-transform:uppercase;letter-spacing:.05em;line-height:1.2;margin:0 0 28px}
     .art-lead{font-size:1.1rem;line-height:1.65;color:var(--text2);margin:0 0 32px}
     .art-byline{display:flex;align-items:center;gap:12px;padding-top:24px;border-top:1px solid var(--line)}
-    .byline-avatar{width:34px;height:34px;border-radius:50%;background:var(--accent);opacity:.18}
+    .byline-avatar{width:34px;height:34px;border-radius:50%;overflow:hidden;flex-shrink:0}
+    .byline-avatar img{width:100%;height:100%;object-fit:cover;border-radius:50%;display:block}
     .byline-text{font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:var(--text2)}
     .byline-text strong{color:var(--text)}
     .hero-img{max-width:1100px;margin:0 auto 64px;padding:0 32px}
@@ -240,7 +241,7 @@
     <h1 data-sv="Bygglov i Stockholm: vad som gäller 2026" data-en="Building permits in Stockholm: what applies in 2026">Bygglov i Stockholm: vad som gäller 2026</h1>
     <p class="art-lead" data-sv="Bygglovsprocessen i Stockholm är reglerad men hanterbar. Tydliga, samordnade handlingar och rätt ansökningstyp minskar risken för kompletteringar och gör projektets tidplan mer förutsägbar." data-en="The building permit process in Stockholm is regulated but manageable. Clear, coordinated documents and the correct application type reduce the risk of additional requests and make the project programme more predictable.">Bygglovsprocessen i Stockholm är reglerad men hanterbar. Tydliga, samordnade handlingar och rätt ansökningstyp minskar risken för kompletteringar och gör projektets tidplan mer förutsägbar.</p>
     <div class="art-byline">
-      <div class="byline-avatar"></div>
+      <div class="byline-avatar"><img src="../../images/210 sq_white-02.webp" alt="Wolfblanc Architects" width="34" height="34" loading="lazy" decoding="async"></div>
       <div class="byline-text"><strong data-sv="Wolfblanc Architects" data-en="Wolfblanc Architects">Wolfblanc Architects</strong> &nbsp;/&nbsp; Stockholm</div>
     </div>
   </header>
@@ -291,6 +292,25 @@
     </section>
 </div>
 
+  <section class="article-faq" aria-labelledby="article-faq-title">
+    <h2 id="article-faq-title" data-sv="Vanliga fr&aring;gor" data-en="Frequently asked questions">Vanliga fr&aring;gor</h2>
+    <details class="faq-item">
+      <summary data-sv="Hur lång tid tar bygglovshandläggning i Stockholm?" data-en="How long does building permit processing take in Stockholm?">Hur lång tid tar bygglovshandläggning i Stockholm?</summary>
+      <p data-sv="Kommunens grundfrist är normalt 10 veckor från komplett ansökan. Fristen kan i vissa ärenden förlängas, och kompletteringar, grannehörande samt tiden tills beslutet får laga kraft påverkar den totala projektplanen." data-en="The municipality's standard period is normally 10 weeks from a complete application. The period can be extended in some cases, and supplementary documents, neighbour consultation and the time until the decision becomes legally effective affect the overall programme.">Kommunens grundfrist är normalt 10 veckor från komplett ansökan. Fristen kan i vissa ärenden förlängas, och kompletteringar, grannehörande samt tiden tills beslutet får laga kraft påverkar den totala projektplanen.</p>
+    </details>
+    <details class="faq-item">
+      <summary data-sv="Vad kostar ett bygglov i Stockholm?" data-en="What does a building permit cost in Stockholm?">Vad kostar ett bygglov i Stockholm?</summary>
+      <p data-sv="Avgiften varierar med åtgärd, area och vilka moment som ingår i handläggningen. Använd Stockholms stads aktuella taxa för en indikativ nivå och bekräfta beloppet med stadsbyggnadskontoret för den specifika fastigheten." data-en="The fee varies with the type of work, area and which stages are included in the review. Use the City of Stockholm's current fee schedule for an indicative level and confirm the amount with the planning office for the specific property.">Avgiften varierar med åtgärd, area och vilka moment som ingår i handläggningen. Använd Stockholms stads aktuella taxa för en indikativ nivå och bekräfta beloppet med stadsbyggnadskontoret för den specifika fastigheten.</p>
+    </details>
+    <details class="faq-item">
+      <summary data-sv="Kan jag ansöka om bygglov utan arkitekt?" data-en="Can I apply for a building permit without an architect?">Kan jag ansöka om bygglov utan arkitekt?</summary>
+      <p data-sv="Du kan ansöka själv, men ritningarna måste vara fackmässiga, skalenliga och måttsatta. En arkitekt kan samordna handlingarna. Om kommunen kräver en kontrollansvarig är det en separat roll som kräver giltig certifiering." data-en="You can apply yourself, but the drawings must be professionally prepared, to scale and dimensioned. An architect can coordinate the documents. If the municipality requires a control manager, that is a separate role requiring valid certification.">Du kan ansöka själv, men ritningarna måste vara fackmässiga, skalenliga och måttsatta. En arkitekt kan samordna handlingarna. Om kommunen kräver en kontrollansvarig är det en separat roll som kräver giltig certifiering.</p>
+    </details>
+    <details class="faq-item">
+      <summary data-sv="Vad händer om jag bygger utan bygglov?" data-en="What happens if I build without a permit?">Vad händer om jag bygger utan bygglov?</summary>
+      <p data-sv="Att bygga utan krävt bygglov kan leda till byggsanktionsavgift, rivningsföreläggande och svårigheter vid försäljning. Stadsbyggnadskontoret kan kräva att åtgärden återställs på ägarens bekostnad." data-en="Building without a required permit can lead to a building sanction fee, a demolition order and difficulties at sale. The planning office can require the work to be reversed at the owner's expense.">Att bygga utan krävt bygglov kan leda till byggsanktionsavgift, rivningsföreläggande och svårigheter vid försäljning. Stadsbyggnadskontoret kan kräva att åtgärden återställs på ägarens bekostnad.</p>
+    </details>
+  </section>
   <section class="cta-section">
     <div class="cta-bg">W</div>
     <div class="cta-inner">
@@ -336,13 +356,9 @@
 </main>
 
 <footer>
-  <span data-sv="&copy; 2025 Wolfblanc Architects" data-en="&copy; 2025 Wolfblanc Architects">&copy; 2025 Wolfblanc Architects</span>
-  <div class="foot-links">
-    <a href="../../index.html" data-sv="Hem" data-en="Home">Hem</a>
-    <a href="../../index.html#projekt" data-sv="Galleri" data-en="Gallery">Galleri</a>
-    <a href="../" data-sv="Journal" data-en="Journal">Journal</a>
-    <a href="../../index.html#kontakt" data-sv="Kontakt" data-en="Contact">Kontakt</a>
-  </div>
+  <span data-sv="WOLFBLANC&reg; ARCHITECTS &middot; Stockholm &middot; Godk&auml;nd f&ouml;r F-skatt &middot; &copy; 2026" data-en="WOLFBLANC&reg; ARCHITECTS &middot; Stockholm &middot; Approved for F-tax &middot; &copy; 2026">WOLFBLANC&reg; ARCHITECTS &middot; Stockholm &middot; Godk&auml;nd f&ouml;r F-skatt &middot; &copy; 2026</span>
+  <a href="../../index.html" target="_self" rel="noopener" style="color:inherit;text-decoration:none;opacity:.65">WEB BY EOLOS DESIGN LAB</a>
+  <span><a href="mailto:info@wolfblanc.com" style="color:inherit;text-decoration:none">info@wolfblanc.com</a> &middot; <a href="https://wolfblanc.com" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none">wolfblanc.com</a></span>
 </footer>
 
 <button id="btt" aria-label="Till toppen">

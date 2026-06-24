@@ -126,7 +126,8 @@
     h1{font-size:clamp(1.7rem,4vw,2.8rem);font-weight:200;text-transform:uppercase;letter-spacing:.05em;line-height:1.2;margin:0 0 28px}
     .art-lead{font-size:1.1rem;line-height:1.65;color:var(--text2);margin:0 0 32px}
     .art-byline{display:flex;align-items:center;gap:12px;padding-top:24px;border-top:1px solid var(--line)}
-    .byline-avatar{width:34px;height:34px;border-radius:50%;background:var(--accent);opacity:.18}
+    .byline-avatar{width:34px;height:34px;border-radius:50%;overflow:hidden;flex-shrink:0}
+    .byline-avatar img{width:100%;height:100%;object-fit:cover;border-radius:50%;display:block}
     .byline-text{font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:var(--text2)}
     .byline-text strong{color:var(--text)}
     .hero-img{max-width:1100px;margin:0 auto 64px;padding:0 32px}
@@ -232,7 +233,7 @@
     <h1 data-sv="Varför vi börjar med hur du lever, inte hur det ser ut" data-en="Why we start with how you live, not how it looks">Varför vi börjar med hur du lever, inte hur det ser ut</h1>
     <p class="art-lead" data-sv="Stil är det sista vi diskuterar med en klient. Det första vi diskuterar är hur morgonen ser ut. Vem vaknar upp när? Vad händer i köket klockan sju? Hur många är hemma på middagen, och hur ofta? Svaren på de frågorna avgör planlösningen. Stilen följer på det." data-en="Style is the last thing we discuss with a client. The first thing we discuss is what the morning looks like. Who wakes up when? What happens in the kitchen at seven? How many are home for dinner, and how often? The answers to those questions determine the floor plan. Style follows from that.">Stil är det sista vi diskuterar med en klient. Det första vi diskuterar är hur morgonen ser ut. Vem vaknar upp när? Vad händer i köket klockan sju? Hur många är hemma på middagen, och hur ofta? Svaren på de frågorna avgör planlösningen. Stilen följer på det.</p>
     <div class="art-byline">
-      <div class="byline-avatar"></div>
+      <div class="byline-avatar"><img src="../../images/210 sq_white-02.webp" alt="Wolfblanc Architects" width="34" height="34" loading="lazy" decoding="async"></div>
       <div class="byline-text"><strong data-sv="Wolfblanc Architects" data-en="Wolfblanc Architects">Wolfblanc Architects</strong> &nbsp;/&nbsp; Stockholm</div>
     </div>
   </header>
@@ -280,6 +281,21 @@
     </section>
 </div>
 
+  <section class="article-faq" aria-labelledby="article-faq-title">
+    <h2 id="article-faq-title" data-sv="Vanliga fr&aring;gor" data-en="Frequently asked questions">Vanliga fr&aring;gor</h2>
+    <details class="faq-item">
+      <summary data-sv="Hur börjar man ett bostadsarkitektprojekt på rätt sätt?" data-en="How do you start a residential architecture project the right way?">Hur börjar man ett bostadsarkitektprojekt på rätt sätt?</summary>
+      <p data-sv="Med ett grundligt briefmöte där arkitekten kartlägger levnadsmönster, dagliga rutiner och framtida behov. En bra brief tar längre tid än de flesta klienter förväntar sig men sparar revisioner och omritning i alla senare skeden." data-en="With a thorough briefing meeting where the architect maps living patterns, daily routines and future needs. A good brief takes longer than most clients expect but saves revisions and redrawing in all later stages.">Med ett grundligt briefmöte där arkitekten kartlägger levnadsmönster, dagliga rutiner och framtida behov. En bra brief tar längre tid än de flesta klienter förväntar sig men sparar revisioner och omritning i alla senare skeden.</p>
+    </details>
+    <details class="faq-item">
+      <summary data-sv="Ska man ha en vision om hur hemmet ska se ut innan man engagerar en arkitekt?" data-en="Should I have a vision of how the home should look before engaging an architect?">Ska man ha en vision om hur hemmet ska se ut innan man engagerar en arkitekt?</summary>
+      <p data-sv="Det är en fördel att ha tankar och bilder som inspiration, men det är inte nödvändigt att ha en bestämd stilbild. Arkitektens uppgift är att tolka dina levnadsbehov och omgivningens förutsättningar och skapa en lösning som du inte hade kunnat tänka ut själv." data-en="It is an advantage to have thoughts and images as inspiration, but it is not necessary to have a fixed style image. The architect's task is to interpret your living needs and the site's conditions and create a solution you could not have devised yourself.">Det är en fördel att ha tankar och bilder som inspiration, men det är inte nödvändigt att ha en bestämd stilbild. Arkitektens uppgift är att tolka dina levnadsbehov och omgivningens förutsättningar och skapa en lösning som du inte hade kunnat tänka ut själv.</p>
+    </details>
+    <details class="faq-item">
+      <summary data-sv="Hur lång tid tar ett bostadsarkitektuppdrag från idé till bygghandlingar?" data-en="How long does a residential architecture commission take from idea to construction documents?">Hur lång tid tar ett bostadsarkitektuppdrag från idé till bygghandlingar?</summary>
+      <p data-sv="En typisk process tar 3 till 6 månader från inledande möte till godkända bygghandlingar. Förstudier och skissarbete tar 4 till 8 veckor. Projektering och bygglovshandlingar tar ytterligare 6 till 12 veckor. Eventuell handläggningstid hos kommunen tillkommer." data-en="A typical process takes 3 to 6 months from initial meeting to approved construction documents. Feasibility and sketch work take 4 to 8 weeks. Design and permit documents take a further 6 to 12 weeks. Any municipal processing time is additional.">En typisk process tar 3 till 6 månader från inledande möte till godkända bygghandlingar. Förstudier och skissarbete tar 4 till 8 veckor. Projektering och bygglovshandlingar tar ytterligare 6 till 12 veckor. Eventuell handläggningstid hos kommunen tillkommer.</p>
+    </details>
+  </section>
   <section class="cta-section">
     <div class="cta-bg">W</div>
     <div class="cta-inner">
@@ -325,13 +341,9 @@
 </main>
 
 <footer>
-  <span data-sv="&copy; 2025 Wolfblanc Architects" data-en="&copy; 2025 Wolfblanc Architects">&copy; 2025 Wolfblanc Architects</span>
-  <div class="foot-links">
-    <a href="../../index.html" data-sv="Hem" data-en="Home">Hem</a>
-    <a href="../../index.html#projekt" data-sv="Galleri" data-en="Gallery">Galleri</a>
-    <a href="../" data-sv="Journal" data-en="Journal">Journal</a>
-    <a href="../../index.html#kontakt" data-sv="Kontakt" data-en="Contact">Kontakt</a>
-  </div>
+  <span data-sv="WOLFBLANC&reg; ARCHITECTS &middot; Stockholm &middot; Godk&auml;nd f&ouml;r F-skatt &middot; &copy; 2026" data-en="WOLFBLANC&reg; ARCHITECTS &middot; Stockholm &middot; Approved for F-tax &middot; &copy; 2026">WOLFBLANC&reg; ARCHITECTS &middot; Stockholm &middot; Godk&auml;nd f&ouml;r F-skatt &middot; &copy; 2026</span>
+  <a href="../../index.html" target="_self" rel="noopener" style="color:inherit;text-decoration:none;opacity:.65">WEB BY EOLOS DESIGN LAB</a>
+  <span><a href="mailto:info@wolfblanc.com" style="color:inherit;text-decoration:none">info@wolfblanc.com</a> &middot; <a href="https://wolfblanc.com" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none">wolfblanc.com</a></span>
 </footer>
 
 <button id="btt" aria-label="Till toppen">
