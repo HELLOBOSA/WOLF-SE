@@ -33,12 +33,12 @@
   <meta property="og:description" content="Arkitektkontor i Stockholm. BIM-metodik. SAR/MSA registrerad · WELL AP certifierad.">
   <meta property="og:url" content="https://wolfblanc.se">
   <meta property="og:site_name" content="Wolfblanc Architects">
-  <meta property="og:image" content="https://wolfblanc.se/assets/hero-horizon.webp">
+  <meta property="og:image" content="https://wolfblanc.se/images/Horizon%20House%2001.webp">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Arkitekt Stockholm - WOLFBLANC ARCHITECTS">
   <meta name="twitter:description" content="Arkitektkontor i Stockholm. SAR/MSA registrerad · WELL AP.">
-  <meta name="twitter:image" content="https://wolfblanc.se/assets/hero-horizon.webp">
+  <meta name="twitter:image" content="https://wolfblanc.se/images/Horizon%20House%2001.webp">
 
   <script type="application/ld+json">
   {
@@ -439,7 +439,7 @@
         </div>
       </div>
       <div class="studio-img reveal">
-        <picture><source srcset="assets/studio-founders.avif" type="image/avif"><img src="assets/studio-founders.webp" alt="Wolfblanc Architects - arkitekturstudio Stockholm" loading="lazy" decoding="async"></picture>
+        <img src="images/wolfblanc-team.webp" alt="Wolfblanc Architects - arkitekturstudio Stockholm" loading="lazy" decoding="async">
       </div>
     </div>
   </div>
@@ -487,7 +487,7 @@
       <div class="gc reveal"><h3 class="ct" data-sv="SAR/MSA REGISTRERAD" data-en="SAR/MSA REGISTERED">SAR/MSA REGISTRERAD</h3><p class="cd" data-sv="Registrerade för arkitekturarbete i Sverige." data-en="Registered for architectural work in Sweden.">Registrerade för arkitekturarbete i Sverige.</p></div>
       <div class="gc reveal"><h3 class="ct" data-sv="WELL AP CERTIFIERING" data-en="WELL AP CREDENTIAL">WELL AP CERTIFIERING</h3><p class="cd" data-sv="Expertis inom design för mänsklig hälsa och välbefinnande." data-en="Expertise in design for human health and well-being.">Expertis inom design för mänsklig hälsa och välbefinnande.</p></div>
       <div class="gc reveal"><h3 class="ct" data-sv="INTERNATIONELL ERFARENHET" data-en="INTERNATIONAL EXPERIENCE">INTERNATIONELL ERFARENHET</h3><p class="cd" data-sv="20+ års erfarenhet med en metod tydligt anpassad till den svenska marknaden." data-en="20+ years of experience with a method applied clearly to the Swedish market.">20+ års erfarenhet med en metod tydligt anpassad till den svenska marknaden.</p></div>
-      <div class="gc reveal"><h3 class="ct" data-sv="BIM-METODIK" data-en="BIM METHODOLOGY">BIM-METODIK</h3><p class="cd" data-sv="Integrerat digitalt arbetsflöde i varje fas — samordning, precision och leveranssäkerhet." data-en="Integrated digital workflow in every phase — coordination, precision and delivery certainty.">Integrerat digitalt arbetsflöde i varje fas — samordning, precision och leveranssäkerhet.</p></div>
+      <div class="gc reveal"><h3 class="ct" data-sv="BIM-METODIK" data-en="BIM METHODOLOGY">BIM-METODIK</h3><p class="cd" data-sv="Integrerat digitalt arbetsflöde i varje fas, samordning, precision och leveranssäkerhet." data-en="Integrated digital workflow in every phase, coordination, precision and delivery certainty.">Integrerat digitalt arbetsflöde i varje fas, samordning, precision och leveranssäkerhet.</p></div>
     </div>
   </div>
 </section>
@@ -556,7 +556,7 @@
       <p style="margin-top:0;margin-bottom:32px" data-sv='Eller skriv direkt till <a href="mailto:info@wolfblanc.com">info@wolfblanc.com</a>' data-en='Or write directly to <a href="mailto:info@wolfblanc.com">info@wolfblanc.com</a>'>Eller skriv direkt till <a href="mailto:info@wolfblanc.com">info@wolfblanc.com</a></p>
 
       <form class="intake-form" id="intake-form" action="https://formspree.io/f/mdajwanb" method="POST">
-        <input type="hidden" name="_subject" value="Nytt projekt — wolfblanc.se">
+        <input type="hidden" name="_subject" value="Nytt projekt, wolfblanc.se">
         <input type="hidden" name="services" id="selected-services" value="">
         <div class="field"><label><span data-sv="Namn" data-en="Name">Namn</span><span class="ix">01</span></label><input type="text" name="name" placeholder="Anna Lindström" required></div>
         <div class="field"><label><span data-sv="E-post" data-en="Email">E-post</span><span class="ix">02</span></label><input type="email" name="email" placeholder="anna@example.com" required></div>
@@ -726,35 +726,58 @@
 (function(){
   /* ── Project data ── */
   var PROJECTS=[
-    {img:'assets/work-horizon-exterior.webp',avif:'assets/work-horizon-exterior.avif',tag:'Horizon / Bostad',tagEn:'Horizon / Residence',title:'Privat kustboende',titleEn:'Private coastal home',cat:'Bostad'},
-    {img:'assets/work-horizon-interior.webp',avif:'assets/work-horizon-interior.avif',tag:'Horizon / Bostad',tagEn:'Horizon / Residence',title:'Interiör — ljus och volym',titleEn:'Interior — light and volume',cat:'Bostad'},
-    {img:'assets/work-boadilla-exterior.webp',avif:'assets/work-boadilla-exterior.avif',tag:'Boadilla / Bostad',tagEn:'Boadilla / Residential',title:'Bostaden som metod',titleEn:'Home as method',cat:'Bostad'},
-    {img:'assets/work-boadilla-interior.webp',avif:'assets/work-boadilla-interior.avif',tag:'Boadilla / Bostad',tagEn:'Boadilla / Residential',title:'Rumslighet och material',titleEn:'Space and material',cat:'Bostad'},
-    {img:'assets/work-a75-living.webp',avif:'assets/work-a75-living.avif',tag:'A75 / Renovering',tagEn:'A75 / Renovation',title:'Ljus och logik',titleEn:'Light and logic',cat:'Renovering'},
-    {img:'assets/work-a75-plan.webp',avif:'assets/work-a75-plan.avif',tag:'A75 / Renovering',tagEn:'A75 / Renovation',title:'Strukturell klarhet',titleEn:'Structural clarity',cat:'Renovering'},
-    {img:'assets/work-k38-living.webp',avif:'assets/work-k38-living.avif',tag:'K38 / Investering',tagEn:'K38 / Investment',title:'Investeringslogik',titleEn:'Investment logic',cat:'Investering'},
-    {img:'assets/work-k38-terrace.webp',avif:'assets/work-k38-terrace.avif',tag:'K38 / Investering',tagEn:'K38 / Investment',title:'Uterum och värde',titleEn:'Outdoor space and value',cat:'Investering'},
-    {img:'assets/work-k12-interior.webp',avif:'assets/work-k12-interior.avif',tag:'K12 / Korttidsuthyrning',tagEn:'K12 / Short-term rental',title:'Optimerad yta',titleEn:'Optimised footprint',cat:'Investering'},
-    {img:'assets/work-plato-masterplan.webp',avif:'assets/work-plato-masterplan.avif',tag:"Plato's Academy / Stadsplanering",tagEn:"Plato's Academy / Urban",title:'Stadsdelsstrategi',titleEn:'District strategy',cat:'Stadsplanering'},
-    {img:'assets/work-plato-street.webp',avif:'assets/work-plato-street.avif',tag:"Plato's Academy / Stadsplanering",tagEn:"Plato's Academy / Urban",title:'Gatunivå och rörelse',titleEn:'Street level and movement',cat:'Stadsplanering'},
-    {img:'assets/work-axis-urban.webp',avif:'assets/work-axis-urban.avif',tag:'Axis / Stadsplanering',tagEn:'Axis / Urban',title:'Urban struktur',titleEn:'Urban structure',cat:'Stadsplanering'},
-    {img:'assets/work-nexus-facade.webp',avif:'assets/work-nexus-facade.avif',tag:'Nexus / Kulturarv',tagEn:'Nexus / Heritage',title:'Urban kontinuitet',titleEn:'Urban continuity',cat:'Stadsplanering'},
-    {img:'assets/work-norrsken-office.webp',avif:'assets/work-norrsken-office.avif',tag:'Norrsken / Arbetsplats',tagEn:'Norrsken / Workspace',title:'Nordisk precision',titleEn:'Nordic precision',cat:'Hospitality'},
-    {img:'assets/work-selva-entry.webp',avif:'assets/work-selva-entry.avif',tag:'Selva / Hospitality',tagEn:'Selva / Hospitality',title:'Hospitality-atmosfär',titleEn:'Hospitality atmosphere',cat:'Hospitality'},
-    {img:'assets/work-selva-lounge.webp',avif:'assets/work-selva-lounge.avif',tag:'Selva / Hospitality',tagEn:'Selva / Hospitality',title:'Lounge och sinnlighet',titleEn:'Lounge and sensory space',cat:'Hospitality'},
-    {img:'assets/work-granolita-counter.webp',avif:'assets/work-granolita-counter.avif',tag:'Granolita / Gastronomi',tagEn:'Granolita / Hospitality',title:'Estetisk rumsupplevelse',titleEn:'Spatial aesthetic',cat:'Hospitality'},
-    {img:'assets/work-dterra-hall.webp',avif:'assets/work-dterra-hall.avif',tag:'Bistró Dterra / Restaurang',tagEn:'Bistró Dterra / Restaurant',title:'Värme genom design',titleEn:'Warmth through design',cat:'Hospitality'}
+    {img:'images/Bistró Dterra 01.webp',tag:'Bistró Dterra / Restaurang',tagEn:'Bistró Dterra / Restaurant',title:'Värme i varje detalj',titleEn:'Warmth in every detail',cat:'Hospitality'},
+    {img:'images/Bistró Dterra 02.webp',tag:'Bistró Dterra / Restaurang',tagEn:'Bistró Dterra / Restaurant',title:'Atmosfär och rumsupplevelse',titleEn:'Atmosphere and spatial experience',cat:'Hospitality'},
+    {img:'images/Boutique Apartment V1_01.webp',tag:'Boutique Apartment / Bostad',tagEn:'Boutique Apartment / Residential',title:'Boutique bostad, logik och känsla',titleEn:'Boutique home, logic and feel',cat:'Bostad'},
+    {img:'images/Boutique Apartment V1_02.webp',tag:'Boutique Apartment / Bostad',tagEn:'Boutique Apartment / Residential',title:'Material och ljus i samspel',titleEn:'Material and light in dialogue',cat:'Bostad'},
+    {img:'images/Boutique Apartment V1_03.webp',tag:'Boutique Apartment / Bostad',tagEn:'Boutique Apartment / Residential',title:'Rumslighet utan kompromiss',titleEn:'Space without compromise',cat:'Bostad'},
+    {img:'images/Casa Boadilla 01.webp',tag:'Casa Boadilla / Bostad',tagEn:'Casa Boadilla / Residential',title:'Bostaden som metod',titleEn:'Home as method',cat:'Bostad'},
+    {img:'images/Casa Boadilla 02.webp',tag:'Casa Boadilla / Bostad',tagEn:'Casa Boadilla / Residential',title:'Landskap och kontrollerat ljus',titleEn:'Landscape and controlled light',cat:'Bostad'},
+    {img:'images/Casa Boadilla 03.webp',tag:'Casa Boadilla / Bostad',tagEn:'Casa Boadilla / Residential',title:'Volym och precision',titleEn:'Volume and precision',cat:'Bostad'},
+    {img:'images/Compact Living Concept K12_01.webp',tag:'K12 / Investering',tagEn:'K12 / Investment',title:'Optimerad yta',titleEn:'Optimised footprint',cat:'Investering'},
+    {img:'images/Compact Living Concept K12_02.webp',tag:'K12 / Investering',tagEn:'K12 / Investment',title:'Compact living, varje kvadrat räknas',titleEn:'Compact living, every square counts',cat:'Investering'},
+    {img:'images/Distrito AXIS 01.webp',tag:'Distrito AXIS / Stadsplanering',tagEn:'Distrito AXIS / Urban',title:'Urban struktur och strategi',titleEn:'Urban structure and strategy',cat:'Stadsplanering'},
+    {img:'images/Distrito AXIS 02.webp',tag:'Distrito AXIS / Stadsplanering',tagEn:'Distrito AXIS / Urban',title:'Stadsrum och rörelse',titleEn:'Urban space and movement',cat:'Stadsplanering'},
+    {img:'images/Edificio Salamanca 01.webp',tag:'Edificio Salamanca / Stadsplanering',tagEn:'Edificio Salamanca / Urban',title:'Fasad som stadsidentitet',titleEn:'Facade as urban identity',cat:'Stadsplanering'},
+    {img:'images/Edificio Salamanca 02.webp',tag:'Edificio Salamanca / Stadsplanering',tagEn:'Edificio Salamanca / Urban',title:'Volym och kontinuitet',titleEn:'Volume and continuity',cat:'Stadsplanering'},
+    {img:'images/Granolita Coffee Brand 01.webp',tag:'Granolita / Gastronomi',tagEn:'Granolita / Hospitality',title:'Estetisk rumsupplevelse',titleEn:'Spatial aesthetic',cat:'Hospitality'},
+    {img:'images/Granolita Coffee Brand 02.webp',tag:'Granolita / Gastronomi',tagEn:'Granolita / Hospitality',title:'Varumärke och rumslig logik',titleEn:'Brand and spatial logic',cat:'Hospitality'},
+    {img:'images/Horizon House 01.webp',tag:'Horizon House / Bostad',tagEn:'Horizon House / Residence',title:'Exteriör och landskap',titleEn:'Exterior and landscape',cat:'Bostad'},
+    {img:'images/Horizon House 02.webp',tag:'Horizon House / Bostad',tagEn:'Horizon House / Residence',title:'Interiör, ljus och volym',titleEn:'Interior, light and volume',cat:'Bostad'},
+    {img:'images/Horizon House 03.webp',tag:'Horizon House / Bostad',tagEn:'Horizon House / Residence',title:'Terass och utsikt',titleEn:'Terrace and view',cat:'Bostad'},
+    {img:'images/Luxury Renovation A75_01.webp',tag:'A75 / Renovering',tagEn:'A75 / Renovation',title:'Ljus och logik',titleEn:'Light and logic',cat:'Renovering'},
+    {img:'images/Luxury Renovation A75_02.webp',tag:'A75 / Renovering',tagEn:'A75 / Renovation',title:'Strukturell klarhet',titleEn:'Structural clarity',cat:'Renovering'},
+    {img:'images/Luxury Renovation A75_03.webp',tag:'A75 / Renovering',tagEn:'A75 / Renovation',title:'Detalj och precision',titleEn:'Detail and precision',cat:'Renovering'},
+    {img:'images/Market Regeneration 01.webp',tag:'Market Regeneration / Stadsplanering',tagEn:'Market Regeneration / Urban',title:'Stadsdelsstrategi',titleEn:'District strategy',cat:'Stadsplanering'},
+    {img:'images/Market Regeneration 02.webp',tag:'Market Regeneration / Stadsplanering',tagEn:'Market Regeneration / Urban',title:'Offentligt rum och identitet',titleEn:'Public space and identity',cat:'Stadsplanering'},
+    {img:'images/Market Regeneration 03.webp',tag:'Market Regeneration / Stadsplanering',tagEn:'Market Regeneration / Urban',title:'Regeneration och långsiktigt värde',titleEn:'Regeneration and long-term value',cat:'Stadsplanering'},
+    {img:'images/Nexus museum 01.webp',tag:'Nexus Museum / Hospitality',tagEn:'Nexus Museum / Hospitality',title:'Urban kontinuitet',titleEn:'Urban continuity',cat:'Hospitality'},
+    {img:'images/Nexus museum 02.webp',tag:'Nexus Museum / Hospitality',tagEn:'Nexus Museum / Hospitality',title:'Kulturarv och ny arkitektur',titleEn:'Heritage and new architecture',cat:'Hospitality'},
+    {img:'images/Norrsken Office 01.webp',tag:'Norrsken / Arbetsplats',tagEn:'Norrsken / Workspace',title:'Nordisk precision',titleEn:'Nordic precision',cat:'Hospitality'},
+    {img:'images/Norrsken Office 02.webp',tag:'Norrsken / Arbetsplats',tagEn:'Norrsken / Workspace',title:'Flexibelt kontorslandskap',titleEn:'Flexible office landscape',cat:'Hospitality'},
+    {img:'images/Residential Rehabilitation K38_01.webp',tag:'K38 / Investering',tagEn:'K38 / Investment',title:'Investeringslogik',titleEn:'Investment logic',cat:'Investering'},
+    {img:'images/Residential Rehabilitation K38_02.webp',tag:'K38 / Investering',tagEn:'K38 / Investment',title:'Rehabilitering och värdeskapande',titleEn:'Rehabilitation and value creation',cat:'Investering'},
+    {img:'images/Residential Rehabilitation K38_03.webp',tag:'K38 / Investering',tagEn:'K38 / Investment',title:'Uterum och avkastning',titleEn:'Outdoor space and yield',cat:'Investering'},
+    {img:'images/Selva Hotel 01.webp',tag:'Selva Hotel / Hospitality',tagEn:'Selva Hotel / Hospitality',title:'Hospitality-atmosfar',titleEn:'Hospitality atmosphere',cat:'Hospitality'},
+    {img:'images/Selva Hotel 02.webp',tag:'Selva Hotel / Hospitality',tagEn:'Selva Hotel / Hospitality',title:'Lounge och sinnlighet',titleEn:'Lounge and sensory space',cat:'Hospitality'},
+    {img:'images/Senior Coliving 01.webp',tag:'Senior Coliving / Bostad',tagEn:'Senior Coliving / Residential',title:'Delat boende med kvalitet',titleEn:'Shared living with quality',cat:'Bostad'},
+    {img:'images/Senior Coliving 02.webp',tag:'Senior Coliving / Bostad',tagEn:'Senior Coliving / Residential',title:'Gemenskap och integritet',titleEn:'Community and privacy',cat:'Bostad'},
+    {img:'images/Strategic Urban Regeneration 01.webp',tag:'Strategic Urban Regeneration / Stadsplanering',tagEn:'Strategic Urban Regeneration / Urban',title:'Strategisk stadsomvandling',titleEn:'Strategic urban transformation',cat:'Stadsplanering'},
+    {img:'images/Strategic Urban Regeneration 02.webp',tag:'Strategic Urban Regeneration / Stadsplanering',tagEn:'Strategic Urban Regeneration / Urban',title:'Tathet och rörelse',titleEn:'Density and movement',cat:'Stadsplanering'},
+    {img:'images/Varvakeios Square.webp',tag:'Varvakeios Square / Stadsplanering',tagEn:'Varvakeios Square / Urban',title:'Historiskt torg, ny logik',titleEn:'Historic square, new logic',cat:'Stadsplanering'}
   ];
   var CATS=['Alla','Bostad','Renovering','Investering','Stadsplanering','Hospitality'];
   var CATS_EN=['All','Residential','Renovation','Investment','Urban','Hospitality'];
   var INITIAL=9;
+
+  (function(){for(var i=PROJECTS.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=PROJECTS[i];PROJECTS[i]=PROJECTS[j];PROJECTS[j]=t;}})();
 
   var pgFilters=document.getElementById('pg-filters');
   var pgGrid=document.getElementById('pg-grid');
   var pgMore=document.getElementById('pg-more');
   var pgMoreBtn=document.getElementById('pg-more-btn');
   var activeCat='Alla';
-  var showAll=false;
+  var shown=INITIAL;
   var filteredList=[];
 
   /* Read lang from page's existing lang system */
@@ -769,28 +792,28 @@
       btn.textContent=pgLang==='en'?CATS_EN[i]:c;
       btn.setAttribute('data-sv',c);
       btn.setAttribute('data-en',CATS_EN[i]);
-      btn.addEventListener('click',function(){activeCat=c;showAll=false;renderFilters();renderGrid();});
+      btn.addEventListener('click',function(){activeCat=c;shown=INITIAL;renderFilters();renderGrid();});
       pgFilters.appendChild(btn);
     });
   }
 
   function renderGrid(){
     filteredList=activeCat==='Alla'?PROJECTS:PROJECTS.filter(function(p){return p.cat===activeCat;});
-    var visible=showAll?filteredList:filteredList.slice(0,INITIAL);
+    var visible=filteredList.slice(0,Math.min(shown,filteredList.length));
     pgGrid.innerHTML='';
     visible.forEach(function(p,i){
       var tile=document.createElement('article');
       tile.className='pg-tile reveal';
       var tag=pgLang==='en'?p.tagEn:p.tag;
       var title=pgLang==='en'?p.titleEn:p.title;
-      tile.innerHTML='<picture><source srcset="'+p.avif+'" type="image/avif"><img src="'+p.img+'" alt="'+title+'" loading="lazy" decoding="async"></picture>'
+      tile.innerHTML='<img src="'+p.img+'" alt="'+title+'" loading="lazy" decoding="async">'
         +'<div class="pg-meta"><span>'+tag+'</span><h3>'+title+'</h3></div>';
       (function(list,idx){tile.addEventListener('click',function(){openPgLb(list,idx);});})(filteredList,i);
       pgGrid.appendChild(tile);
     });
     pgGrid.querySelectorAll('.reveal').forEach(function(el){if(typeof revealObs!=='undefined'&&revealObs)revealObs.observe(el);});
     /* Show/hide "Visa fler" */
-    if(!showAll&&filteredList.length>INITIAL){
+    if(shown<filteredList.length){
       pgMore.style.display='flex';
       pgMoreBtn.textContent=pgLang==='en'?'SHOW MORE PROJECTS':'VISA FLER PROJEKT';
     } else {
@@ -798,7 +821,7 @@
     }
   }
 
-  pgMoreBtn.addEventListener('click',function(){showAll=true;renderGrid();});
+  pgMoreBtn.addEventListener('click',function(){shown+=INITIAL;renderGrid();});
 
   /* ── Lightbox ── */
   var lbEl=document.getElementById('lb');
@@ -810,7 +833,7 @@
     var p=lbList[lbIdx];
     lbImg.src=p.img;
     lbImg.alt=pgLang==='en'?p.titleEn:p.title;
-    lbCap.textContent=(pgLang==='en'?p.tagEn:p.tag)+' — '+(pgLang==='en'?p.titleEn:p.title);
+    lbCap.textContent=(pgLang==='en'?p.tagEn:p.tag)+', '+(pgLang==='en'?p.titleEn:p.title);
     lbEl.classList.add('open');
     document.body.style.overflow='hidden';
   }
