@@ -89,7 +89,7 @@
     .feat-meta .dot{width:3px;height:3px;border-radius:50%;background:var(--accent);opacity:.5}
     .feat-meta .dim{color:var(--text2)}
     .feat-title{font-size:clamp(1.2rem,2vw,1.6rem);font-weight:300;text-transform:uppercase;letter-spacing:.06em;line-height:1.3;color:var(--text);margin:0 0 18px}
-    .feat-desc{font-size:.92rem;line-height:1.7;color:var(--text2);margin:0 0 28px}
+    .feat-desc{font-size:1rem;line-height:1.75;letter-spacing:.005em;color:var(--text2);margin:0 0 28px}
     .wb-go{font-size:.56rem;letter-spacing:.16em;text-transform:uppercase;color:var(--text);transition:color .3s}
     .filter-bar{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:20px;border-top:1px solid var(--line);padding-top:32px;margin-bottom:36px}
     .filter-btns{display:flex;flex-wrap:wrap;gap:8px}
@@ -106,7 +106,8 @@
     .card-meta{display:flex;gap:9px;align-items:center;font-size:.54rem;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:14px}
     .card-meta .dim{color:var(--text2)}
     .card-title{font-size:.98rem;font-weight:300;text-transform:uppercase;letter-spacing:.05em;line-height:1.35;color:var(--text);margin:0 0 12px}
-    .card-desc{font-size:.92rem;line-height:1.68;letter-spacing:.01em;color:var(--text2);margin:0 0 18px}
+    .card-desc{font-size:1rem;line-height:1.72;letter-spacing:.005em;color:var(--text2);margin:0 0 18px}
+    .wb-card[hidden]{display:none!important}
     .lm-wrap{display:flex;justify-content:center;padding:56px 0 0}
     .lm-btn{font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:var(--text2);background:transparent;border:1px solid var(--line);padding:14px 28px;cursor:pointer;transition:color .3s,border-color .3s}
     .lm-btn:hover{color:var(--accent);border-color:var(--accent)}
@@ -206,7 +207,7 @@
     </div>
     <div class="feat-body">
       <div class="feat-meta">
-        <span data-sv="Investering" data-en="Investment">Investering</span>
+        <span data-sv="Fastighet &amp; stadsutveckling" data-en="Property &amp; urban development">Fastighet &amp; stadsutveckling</span>
         <span class="dot"></span>
         <span class="dim">16 JUN 2026</span>
         <span class="dim">· 7 MIN</span>
@@ -220,24 +221,18 @@
   <div class="filter-bar">
     <div class="filter-btns">
       <button type="button" class="fbtn on" data-filter="Alla" data-sv="Alla" data-en="All">Alla</button>
-      <button type="button" class="fbtn" data-filter="Investering" data-sv="Investering" data-en="Investment">Investering</button>
-      <button type="button" class="fbtn" data-filter="Renovering" data-sv="Renovering" data-en="Renovation">Renovering</button>
-      <button type="button" class="fbtn" data-filter="Bostad" data-sv="Bostad" data-en="Residential">Bostad</button>
-      <button type="button" class="fbtn" data-filter="Hospitality" data-sv="Hospitality" data-en="Hospitality">Hospitality</button>
-      <button type="button" class="fbtn" data-filter="Stadsplanering" data-sv="Stadsplanering" data-en="Urban">Stadsplanering</button>
-      <button type="button" class="fbtn" data-filter="Process" data-sv="Process" data-en="Process">Process</button>
-      <button type="button" class="fbtn" data-filter="Guide" data-sv="Guide" data-en="Guide">Guide</button>
-      <button type="button" class="fbtn" data-filter="Arkitektur" data-sv="Arkitektur" data-en="Architecture">Arkitektur</button>
-      <button type="button" class="fbtn" data-filter="Hållbarhet" data-sv="Hållbarhet" data-en="Sustainability">Hållbarhet</button>
+      <button type="button" class="fbtn" data-filter="Bostad" data-sv="Bostad &amp; renovering" data-en="Residential &amp; renovation">Bostad &amp; renovering</button>
+      <button type="button" class="fbtn" data-filter="Fastighet" data-sv="Fastighet &amp; stadsutveckling" data-en="Property &amp; urban development">Fastighet &amp; stadsutveckling</button>
+      <button type="button" class="fbtn" data-filter="Kommersiellt" data-sv="Arbetsplats &amp; hospitality" data-en="Workplace &amp; hospitality">Arbetsplats &amp; hospitality</button>
     </div>
     <span class="fcount"><span id="art-count">18</span> <span data-sv="artiklar" data-en="articles">artiklar</span></span>
   </div>
 
   <div class="grid3">
-    <a href="./planlosning-och-potential/" class="wb-card" data-cat="Renovering">
+    <a href="./planlosning-och-potential/" class="wb-card" data-cat="Bostad">
       <div class="card-img"><img class="wb-img" src="../images/Luxury Renovation A75_01.webp" alt="Vad planlösningen egentligen säger, Wolfblanc Journal" loading="lazy" decoding="async"></div>
       <div class="card-body">
-        <div class="card-meta"><span data-sv="Renovering" data-en="Renovation">Renovering</span><span class="dim">· 12 MAR 2026</span></div>
+        <div class="card-meta"><span data-sv="Bostad &amp; renovering" data-en="Residential &amp; renovation">Bostad &amp; renovering</span><span class="dim">· 12 MAR 2026</span></div>
         <h3 class="card-title" data-sv="Vad planlösningen egentligen säger" data-en="What the floor plan really tells you">Vad planlösningen egentligen säger</h3>
         <p class="card-desc" data-sv="Innan väggar rivs: hur man läser ljus, flöde och dolda möjligheter i en stockholmslägenhet." data-en="Before walls come down: reading light, flow and hidden potential in a Stockholm apartment.">Innan väggar rivs: hur man läser ljus, flöde och dolda möjligheter i en stockholmslägenhet.</p>
         <span class="wb-go" data-sv="Läs vidare →" data-en="Read more →">Läs vidare →</span>
@@ -246,34 +241,34 @@
     <a href="./ljusets-roll-i-nordisk-bostad/" class="wb-card" data-cat="Bostad">
       <div class="card-img"><img class="wb-img" src="../images/Horizon House 02.webp" alt="Ljusets roll i den svenska bostaden, Wolfblanc Journal" loading="lazy" decoding="async"></div>
       <div class="card-body">
-        <div class="card-meta"><span data-sv="Bostad" data-en="Residential">Bostad</span><span class="dim">· 04 MAR 2026</span></div>
+        <div class="card-meta"><span data-sv="Bostad &amp; renovering" data-en="Residential &amp; renovation">Bostad &amp; renovering</span><span class="dim">· 04 MAR 2026</span></div>
         <h3 class="card-title" data-sv="Ljusets roll i den svenska bostaden" data-en="The role of light in the Nordic home">Ljusets roll i den svenska bostaden</h3>
         <p class="card-desc" data-sv="Att designa för långa vintrar och korta sommarnätter, orientering, fönstersättning och material." data-en="Designing for long winters and short summer nights, orientation, glazing and materials.">Att designa för långa vintrar och korta sommarnätter, orientering, fönstersättning och material.</p>
         <span class="wb-go" data-sv="Läs vidare →" data-en="Read more →">Läs vidare →</span>
       </div>
     </a>
-    <a href="./kontoret-som-vill-bli-besokt/" class="wb-card" data-cat="Hospitality">
+    <a href="./kontoret-som-vill-bli-besokt/" class="wb-card" data-cat="Kommersiellt">
       <div class="card-img"><img class="wb-img" src="../images/Norrsken Office 01.webp" alt="Kontoret som vill bli besökt, Wolfblanc Journal" loading="lazy" decoding="async"></div>
       <div class="card-body">
-        <div class="card-meta"><span data-sv="Arbetsplats" data-en="Workplace">Arbetsplats</span><span class="dim">· 22 FEB 2026</span></div>
+        <div class="card-meta"><span data-sv="Arbetsplats &amp; hospitality" data-en="Workplace &amp; hospitality">Arbetsplats &amp; hospitality</span><span class="dim">· 22 FEB 2026</span></div>
         <h3 class="card-title" data-sv="Kontoret som vill bli besökt" data-en="The office that wants to be visited">Kontoret som vill bli besökt</h3>
         <p class="card-desc" data-sv="Hybridarbete har ändrat vad en arbetsplats måste erbjuda. Atmosfär är inte längre en lyx." data-en="Hybrid work changed what a workplace must offer. Atmosphere is no longer a luxury.">Hybridarbete har ändrat vad en arbetsplats måste erbjuda. Atmosfär är inte längre en lyx.</p>
         <span class="wb-go" data-sv="Läs vidare →" data-en="Read more →">Läs vidare →</span>
       </div>
     </a>
-    <a href="./atmosfar-som-affarsstrategi/" class="wb-card" data-cat="Hospitality">
+    <a href="./atmosfar-som-affarsstrategi/" class="wb-card" data-cat="Kommersiellt">
       <div class="card-img"><img class="wb-img" src="../images/Selva Hotel 01.webp" alt="Atmosfär som affärsmodell, Wolfblanc Journal" loading="lazy" decoding="async"></div>
       <div class="card-body">
-        <div class="card-meta"><span data-sv="Hospitality" data-en="Hospitality">Hospitality</span><span class="dim">· 14 FEB 2026</span></div>
+        <div class="card-meta"><span data-sv="Arbetsplats &amp; hospitality" data-en="Workplace &amp; hospitality">Arbetsplats &amp; hospitality</span><span class="dim">· 14 FEB 2026</span></div>
         <h3 class="card-title" data-sv="Atmosfär som affärsmodell" data-en="Atmosphere as a business model">Atmosfär som affärsmodell</h3>
         <p class="card-desc" data-sv="I hotell och restaurang är rummet produkten. Hur design driver återbesök och marginal." data-en="In hospitality the room is the product. How design drives repeat visits and margin.">I hotell och restaurang är rummet produkten. Hur design driver återbesök och marginal.</p>
         <span class="wb-go" data-sv="Läs vidare →" data-en="Read more →">Läs vidare →</span>
       </div>
     </a>
-    <a href="./tathet-rorelse-och-varde/" class="wb-card" data-cat="Stadsplanering">
+    <a href="./tathet-rorelse-och-varde/" class="wb-card" data-cat="Fastighet">
       <div class="card-img"><img class="wb-img" src="../images/Strategic Urban Regeneration 01.webp" alt="Täthet, rörelse och långsiktigt värde, Wolfblanc Journal" loading="lazy" decoding="async"></div>
       <div class="card-body">
-        <div class="card-meta"><span data-sv="Stadsplanering" data-en="Urban">Stadsplanering</span><span class="dim">· 30 JAN 2026</span></div>
+        <div class="card-meta"><span data-sv="Fastighet &amp; stadsutveckling" data-en="Property &amp; urban development">Fastighet &amp; stadsutveckling</span><span class="dim">· 30 JAN 2026</span></div>
         <h3 class="card-title" data-sv="Täthet, rörelse och långsiktigt värde" data-en="Density, movement and long-term value">Täthet, rörelse och långsiktigt värde</h3>
         <p class="card-desc" data-sv="Vad som gör en stadsdel värd att bo i över tid, bortom täthetstal och exploateringsgrad." data-en="What makes a district worth living in over time, beyond density figures.">Vad som gör en stadsdel värd att bo i över tid, bortom täthetstal och exploateringsgrad.</p>
         <span class="wb-go" data-sv="Läs vidare →" data-en="Read more →">Läs vidare →</span>
@@ -282,79 +277,79 @@
     <a href="./bostaden-som-metod/" class="wb-card" data-cat="Bostad">
       <div class="card-img"><img class="wb-img" src="../images/Boutique Apartment V1_02.webp" alt="Bostaden som metod, inte stil, Wolfblanc Journal" loading="lazy" decoding="async"></div>
       <div class="card-body">
-        <div class="card-meta"><span data-sv="Bostad" data-en="Residential">Bostad</span><span class="dim">· 18 JAN 2026</span></div>
+        <div class="card-meta"><span data-sv="Bostad &amp; renovering" data-en="Residential &amp; renovation">Bostad &amp; renovering</span><span class="dim">· 18 JAN 2026</span></div>
         <h3 class="card-title" data-sv="Bostaden som metod, inte stil" data-en="The home as method, not style">Bostaden som metod, inte stil</h3>
         <p class="card-desc" data-sv="Varför vi börjar i vardagsbruk och landskap snarare än i ett estetiskt manér." data-en="Why we start from daily use and landscape rather than an aesthetic mannerism.">Varför vi börjar i vardagsbruk och landskap snarare än i ett estetiskt manér.</p>
         <span class="wb-go" data-sv="Läs vidare →" data-en="Read more →">Läs vidare →</span>
       </div>
     </a>
-    <a href="./fran-lokal-till-upplevelse/" class="wb-card" data-cat="Hospitality">
+    <a href="./fran-lokal-till-upplevelse/" class="wb-card" data-cat="Kommersiellt">
       <div class="card-img"><img class="wb-img" src="../images/Granolita Coffee Brand 01.webp" alt="Från lokal till upplevelse, Wolfblanc Journal" loading="lazy" decoding="async"></div>
       <div class="card-body">
-        <div class="card-meta"><span data-sv="Gastronomi" data-en="Hospitality">Gastronomi</span><span class="dim">· 09 JAN 2026</span></div>
+        <div class="card-meta"><span data-sv="Arbetsplats &amp; hospitality" data-en="Workplace &amp; hospitality">Arbetsplats &amp; hospitality</span><span class="dim">· 09 JAN 2026</span></div>
         <h3 class="card-title" data-sv="Från lokal till upplevelse" data-en="From premises to experience">Från lokal till upplevelse</h3>
         <p class="card-desc" data-sv="En liten butikslokal kan bära ett starkt varumärke, om ljus, material och flöde stämmer." data-en="A small retail space can carry a strong brand, if light, material and flow align.">En liten butikslokal kan bära ett starkt varumärke, om ljus, material och flöde stämmer.</p>
         <span class="wb-go" data-sv="Läs vidare →" data-en="Read more →">Läs vidare →</span>
       </div>
     </a>
-    <a href="./att-bygga-vidare-pa-minne/" class="wb-card" data-cat="Stadsplanering">
+    <a href="./att-bygga-vidare-pa-minne/" class="wb-card" data-cat="Fastighet">
       <div class="card-img"><img class="wb-img" src="../images/Nexus museum 01.webp" alt="Att bygga vidare på minne, Wolfblanc Journal" loading="lazy" decoding="async"></div>
       <div class="card-body">
-        <div class="card-meta"><span data-sv="Kulturarv" data-en="Heritage">Kulturarv</span><span class="dim">· 02 JAN 2026</span></div>
+        <div class="card-meta"><span data-sv="Fastighet &amp; stadsutveckling" data-en="Property &amp; urban development">Fastighet &amp; stadsutveckling</span><span class="dim">· 02 JAN 2026</span></div>
         <h3 class="card-title" data-sv="Att bygga vidare på minne" data-en="Building on memory">Att bygga vidare på minne</h3>
         <p class="card-desc" data-sv="Hur ny arkitektur kan föra en plats historia vidare utan att frysa den i tiden." data-en="How new architecture can carry a place's history forward without freezing it.">Hur ny arkitektur kan föra en plats historia vidare utan att frysa den i tiden.</p>
         <span class="wb-go" data-sv="Läs vidare →" data-en="Read more →">Läs vidare →</span>
       </div>
     </a>
-    <a href="./bim-fran-ide-till-nyckelfardigt/" class="wb-card" data-cat="Process">
+    <a href="./bim-fran-ide-till-nyckelfardigt/" class="wb-card" data-cat="Fastighet">
       <div class="card-img"><img class="wb-img" src="../images/Bistró Dterra 01.webp" alt="BIM: från idé till nyckelfärdigt, Wolfblanc Journal" loading="lazy" decoding="async"></div>
       <div class="card-body">
-        <div class="card-meta"><span data-sv="Process" data-en="Process">Process</span><span class="dim">· 19 DEC 2025</span></div>
+        <div class="card-meta"><span data-sv="Fastighet &amp; stadsutveckling" data-en="Property &amp; urban development">Fastighet &amp; stadsutveckling</span><span class="dim">· 19 DEC 2025</span></div>
         <h3 class="card-title" data-sv="BIM: från idé till nyckelfärdigt" data-en="BIM: from idea to turnkey">BIM: från idé till nyckelfärdigt</h3>
         <p class="card-desc" data-sv="Hur ett digitalt arbetsflöde minskar risk, sparar tid och gör beslut tydligare för alla parter." data-en="How a digital workflow reduces risk, saves time and clarifies decisions for everyone.">Hur ett digitalt arbetsflöde minskar risk, sparar tid och gör beslut tydligare för alla parter.</p>
         <span class="wb-go" data-sv="Läs vidare →" data-en="Read more →">Läs vidare →</span>
       </div>
     </a>
-    <a href="./bygglov-stockholm-guide/" class="wb-card" data-cat="Stadsplanering">
+    <a href="./bygglov-stockholm-guide/" class="wb-card" data-cat="Bostad">
       <div class="card-img"><img class="wb-img" src="../images/Edificio Salamanca 01.webp" alt="Bygglov i Stockholm 2026: guide och krav, Wolfblanc Journal" loading="lazy" decoding="async"></div>
       <div class="card-body">
-        <div class="card-meta"><span data-sv="Stadsplanering" data-en="Urban">Stadsplanering</span><span class="dim">· 24 JUN 2026</span></div>
+        <div class="card-meta"><span data-sv="Bostad &amp; renovering" data-en="Residential &amp; renovation">Bostad &amp; renovering</span><span class="dim">· 24 JUN 2026</span></div>
         <h3 class="card-title" data-sv="Bygglov i Stockholm 2026: guide och krav" data-en="Building permits Stockholm 2026: guide and requirements">Bygglov i Stockholm 2026: guide och krav</h3>
         <p class="card-desc" data-sv="Handlingar, tidsplan, avgifter och vanliga misstag, skriven av SAR/MSA-registrerade arkitekter." data-en="Documents, timeline, fees and common mistakes, written by SAR/MSA-registered architects.">Handlingar, tidsplan, avgifter och vanliga misstag, skriven av SAR/MSA-registrerade arkitekter.</p>
         <span class="wb-go" data-sv="Läs vidare →" data-en="Read more →">Läs vidare →</span>
       </div>
     </a>
-    <a href="./renovera-villa-stockholm/" class="wb-card" data-cat="Renovering">
+    <a href="./renovera-villa-stockholm/" class="wb-card" data-cat="Bostad">
       <div class="card-img"><img class="wb-img" src="../images/Horizon House 01.webp" alt="Renovera villa i Stockholm: planering och budget, Wolfblanc Journal" loading="lazy" decoding="async"></div>
       <div class="card-body">
-        <div class="card-meta"><span data-sv="Renovering" data-en="Renovation">Renovering</span><span class="dim">· 24 JUN 2026</span></div>
+        <div class="card-meta"><span data-sv="Bostad &amp; renovering" data-en="Residential &amp; renovation">Bostad &amp; renovering</span><span class="dim">· 24 JUN 2026</span></div>
         <h3 class="card-title" data-sv="Renovera villa i Stockholm: planering och budget" data-en="Renovate a villa in Stockholm: planning and budget">Renovera villa i Stockholm: planering och budget</h3>
         <p class="card-desc" data-sv="Etapper, budget, ROT-avdrag och val av arkitekt för din villarenovering i Stockholmsregionen." data-en="Phases, budget, ROT deduction and choosing an architect for your villa renovation.">Etapper, budget, ROT-avdrag och val av arkitekt för din villarenovering i Stockholmsregionen.</p>
         <span class="wb-go" data-sv="Läs vidare →" data-en="Read more →">Läs vidare →</span>
       </div>
     </a>
-    <a href="./tillbyggnad-stockholm-guide/" class="wb-card" data-cat="Guide">
+    <a href="./tillbyggnad-stockholm-guide/" class="wb-card" data-cat="Bostad">
       <div class="card-img"><img class="wb-img" src="../images/Luxury Renovation A75_01.webp" alt="Tillbyggnad i Stockholm: regler, process och kostnad, Wolfblanc Journal" loading="lazy" decoding="async"></div>
       <div class="card-body">
-        <div class="card-meta"><span data-sv="Guide" data-en="Guide">Guide</span><span class="dim">· 24 JUN 2026</span></div>
+        <div class="card-meta"><span data-sv="Bostad &amp; renovering" data-en="Residential &amp; renovation">Bostad &amp; renovering</span><span class="dim">· 24 JUN 2026</span></div>
         <h3 class="card-title" data-sv="Tillbyggnad i Stockholm: regler, process och kostnad" data-en="House extension in Stockholm: rules, process and cost">Tillbyggnad i Stockholm: regler, process och kostnad</h3>
         <p class="card-desc" data-sv="Attefallsåtgärder, bygglovspliktiga tillbyggnader, kostnad per kvm och vanliga misstag." data-en="Attefall measures, permit-required extensions, cost per sqm and common mistakes.">Attefallsåtgärder, bygglovspliktiga tillbyggnader, kostnad per kvm och vanliga misstag.</p>
         <span class="wb-go" data-sv="Läs vidare →" data-en="Read more →">Läs vidare →</span>
       </div>
     </a>
-    <a href="./kostnad-arkitekt-stockholm/" class="wb-card" data-cat="Arkitektur">
+    <a href="./kostnad-arkitekt-stockholm/" class="wb-card" data-cat="Bostad">
       <div class="card-img"><img class="wb-img" src="../images/Boutique Apartment V1_01.webp" alt="Vad kostar en arkitekt i Stockholm 2026?, Wolfblanc Journal" loading="lazy" decoding="async"></div>
       <div class="card-body">
-        <div class="card-meta"><span data-sv="Arkitektur" data-en="Architecture">Arkitektur</span><span class="dim">· 24 JUN 2026</span></div>
+        <div class="card-meta"><span data-sv="Bostad &amp; renovering" data-en="Residential &amp; renovation">Bostad &amp; renovering</span><span class="dim">· 24 JUN 2026</span></div>
         <h3 class="card-title" data-sv="Vad kostar en arkitekt i Stockholm 2026?" data-en="What does an architect in Stockholm cost in 2026?">Vad kostar en arkitekt i Stockholm 2026?</h3>
         <p class="card-desc" data-sv="Timpris, fast arvode och procent av byggkostnad. Vad som ingår och hur du förhandlar rätt." data-en="Hourly rate, fixed fee and percentage of construction cost. What is included and how to negotiate.">Timpris, fast arvode och procent av byggkostnad. Vad som ingår och hur du förhandlar rätt.</p>
         <span class="wb-go" data-sv="Läs vidare →" data-en="Read more →">Läs vidare →</span>
       </div>
     </a>
-    <a href="./arkitektritat-kok-badrum-stockholm/" class="wb-card" data-cat="Arkitektur">
+    <a href="./arkitektritat-kok-badrum-stockholm/" class="wb-card" data-cat="Bostad">
       <div class="card-img"><img class="wb-img" src="../images/Luxury Renovation A75_03.webp" alt="Arkitektritat kök och badrum i Stockholm, Wolfblanc Journal" loading="lazy" decoding="async"></div>
       <div class="card-body">
-        <div class="card-meta"><span data-sv="Arkitektur" data-en="Architecture">Arkitektur</span><span class="dim">· 24 JUN 2026</span></div>
+        <div class="card-meta"><span data-sv="Bostad &amp; renovering" data-en="Residential &amp; renovation">Bostad &amp; renovering</span><span class="dim">· 24 JUN 2026</span></div>
         <h3 class="card-title" data-sv="Arkitektritat kök och badrum i Stockholm" data-en="Architect-designed kitchen and bathroom in Stockholm">Arkitektritat kök och badrum i Stockholm</h3>
         <p class="card-desc" data-sv="Vad en arkitekt gör som köksleverantören inte gör, och vad det kostar jämfört med paketlösningar." data-en="What an architect does that the kitchen supplier does not, and what it costs versus package solutions.">Vad en arkitekt gör som köksleverantören inte gör, och vad det kostar jämfört med paketlösningar.</p>
         <span class="wb-go" data-sv="Läs vidare →" data-en="Read more →">Läs vidare →</span>
@@ -363,16 +358,16 @@
     <a href="./fritidshus-skargard-stockholm/" class="wb-card" data-cat="Bostad">
       <div class="card-img"><img class="wb-img" src="../images/Selva Hotel 01.webp" alt="Fritidshus i Stockholms skärgård: arkitektur och regler, Wolfblanc Journal" loading="lazy" decoding="async"></div>
       <div class="card-body">
-        <div class="card-meta"><span data-sv="Bostad" data-en="Residential">Bostad</span><span class="dim">· 24 JUN 2026</span></div>
+        <div class="card-meta"><span data-sv="Bostad &amp; renovering" data-en="Residential &amp; renovation">Bostad &amp; renovering</span><span class="dim">· 24 JUN 2026</span></div>
         <h3 class="card-title" data-sv="Fritidshus i Stockholms skärgård: arkitektur och regler" data-en="Vacation house in Stockholm archipelago: architecture and rules">Fritidshus i Stockholms skärgård: arkitektur och regler</h3>
         <p class="card-desc" data-sv="Strandskydd, klimatanpassad konstruktion och hur arkitekten hjälper dig genom regelverket." data-en="Shore protection, climate-adapted construction and how the architect guides you through the rules.">Strandskydd, klimatanpassad konstruktion och hur arkitekten hjälper dig genom regelverket.</p>
         <span class="wb-go" data-sv="Läs vidare →" data-en="Read more →">Läs vidare →</span>
       </div>
     </a>
-    <a href="./hallbar-arkitektur-stockholm/" class="wb-card" data-cat="Hållbarhet">
+    <a href="./hallbar-arkitektur-stockholm/" class="wb-card" data-cat="Fastighet">
       <div class="card-img"><img class="wb-img" src="../images/Market Regeneration 01.webp" alt="Hållbar arkitektur i Stockholm: material och metod, Wolfblanc Journal" loading="lazy" decoding="async"></div>
       <div class="card-body">
-        <div class="card-meta"><span data-sv="Hållbarhet" data-en="Sustainability">Hållbarhet</span><span class="dim">· 24 JUN 2026</span></div>
+        <div class="card-meta"><span data-sv="Fastighet &amp; stadsutveckling" data-en="Property &amp; urban development">Fastighet &amp; stadsutveckling</span><span class="dim">· 24 JUN 2026</span></div>
         <h3 class="card-title" data-sv="Hållbar arkitektur i Stockholm: material och metod" data-en="Sustainable architecture in Stockholm: materials and method">Hållbar arkitektur i Stockholm: material och metod</h3>
         <p class="card-desc" data-sv="Passivhusteknik, cirkulära material, WELL och Miljöbyggnad, förklarat av WELL AP-certifierade arkitekter." data-en="Passive house, circular materials, WELL and Miljöbyggnad explained by WELL AP-certified architects.">Passivhusteknik, cirkulära material, WELL och Miljöbyggnad, förklarat av WELL AP-certifierade arkitekter.</p>
         <span class="wb-go" data-sv="Läs vidare →" data-en="Read more →">Läs vidare →</span>
@@ -381,7 +376,7 @@
     <a href="./sekelskifte-planlosning-stockholm/" class="wb-card" data-cat="Bostad">
       <div class="card-img"><img class="wb-img" src="../images/Residential Rehabilitation K38_01.webp" alt="Sekelskifteslägenhet i Stockholm: planering och potential, Wolfblanc Journal" loading="lazy" decoding="async"></div>
       <div class="card-body">
-        <div class="card-meta"><span data-sv="Bostad" data-en="Residential">Bostad</span><span class="dim">· 24 JUN 2026</span></div>
+        <div class="card-meta"><span data-sv="Bostad &amp; renovering" data-en="Residential &amp; renovation">Bostad &amp; renovering</span><span class="dim">· 24 JUN 2026</span></div>
         <h3 class="card-title" data-sv="Sekelskifteslägenhet i Stockholm: planering och potential" data-en="Century-turn apartment in Stockholm: planning and potential">Sekelskifteslägenhet i Stockholm: planering och potential</h3>
         <p class="card-desc" data-sv="Hur du moderniserar utan att tappa karaktären: planlösning, originaldetaljer och antikvariska krav." data-en="How to modernise without losing character: floor plan, original details and heritage requirements.">Hur du moderniserar utan att tappa karaktären: planlösning, originaldetaljer och antikvariska krav.</p>
         <span class="wb-go" data-sv="Läs vidare →" data-en="Read more →">Läs vidare →</span>
@@ -390,7 +385,7 @@
     <a href="./inredning-liten-lagenhet-stockholm/" class="wb-card" data-cat="Bostad">
       <div class="card-img"><img class="wb-img" src="../images/Compact Living Concept K12_01.webp" alt="Inredning av liten lägenhet i Stockholm: maximera ytan, Wolfblanc Journal" loading="lazy" decoding="async"></div>
       <div class="card-body">
-        <div class="card-meta"><span data-sv="Bostad" data-en="Residential">Bostad</span><span class="dim">· 24 JUN 2026</span></div>
+        <div class="card-meta"><span data-sv="Bostad &amp; renovering" data-en="Residential &amp; renovation">Bostad &amp; renovering</span><span class="dim">· 24 JUN 2026</span></div>
         <h3 class="card-title" data-sv="Inredning av liten lägenhet i Stockholm: maximera ytan" data-en="Interior design for a small apartment in Stockholm: maximise the space">Inredning av liten lägenhet i Stockholm: maximera ytan</h3>
         <p class="card-desc" data-sv="Planlösning, ljus och förvaring som gör 35 kvm till en bostad som upplevs dubbelt så stor." data-en="Floor plan, light and storage that makes 35 sqm feel twice as large.">Planlösning, ljus och förvaring som gör 35 kvm till en bostad som upplevs dubbelt så stor.</p>
         <span class="wb-go" data-sv="Läs vidare →" data-en="Read more →">Läs vidare →</span>
@@ -478,18 +473,28 @@
 
   var cards=Array.from(document.querySelectorAll('[data-cat]'));
   var countEl=document.getElementById('art-count');
+  var loadMore=document.querySelector('.lm-btn');
+  var activeFilter='Alla';
+  var visibleLimit=9;
+
+  function renderArticles(){
+    var eligible=cards.filter(function(card){return activeFilter==='Alla'||card.getAttribute('data-cat')===activeFilter;});
+    cards.forEach(function(card){card.hidden=true;});
+    eligible.slice(0,visibleLimit).forEach(function(card){card.hidden=false;});
+    if(countEl)countEl.textContent=String(eligible.length).padStart(2,'0');
+    if(loadMore)loadMore.parentElement.style.display=visibleLimit<eligible.length?'flex':'none';
+  }
+
   document.querySelectorAll('[data-filter]').forEach(function(btn){
     btn.addEventListener('click',function(){
-      var f=btn.getAttribute('data-filter'),n=0;
-      cards.forEach(function(c){
-        var show=f==='Alla'||c.getAttribute('data-cat')===f;
-        c.style.display=show?'':'none';
-        if(show)n++;
-      });
-      if(countEl)countEl.textContent=String(n).padStart(2,'0');
+      activeFilter=btn.getAttribute('data-filter');
+      visibleLimit=9;
       document.querySelectorAll('[data-filter]').forEach(function(b){b.classList.toggle('on',b===btn);});
+      renderArticles();
     });
   });
+  if(loadMore)loadMore.addEventListener('click',function(){visibleLimit+=9;renderArticles();});
+  renderArticles();
 })();
 </script>
 <button id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg></button>

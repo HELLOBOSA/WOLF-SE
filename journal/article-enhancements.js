@@ -67,26 +67,6 @@
     ]
   };
 
-  var guide=additions[slug],articleBody=document.querySelector('.wb-body');
-  if(guide && articleBody){
-    var section=document.createElement('section');
-    var heading=document.createElement('h2');
-    heading.className='section-h';
-    heading.setAttribute('data-sv',guide[0]);
-    heading.setAttribute('data-en',guide[1]);
-    heading.textContent=activeLang==='en'?guide[1]:guide[0];
-    section.appendChild(heading);
-    for(var guideIndex=2;guideIndex<guide.length;guideIndex+=2){
-      var pair=[guide[guideIndex],guide[guideIndex+1]];
-      var paragraph=document.createElement('p');
-      paragraph.setAttribute('data-sv',pair[0]);
-      paragraph.setAttribute('data-en',pair[1]);
-      paragraph.textContent=activeLang==='en'?pair[1]:pair[0];
-      section.appendChild(paragraph);
-    }
-    articleBody.appendChild(section);
-  }
-
   var depth={
     'arkitektritat-kok-badrum-stockholm':[
       'Beslut som måste tas före byggstart','Decisions to make before construction',
@@ -186,24 +166,6 @@
   };
 
   var more=depth[slug];
-  if(more && articleBody){
-    var depthSection=document.createElement('section');
-    var depthHeading=document.createElement('h2');
-    depthHeading.className='section-h';
-    depthHeading.setAttribute('data-sv',more[0]);
-    depthHeading.setAttribute('data-en',more[1]);
-    depthHeading.textContent=activeLang==='en'?more[1]:more[0];
-    depthSection.appendChild(depthHeading);
-    [[more[2],more[3]],[more[4],more[5]]].forEach(function(pair){
-      var depthParagraph=document.createElement('p');
-      depthParagraph.setAttribute('data-sv',pair[0]);
-      depthParagraph.setAttribute('data-en',pair[1]);
-      depthParagraph.textContent=activeLang==='en'?pair[1]:pair[0];
-      depthSection.appendChild(depthParagraph);
-    });
-    articleBody.appendChild(depthSection);
-  }
-
   var faqData=null;
   document.querySelectorAll('script[type="application/ld+json"]').forEach(function(node){
     try{

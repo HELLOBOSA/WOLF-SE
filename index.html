@@ -231,7 +231,7 @@
     @media(max-width:768px){.studio-grid{grid-template-columns:1fr;gap:40px}}
     .studio-text{margin-left:8%}
     @media(max-width:768px){.studio-text{margin-left:0}}
-    .studio-text p{color:var(--text-secondary);font-size:1rem;line-height:1.78;margin-bottom:32px}
+    .studio-text p{color:var(--text-secondary);font-size:1.06rem;line-height:1.8;letter-spacing:.005em;margin-bottom:32px}
     .pills{display:flex;flex-wrap:wrap;gap:8px}
     .pill{
       border:1px solid rgba(90,104,120,.5);border-radius:2px;padding:6px 12px;
@@ -256,7 +256,7 @@
     .gc:hover{background:var(--glass-bg)}
     .cl{width:20px;height:1px;background:var(--accent);margin-bottom:24px}
     .ct{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;font-weight:400;margin-bottom:16px}
-    .cd{font-size:.94rem;color:var(--text-secondary);line-height:1.72;letter-spacing:.01em}
+    .cd{font-size:1rem;color:var(--text-secondary);line-height:1.76;letter-spacing:.005em}
     .card-link{display:inline-block;margin-top:18px;font-size:.58rem;letter-spacing:.16em;text-transform:uppercase;color:var(--text-primary)}
     .card-link:hover{color:var(--accent)}
     a.gc{display:block}
@@ -274,7 +274,7 @@
     }
     .pb:hover .pn{opacity:.1}
     .pl{font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;font-weight:400;margin-bottom:12px;position:relative;z-index:1}
-    .pd{font-size:.94rem;line-height:1.7;color:var(--text-secondary);position:relative;z-index:1}
+    .pd{font-size:1rem;line-height:1.74;color:var(--text-secondary);position:relative;z-index:1}
 
     /* CTA */
     .cta{
@@ -337,7 +337,7 @@
     .map iframe{width:100%;height:100%;border:0}
     .sp{margin-top:80px;padding-top:64px;border-top:1px solid var(--line)}
     .sp h3{font-size:1.5rem;font-weight:300;margin-bottom:32px}
-    .sp p{font-size:.75rem;color:var(--text-secondary);margin-top:24px}
+    .sp p{font-size:.9rem;line-height:1.7;color:var(--text-secondary);margin-top:24px}
     .sp p a{text-decoration:underline}
     .sp p a:hover{color:var(--accent)}
     .prefer-international{margin-top:32px;font-size:.65rem;letter-spacing:.16em;text-transform:uppercase;color:var(--text-secondary)}
@@ -800,14 +800,14 @@
   var PROJECTS=[
     {img:'images/Bistró Dterra 01.webp',tag:'Bistró Dterra / Restaurang',tagEn:'Bistró Dterra / Restaurant',title:'Värme i varje detalj',titleEn:'Warmth in every detail',cat:'Hospitality'},
     {img:'images/Bistró Dterra 02.webp',tag:'Bistró Dterra / Restaurang',tagEn:'Bistró Dterra / Restaurant',title:'Atmosfär och rumsupplevelse',titleEn:'Atmosphere and spatial experience',cat:'Hospitality'},
-    {img:'images/Boutique Apartment V1_01.webp',tag:'V1 / Bostad & investering',tagEn:'V1 / Residential & investment',title:'Boutique bostad, logik och känsla',titleEn:'Boutique home, logic and feel',cat:'Bostad',cats:['Bostad','Renovering','Investering']},
-    {img:'images/Boutique Apartment V1_02.webp',tag:'V1 / Bostad & renovering',tagEn:'V1 / Residential & renovation',title:'Material och ljus i samspel',titleEn:'Material and light in dialogue',cat:'Bostad',cats:['Bostad','Renovering','Investering']},
-    {img:'images/Boutique Apartment V1_03.webp',tag:'V1 / Bostad & investering',tagEn:'V1 / Residential & investment',title:'Rumslighet utan kompromiss',titleEn:'Space without compromise',cat:'Bostad',cats:['Bostad','Renovering','Investering']},
+    {img:'images/Boutique Apartment V1_01.webp',tag:'V1 / Bostad · Renovering · Investering',tagEn:'V1 / Residential · Renovation · Investment',title:'Boutique bostad, logik och känsla',titleEn:'Boutique home, logic and feel',cat:'Bostad',cats:['Bostad','Renovering','Investering']},
+    {img:'images/Boutique Apartment V1_02.webp',tag:'V1 / Bostad · Renovering · Investering',tagEn:'V1 / Residential · Renovation · Investment',title:'Material och ljus i samspel',titleEn:'Material and light in dialogue',cat:'Bostad',cats:['Bostad','Renovering','Investering']},
+    {img:'images/Boutique Apartment V1_03.webp',tag:'V1 / Bostad · Renovering · Investering',tagEn:'V1 / Residential · Renovation · Investment',title:'Rumslighet utan kompromiss',titleEn:'Space without compromise',cat:'Bostad',cats:['Bostad','Renovering','Investering']},
     {img:'images/Casa Boadilla 01.webp',tag:'Casa Boadilla / Bostad',tagEn:'Casa Boadilla / Residential',title:'Bostaden som metod',titleEn:'Home as method',cat:'Bostad'},
     {img:'images/Casa Boadilla 02.webp',tag:'Casa Boadilla / Bostad',tagEn:'Casa Boadilla / Residential',title:'Landskap och kontrollerat ljus',titleEn:'Landscape and controlled light',cat:'Bostad'},
     {img:'images/Casa Boadilla 03.webp',tag:'Casa Boadilla / Bostad',tagEn:'Casa Boadilla / Residential',title:'Volym och precision',titleEn:'Volume and precision',cat:'Bostad'},
-    {img:'images/Compact Living Concept K12_01.webp',tag:'K12 / Bostad & investering',tagEn:'K12 / Residential & investment',title:'Optimerad yta',titleEn:'Optimised footprint',cat:'Investering',cats:['Bostad','Renovering','Investering']},
-    {img:'images/Compact Living Concept K12_02.webp',tag:'K12 / Bostad & investering',tagEn:'K12 / Residential & investment',title:'Compact living, varje kvadrat räknas',titleEn:'Compact living, every square counts',cat:'Investering',cats:['Bostad','Renovering','Investering']},
+    {img:'images/Compact Living Concept K12_01.webp',tag:'K12 / Bostad · Renovering · Investering',tagEn:'K12 / Residential · Renovation · Investment',title:'Optimerad yta',titleEn:'Optimised footprint',cat:'Investering',cats:['Bostad','Renovering','Investering']},
+    {img:'images/Compact Living Concept K12_02.webp',tag:'K12 / Bostad · Renovering · Investering',tagEn:'K12 / Residential · Renovation · Investment',title:'Compact living, varje kvadrat räknas',titleEn:'Compact living, every square counts',cat:'Investering',cats:['Bostad','Renovering','Investering']},
     {img:'images/Distrito AXIS 01.webp',tag:'Distrito AXIS / Stad & arbetsplats',tagEn:'Distrito AXIS / Urban & workplace',title:'Urban struktur och strategi',titleEn:'Urban structure and strategy',cat:'Stadsplanering',cats:['Stadsplanering','Arbetsplats','Kultur']},
     {img:'images/Distrito AXIS 02.webp',tag:'Distrito AXIS / Stad & kultur',tagEn:'Distrito AXIS / Urban & culture',title:'Stadsrum och rörelse',titleEn:'Urban space and movement',cat:'Stadsplanering',cats:['Stadsplanering','Arbetsplats','Kultur']},
     {img:'images/Edificio Salamanca 01.webp',tag:'Edificio Salamanca / Bostadsutveckling',tagEn:'Edificio Salamanca / Residential development',title:'Fasad som stadsidentitet',titleEn:'Facade as urban identity',cat:'Bostad',cats:['Bostad','Investering']},
@@ -817,9 +817,9 @@
     {img:'images/Horizon House 01.webp',tag:'Horizon House / Bostad',tagEn:'Horizon House / Residence',title:'Exteriör och landskap',titleEn:'Exterior and landscape',cat:'Bostad'},
     {img:'images/Horizon House 02.webp',tag:'Horizon House / Bostad',tagEn:'Horizon House / Residence',title:'Interiör, ljus och volym',titleEn:'Interior, light and volume',cat:'Bostad'},
     {img:'images/Horizon House 03.webp',tag:'Horizon House / Bostad',tagEn:'Horizon House / Residence',title:'Terass och utsikt',titleEn:'Terrace and view',cat:'Bostad'},
-    {img:'images/Luxury Renovation A75_01.webp',tag:'A75 / Bostad & renovering',tagEn:'A75 / Residential & renovation',title:'Ljus och logik',titleEn:'Light and logic',cat:'Renovering',cats:['Bostad','Renovering','Investering']},
-    {img:'images/Luxury Renovation A75_02.webp',tag:'A75 / Bostad & investering',tagEn:'A75 / Residential & investment',title:'Strukturell klarhet',titleEn:'Structural clarity',cat:'Renovering',cats:['Bostad','Renovering','Investering']},
-    {img:'images/Luxury Renovation A75_03.webp',tag:'A75 / Bostad & renovering',tagEn:'A75 / Residential & renovation',title:'Detalj och precision',titleEn:'Detail and precision',cat:'Renovering',cats:['Bostad','Renovering','Investering']},
+    {img:'images/Luxury Renovation A75_01.webp',tag:'A75 / Bostad · Renovering · Investering',tagEn:'A75 / Residential · Renovation · Investment',title:'Ljus och logik',titleEn:'Light and logic',cat:'Renovering',cats:['Bostad','Renovering','Investering']},
+    {img:'images/Luxury Renovation A75_02.webp',tag:'A75 / Bostad · Renovering · Investering',tagEn:'A75 / Residential · Renovation · Investment',title:'Strukturell klarhet',titleEn:'Structural clarity',cat:'Renovering',cats:['Bostad','Renovering','Investering']},
+    {img:'images/Luxury Renovation A75_03.webp',tag:'A75 / Bostad · Renovering · Investering',tagEn:'A75 / Residential · Renovation · Investment',title:'Detalj och precision',titleEn:'Detail and precision',cat:'Renovering',cats:['Bostad','Renovering','Investering']},
     {img:'images/Market Regeneration 01.webp',tag:'Market Regeneration / Stadsplanering',tagEn:'Market Regeneration / Urban',title:'Stadsdelsstrategi',titleEn:'District strategy',cat:'Stadsplanering'},
     {img:'images/Market Regeneration 02.webp',tag:'Market Regeneration / Stadsplanering',tagEn:'Market Regeneration / Urban',title:'Offentligt rum och identitet',titleEn:'Public space and identity',cat:'Stadsplanering'},
     {img:'images/Market Regeneration 03.webp',tag:'Market Regeneration / Stadsplanering',tagEn:'Market Regeneration / Urban',title:'Regeneration och långsiktigt värde',titleEn:'Regeneration and long-term value',cat:'Stadsplanering'},
@@ -827,9 +827,9 @@
     {img:'images/Nexus museum 02.webp',tag:'Nexus Museum / Kulturarv',tagEn:'Nexus Museum / Heritage',title:'Kulturarv och ny arkitektur',titleEn:'Heritage and new architecture',cat:'Kultur',cats:['Kultur','Stadsplanering']},
     {img:'images/Norrsken Office 01.webp',tag:'Norrsken / Arbetsplats',tagEn:'Norrsken / Workplace',title:'Nordisk precision',titleEn:'Nordic precision',cat:'Arbetsplats'},
     {img:'images/Norrsken Office 02.webp',tag:'Norrsken / Arbetsplats',tagEn:'Norrsken / Workplace',title:'Flexibelt kontorslandskap',titleEn:'Flexible office landscape',cat:'Arbetsplats'},
-    {img:'images/Residential Rehabilitation K38_01.webp',tag:'K38 / Bostad & investering',tagEn:'K38 / Residential & investment',title:'Investeringslogik',titleEn:'Investment logic',cat:'Investering',cats:['Bostad','Renovering','Investering']},
-    {img:'images/Residential Rehabilitation K38_02.webp',tag:'K38 / Bostad & renovering',tagEn:'K38 / Residential & renovation',title:'Rehabilitering och värdeskapande',titleEn:'Rehabilitation and value creation',cat:'Investering',cats:['Bostad','Renovering','Investering']},
-    {img:'images/Residential Rehabilitation K38_03.webp',tag:'K38 / Bostad & investering',tagEn:'K38 / Residential & investment',title:'Uterum och avkastning',titleEn:'Outdoor space and yield',cat:'Investering',cats:['Bostad','Renovering','Investering']},
+    {img:'images/Residential Rehabilitation K38_01.webp',tag:'K38 / Bostad · Renovering · Investering',tagEn:'K38 / Residential · Renovation · Investment',title:'Investeringslogik',titleEn:'Investment logic',cat:'Investering',cats:['Bostad','Renovering','Investering']},
+    {img:'images/Residential Rehabilitation K38_02.webp',tag:'K38 / Bostad · Renovering · Investering',tagEn:'K38 / Residential · Renovation · Investment',title:'Rehabilitering och värdeskapande',titleEn:'Rehabilitation and value creation',cat:'Investering',cats:['Bostad','Renovering','Investering']},
+    {img:'images/Residential Rehabilitation K38_03.webp',tag:'K38 / Bostad · Renovering · Investering',tagEn:'K38 / Residential · Renovation · Investment',title:'Uterum och avkastning',titleEn:'Outdoor space and yield',cat:'Investering',cats:['Bostad','Renovering','Investering']},
     {img:'images/Selva Hotel 01.webp',tag:'Selva Hotel / Hospitality',tagEn:'Selva Hotel / Hospitality',title:'Hospitality-atmosfar',titleEn:'Hospitality atmosphere',cat:'Hospitality'},
     {img:'images/Selva Hotel 02.webp',tag:'Selva Hotel / Hospitality',tagEn:'Selva Hotel / Hospitality',title:'Lounge och sinnlighet',titleEn:'Lounge and sensory space',cat:'Hospitality'},
     {img:'images/Senior Coliving 01.webp',tag:'Senior Coliving / Bostad',tagEn:'Senior Coliving / Residential',title:'Delat boende med kvalitet',titleEn:'Shared living with quality',cat:'Bostad'},
@@ -842,11 +842,29 @@
   var CATS_EN=['All','Residential','Renovation','Investment','Urban','Culture','Workplace','Hospitality'];
   var INITIAL=9;
 
-  var strategicOrder=['Boutique Apartment','Horizon House','Residential Rehabilitation','Luxury Renovation','Compact Living','Casa Boadilla','Granolita','Bistró Dterra','Selva Hotel','Norrsken Office','Distrito AXIS','Nexus museum','Edificio Salamanca','Strategic Urban Regeneration','Market Regeneration','Senior Coliving','Varvakeios'];
-  PROJECTS.sort(function(a,b){
-    function rank(item){for(var i=0;i<strategicOrder.length;i++){if(item.img.indexOf(strategicOrder[i])>-1)return i;}return strategicOrder.length;}
-    return rank(a)-rank(b);
-  });
+  /* Vary each visit while distributing images from the same project. */
+  (function(){
+    function shuffle(list){
+      for(var i=list.length-1;i>0;i--){
+        var j=Math.floor(Math.random()*(i+1));
+        var item=list[i];list[i]=list[j];list[j]=item;
+      }
+      return list;
+    }
+    var grouped={};
+    PROJECTS.forEach(function(project){
+      var key=project.img.replace(/^.*\//,'').replace(/(?:_| )\d{2}\.webp$/i,'').replace(/\.webp$/i,'');
+      (grouped[key]||(grouped[key]=[])).push(project);
+    });
+    var groups=shuffle(Object.keys(grouped).map(function(key){return shuffle(grouped[key]);}));
+    var distributed=[];
+    while(groups.length){
+      shuffle(groups);
+      groups.forEach(function(group){if(group.length)distributed.push(group.shift());});
+      groups=groups.filter(function(group){return group.length;});
+    }
+    PROJECTS=distributed;
+  })();
 
   var pgFilters=document.getElementById('pg-filters');
   var pgGrid=document.getElementById('pg-grid');
