@@ -85,6 +85,16 @@ Vi kommunicerar pa svenska, engelska, spanska och grekiska.
 - https://wolfblanc.se/journal/hallbar-arkitektur-stockholm/
 - https://wolfblanc.se/journal/sekelskifte-planlosning-stockholm/
 - https://wolfblanc.se/journal/inredning-liten-lagenhet-stockholm/
+- https://wolfblanc.se/journal/planlosning-och-potential/
+- https://wolfblanc.se/journal/ljusets-roll-i-nordisk-bostad/
+- https://wolfblanc.se/journal/kontoret-som-vill-bli-besokt/
+- https://wolfblanc.se/journal/atmosfar-som-affarsstrategi/
+- https://wolfblanc.se/journal/tathet-rorelse-och-varde/
+- https://wolfblanc.se/journal/bostaden-som-metod/
+- https://wolfblanc.se/journal/fran-lokal-till-upplevelse/
+- https://wolfblanc.se/journal/att-bygga-vidare-pa-minne/
+- https://wolfblanc.se/journal/att-lasa-en-fastighet-innan-du-binder-kapital/
+- https://wolfblanc.se/journal/bim-fran-ide-till-nyckelfardigt/
 
 ## Kontakt
 
@@ -169,6 +179,28 @@ Stockholm, Gothenburg, Malmo, Uppsala, Ostermalm, Djursholm, Lidingo, Nacka, Dan
 ## Languages
 
 We communicate in Swedish, English, Spanish, and Greek.
+
+## Journal
+
+- https://wolfblanc.se/journal/bygglov-stockholm-guide/
+- https://wolfblanc.se/journal/renovera-villa-stockholm/
+- https://wolfblanc.se/journal/tillbyggnad-stockholm-guide/
+- https://wolfblanc.se/journal/kostnad-arkitekt-stockholm/
+- https://wolfblanc.se/journal/arkitektritat-kok-badrum-stockholm/
+- https://wolfblanc.se/journal/fritidshus-skargard-stockholm/
+- https://wolfblanc.se/journal/hallbar-arkitektur-stockholm/
+- https://wolfblanc.se/journal/sekelskifte-planlosning-stockholm/
+- https://wolfblanc.se/journal/inredning-liten-lagenhet-stockholm/
+- https://wolfblanc.se/journal/planlosning-och-potential/
+- https://wolfblanc.se/journal/ljusets-roll-i-nordisk-bostad/
+- https://wolfblanc.se/journal/kontoret-som-vill-bli-besokt/
+- https://wolfblanc.se/journal/atmosfar-som-affarsstrategi/
+- https://wolfblanc.se/journal/tathet-rorelse-och-varde/
+- https://wolfblanc.se/journal/bostaden-som-metod/
+- https://wolfblanc.se/journal/fran-lokal-till-upplevelse/
+- https://wolfblanc.se/journal/att-bygga-vidare-pa-minne/
+- https://wolfblanc.se/journal/att-lasa-en-fastighet-innan-du-binder-kapital/
+- https://wolfblanc.se/journal/bim-fran-ide-till-nyckelfardigt/
 
 ## Contact
 
