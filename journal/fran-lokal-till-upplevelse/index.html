@@ -171,7 +171,7 @@
     .foot-links a:hover{color:var(--accent)}
     #btt{position:fixed;bottom:32px;right:32px;width:40px;height:40px;border:1px solid var(--accent);color:var(--accent);display:flex;align-items:center;justify-content:center;z-index:1000;background:transparent;cursor:pointer;opacity:0;visibility:hidden;transition:all .3s}
     #btt.visible{opacity:1;visibility:visible}
-    #btt:hover{background:var(--accent);color:var(--bg)}
+    #btt:hover{background:var(--accent);color:var(--bg)}@media(max-width:768px){#btt{right:24px}}
     @media(max-width:860px){
       .nb{padding:0 1.25rem}
       .nb-links{display:none}
