@@ -335,9 +335,9 @@
 
   var lang=localStorage.getItem('wb-se-lang')||'sv';
   function applyLang(){
-    document.querySelectorAll('[data-sv][data-en]').forEach(function(el){
+    document.querySelectorAll('[data-sv],[data-en]').forEach(function(el){
       var t=el.getAttribute('data-'+lang);
-      if(t!==null)el.textContent=t;
+      if(t!==null)el.innerHTML=t;
     });
     document.querySelectorAll('[data-lang-switch]').forEach(function(b){
       b.classList.toggle('active',b.getAttribute('data-lang-switch')===lang);
