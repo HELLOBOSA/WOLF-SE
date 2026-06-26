@@ -74,6 +74,18 @@ Stockholm, Goteborg, Malmo, Uppsala, Ostermalm, Djursholm, Lidingo, Nacka, Dande
 
 Vi kommunicerar pa svenska, engelska, spanska och grekiska.
 
+## Tjänster
+
+- https://wolfblanc.se/tjanster/teknisk-due-diligence/
+- https://wolfblanc.se/tjanster/arkitektur-landskap/
+- https://wolfblanc.se/tjanster/totalrenovering-stockholm/
+- https://wolfblanc.se/tjanster/bostadsinteriorer/
+- https://wolfblanc.se/tjanster/kommersiell-strategi/
+- https://wolfblanc.se/tjanster/stadsplanering/
+- https://wolfblanc.se/tjanster/bim-konsultation/
+- https://wolfblanc.se/tjanster/valbefinnande/
+- https://wolfblanc.se/tjanster/arkitektur-visualisering/
+
 ## Journal
 
 - https://wolfblanc.se/journal/bygglov-stockholm-guide/
@@ -179,6 +191,18 @@ Stockholm, Gothenburg, Malmo, Uppsala, Ostermalm, Djursholm, Lidingo, Nacka, Dan
 ## Languages
 
 We communicate in Swedish, English, Spanish, and Greek.
+
+## Services
+
+- https://wolfblanc.se/tjanster/teknisk-due-diligence/
+- https://wolfblanc.se/tjanster/arkitektur-landskap/
+- https://wolfblanc.se/tjanster/totalrenovering-stockholm/
+- https://wolfblanc.se/tjanster/bostadsinteriorer/
+- https://wolfblanc.se/tjanster/kommersiell-strategi/
+- https://wolfblanc.se/tjanster/stadsplanering/
+- https://wolfblanc.se/tjanster/bim-konsultation/
+- https://wolfblanc.se/tjanster/valbefinnande/
+- https://wolfblanc.se/tjanster/arkitektur-visualisering/
 
 ## Journal
 
