@@ -96,13 +96,15 @@
     .mob-menu a{display:block;font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--text);padding:16px 1.25rem;border-bottom:1px solid var(--line);transition:color .3s}
     .mob-menu a:last-child{border-bottom:0}
     .mob-menu a:hover{color:var(--accent)}
-    .art-header{max-width:900px;margin:0 auto;padding:48px 32px 40px}
+    header.hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line);min-height:58vh;display:flex;align-items:center}
+    .hero-grid{--line:rgba(90,104,120,.22);position:absolute;inset:0;background-image:repeating-linear-gradient(0deg,var(--line) 0,transparent 1px,transparent 80px),repeating-linear-gradient(90deg,var(--line) 0,transparent 1px,transparent 80px);background-size:80px 80px;animation:wbDrift 20s linear infinite;pointer-events:none;will-change:background-position}
+    .hero-inner{position:relative;max-width:1000px;width:100%;margin:0 auto;padding:118px 32px 72px}
     .back-link{display:inline-block;font-size:.58rem;letter-spacing:.18em;text-transform:uppercase;color:var(--text2);margin-bottom:32px}
     .back-link:hover{color:var(--accent)}
-    .eyebrow{display:block;font-size:.6rem;letter-spacing:.3em;text-transform:uppercase;color:var(--text2);margin-bottom:18px}
+    .eyebrow{display:block;font-size:.6rem;letter-spacing:.3em;text-transform:uppercase;color:var(--text2);margin-bottom:20px}
     h1{font-size:clamp(1.8rem,4.4vw,3rem);font-weight:200;text-transform:uppercase;letter-spacing:.05em;line-height:1.18;margin:0 0 24px;max-width:20ch}
-    .art-lead{font-size:1.1rem;line-height:1.65;color:var(--text2);margin:0 0 8px;max-width:60ch}
-    .hero-img{max-width:1000px;margin:0 auto 56px;padding:24px 32px 0}
+    .lead{font-size:1.1rem;line-height:1.7;color:var(--text2);max-width:60ch}
+    .hero-img{max-width:1000px;margin:0 auto 56px;padding:56px 32px 0}
     .hero-img-wrap{position:relative;aspect-ratio:16/9;overflow:hidden;border:1px solid var(--line)}
     .hero-img-wrap img{width:100%;height:100%;object-fit:cover;filter:saturate(.95) contrast(1.02)}
     .img-caption{font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;color:var(--text2);margin:12px 0 0}
@@ -157,13 +159,15 @@
       .nb{padding:0 1.25rem}
       .nb-links{display:none}
       .burger{display:flex}
-      .art-header,.hero-img,.wb-body,.cta-inner{padding-left:24px;padding-right:24px}
+      .hero-inner,.hero-img,.wb-body,.cta-inner{padding-left:24px;padding-right:24px}
+      .hero-inner{padding-top:96px;padding-bottom:56px}
       .aud-grid,.cred-list{grid-template-columns:1fr}
       footer{flex-direction:column;gap:18px;padding:1.5rem 1.25rem}
       footer>span:nth-child(2),footer>span:nth-child(3){text-align:center}
     }
-    @media(max-width:640px){.art-lead{font-size:1.04rem}.wb-body{font-size:1.02rem;line-height:1.86}.svc-table td:first-child{width:auto}}
-    @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+    @media(max-width:640px){.lead{font-size:1.04rem}.wb-body{font-size:1.02rem;line-height:1.86}.svc-table td:first-child{width:auto}}
+    @keyframes wbDrift{from{background-position:0 0}to{background-position:80px 80px}}
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.hero-grid{animation:none;will-change:auto}}
     .cookie-banner{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);z-index:1200;width:max-content;max-width:calc(100vw - 32px);display:flex;align-items:center;justify-content:center;gap:14px;padding:8px 10px 8px 16px;border:1px solid var(--glass-border,var(--line,rgba(90,104,120,.18)));background:rgba(90,104,120,.18);backdrop-filter:blur(16px);border-radius:999px;color:var(--text-primary,var(--text,#09090b));box-shadow:0 18px 45px rgba(9,9,11,.08)}
     html.dark .cookie-banner,html.wb-dark .cookie-banner,body.wb-dark .cookie-banner{background:rgba(155,168,184,.16);box-shadow:0 18px 45px rgba(0,0,0,.28)}
     .cookie-banner[hidden]{display:none}
@@ -219,11 +223,14 @@
 </nav>
 
 <main>
-  <header class="art-header">
-    <a href="../" class="back-link" data-sv="&larr; Hem" data-en="&larr; Home">&larr; Hem</a>
-    <span class="eyebrow" data-sv="ARKITEKTKONTOR · SVERIGE" data-en="ARCHITECTURE STUDIO · SWEDEN">ARKITEKTKONTOR · SVERIGE</span>
-    <h1 data-sv="Arkitektkontor i Sverige" data-en="Architecture studio in Sweden">Arkitektkontor i Sverige</h1>
-    <p class="art-lead" data-sv="Wolfblanc är ett arkitektur- och designkontor med bas i Stockholm. Vi hjälper bostadsägare, fritidshusägare, investerare och företag med ett komplett arbetssätt och en trygg leverans, byggd på erfarenhet från stora byggprojekt." data-en="Wolfblanc is an architecture and design studio based in Stockholm. We support homeowners, second-home owners, investors and businesses with a complete way of working and a dependable delivery, built on experience from large construction projects.">Wolfblanc är ett arkitektur- och designkontor med bas i Stockholm. Vi hjälper bostadsägare, fritidshusägare, investerare och företag med ett komplett arbetssätt och en trygg leverans, byggd på erfarenhet från stora byggprojekt.</p>
+  <header class="hero">
+    <div class="hero-grid"></div>
+    <div class="hero-inner">
+      <a href="../" class="back-link" data-sv="&larr; Hem" data-en="&larr; Home">&larr; Hem</a>
+      <span class="eyebrow" data-sv="ARKITEKTKONTOR · SVERIGE" data-en="ARCHITECTURE STUDIO · SWEDEN">ARKITEKTKONTOR · SVERIGE</span>
+      <h1 data-sv="Arkitektkontor i Sverige" data-en="Architecture studio in Sweden">Arkitektkontor i Sverige</h1>
+      <p class="lead" data-sv="Wolfblanc är ett arkitektur- och designkontor med bas i Stockholm. Vi hjälper bostadsägare, fritidshusägare, investerare och företag med ett komplett arbetssätt och en trygg leverans, byggd på erfarenhet från stora byggprojekt." data-en="Wolfblanc is an architecture and design studio based in Stockholm. We support homeowners, second-home owners, investors and businesses with a complete way of working and a dependable delivery, built on experience from large construction projects.">Wolfblanc är ett arkitektur- och designkontor med bas i Stockholm. Vi hjälper bostadsägare, fritidshusägare, investerare och företag med ett komplett arbetssätt och en trygg leverans, byggd på erfarenhet från stora byggprojekt.</p>
+    </div>
   </header>
 
   <div class="hero-img">

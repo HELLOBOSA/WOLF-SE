@@ -13,6 +13,18 @@
     <priority>0.3</priority>
   </url>
   <url>
+    <loc>https://wolfblanc.se/arkitektkontor-sverige/</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://wolfblanc.se/vanliga-fragor/</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://wolfblanc.se/journal/</loc>
     <lastmod>2026-06-24</lastmod>
     <changefreq>weekly</changefreq>

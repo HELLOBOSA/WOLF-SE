@@ -8,9 +8,14 @@
 - Sprak: svenska (standard), engelska
 - Typ: Arkitekturstudio
 
+## Centrala sidor
+
+- Arkitektkontor i Sverige: https://wolfblanc.se/arkitektkontor-sverige/
+- Vanliga fragor: https://wolfblanc.se/vanliga-fragor/
+
 ## Kontor
 
-### Stockholm (Huvudkontor)
+### Stockholm
 - Adress: Kungsgatan 9, 111 43 Stockholm, Sverige
 - Telefon: +46 73 656 64 89
 - E-post: info@wolfblanc.com
@@ -20,10 +25,8 @@
 
 - SAR/MSA registrerad (Sveriges Arkitekter)
 - WELL AP-certifierad (design for halsa och valbefinnande)
-- COAM N.25160 (Spanien)
-- TEE N.168011 (Grekland)
+- Erfarenhet fran stora byggprojekt och ledande byggbolag
 - KTH (Kungliga Tekniska Hogskolan)
-- ETSAM (Madrid)
 - 20+ ars samlad erfarenhet
 
 ## Tjanster
@@ -61,7 +64,7 @@
 
 ## Geografisk tackning
 
-Stockholm, Goteborg, Malmo, Uppsala, Ostermalm, Djursholm, Lidingo, Nacka, Danderyd. Aven internationella projekt i Marbella, Spanien.
+Stockholm, Goteborg, Malmo, Uppsala, Ostermalm, Djursholm, Lidingo, Nacka och Danderyd.
 
 ## Process
 
@@ -126,9 +129,14 @@ Vi kommunicerar pa svenska, engelska, spanska och grekiska.
 - Languages: Swedish (default), English
 - Type: Architecture studio
 
+## Core pages
+
+- Architecture studio in Sweden: https://wolfblanc.se/arkitektkontor-sverige/
+- Frequently asked questions: https://wolfblanc.se/vanliga-fragor/
+
 ## Office
 
-### Stockholm (Headquarters)
+### Stockholm
 - Address: Kungsgatan 9, 111 43 Stockholm, Sweden
 - Phone: +46 73 656 64 89
 - Email: info@wolfblanc.com
@@ -138,10 +146,8 @@ Vi kommunicerar pa svenska, engelska, spanska och grekiska.
 
 - SAR/MSA registered (Swedish Association of Architects)
 - WELL AP certified (design for human health and well-being)
-- COAM N.25160 (Spain)
-- TEE N.168011 (Greece)
+- Experience from large construction projects and leading construction companies
 - KTH (Royal Institute of Technology, Stockholm)
-- ETSAM (Madrid School of Architecture)
 - 20+ years of combined experience
 
 ## Services
@@ -179,7 +185,7 @@ Vi kommunicerar pa svenska, engelska, spanska och grekiska.
 
 ## Geographic coverage
 
-Stockholm, Gothenburg, Malmo, Uppsala, Ostermalm, Djursholm, Lidingo, Nacka, Danderyd. Also international projects in Marbella, Spain.
+Stockholm, Gothenburg, Malmo, Uppsala, Ostermalm, Djursholm, Lidingo, Nacka and Danderyd.
 
 ## Process
 
