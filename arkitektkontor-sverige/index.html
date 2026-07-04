@@ -164,7 +164,7 @@
       .hero-inner{padding-top:96px;padding-bottom:56px}
       .aud-grid,.cred-list{grid-template-columns:1fr}
       footer{flex-direction:column;gap:18px;padding:1.5rem 1.25rem}
-      footer>span:nth-child(2),footer>span:nth-child(3){text-align:center}
+      footer>span{text-align:center}
     }
     @media(max-width:640px){.lead{font-size:1.04rem}.wb-body{font-size:1.02rem;line-height:1.86}.svc-table td:first-child{width:auto}}
     @keyframes wbDrift{from{background-position:0 0}to{background-position:80px 80px}}
@@ -184,7 +184,8 @@
     @media(max-width:520px){.cookie-banner{bottom:16px;max-width:calc(100vw - 20px);padding:8px 9px 8px 12px;gap:7px}.cookie-copy{gap:7px}.cookie-title,.cookie-btn{font-size:.5rem;letter-spacing:.12em}.cookie-link{font-size:.46rem;letter-spacing:.12em}.cookie-actions{gap:6px}.cookie-btn{padding:6px 7px}.cookie-btn.accept{padding:6px 9px}}
     @media(max-width:380px){.cookie-banner{flex-wrap:wrap;border-radius:18px;padding:9px 10px;row-gap:8px}.cookie-copy,.cookie-actions{justify-content:center}}
   html{overflow-y:scroll}
-  </style>
+  @media(max-width:640px){.svc-table,.svc-table tbody,.svc-table tr,.svc-table td{display:block;width:auto}.svc-table thead{position:absolute;left:-9999px}.svc-table tr{padding:16px 0;border-bottom:1px solid var(--line)}.svc-table tr:last-child{border-bottom:0}.svc-table td{padding:0;border-bottom:0}.svc-table td:first-child{width:auto;margin:0 0 6px}}
+</style>
 </head>
 <body>
 
