@@ -11,6 +11,7 @@
 ## Centrala sidor
 
 - Arkitektkontor i Sverige: https://wolfblanc.se/arkitektkontor-sverige/
+- Arkitekttjanster i Sverige: https://wolfblanc.se/tjanster/
 - Vanliga fragor: https://wolfblanc.se/vanliga-fragor/
 
 ## Kontor
@@ -133,6 +134,7 @@ Vi kommunicerar pa svenska, engelska, spanska och grekiska.
 ## Core pages
 
 - Architecture studio in Sweden: https://wolfblanc.se/arkitektkontor-sverige/
+- Architecture services in Sweden: https://wolfblanc.se/tjanster/
 - Frequently asked questions: https://wolfblanc.se/vanliga-fragor/
 
 ## Office
