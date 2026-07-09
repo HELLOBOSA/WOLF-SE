@@ -32,9 +32,15 @@
   </url>
   <url>
     <loc>https://wolfblanc.se/journal/</loc>
-    <lastmod>2026-06-24</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wolfblanc.se/journal/rummet-som-varumarke/</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://wolfblanc.se/journal/att-lasa-en-fastighet-innan-du-binder-kapital/</loc>
