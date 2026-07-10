@@ -1,18 +1,18 @@
 # Wolfblanc Architects - Sverige
 
-> Wolfblanc ar ett arkitektur- och designkontor med kontor i Stockholm. Vi ritar bostader, renoveringar, investeringsfastigheter och hospitality-projekt med internationell erfarenhet och nordisk precision. SAR/MSA registrerad. WELL AP-certifierad.
+> Wolfblanc är ett arkitektur- och designkontor med kontor i Stockholm. Vi ritar bostäder, renoveringar, investeringsfastigheter och hospitality-projekt med internationell erfarenhet och nordisk precision. SAR/MSA-registrerad. WELL AP-certifierad.
 
 ## Webbplats
 
 - URL: https://wolfblanc.se
-- Sprak: svenska (standard), engelska
+- Språk: svenska (standard), engelska
 - Typ: Arkitekturstudio
 
 ## Centrala sidor
 
 - Arkitektkontor i Sverige: https://wolfblanc.se/arkitektkontor-sverige/
-- Arkitekttjanster i Sverige: https://wolfblanc.se/tjanster/
-- Vanliga fragor: https://wolfblanc.se/vanliga-fragor/
+- Arkitekttjänster i Sverige: https://wolfblanc.se/tjanster/
+- Vanliga frågor: https://wolfblanc.se/vanliga-fragor/
 
 ## Kontor
 
@@ -20,63 +20,68 @@
 - Adress: Kungsgatan 9, 111 43 Stockholm, Sverige
 - Telefon: +46 73 656 64 89
 - E-post: info@wolfblanc.com
-- Oppettider: mandag-fredag 09:00-18:00
+- Öppettider: måndag-fredag 09:00-18:00
 
 ## Meriter
 
-- SAR/MSA registrerad (Sveriges Arkitekter)
-- WELL AP-certifierad (design for halsa och valbefinnande)
-- Erfarenhet fran stora byggprojekt och ledande byggbolag
-- KTH (Kungliga Tekniska Hogskolan)
-- 20+ ars samlad erfarenhet
+- COAM N.25160 (Spanien) - Arkitektsamfundet i Madrid
+- TEE-TCG N.168011 (Grekland) - Greklands tekniska kammare
+- SAR/MSA (Sverige) - Sveriges Arkitekter
+- Ledning: VD och registrerad arkitekt (COAM N.25160)
+- WELL AP-certifierad (design för hälsa och välbefinnande)
+- Utbildning: ETSAM (Madrid), KTH (Stockholm), NTUA (Aten)
+- 20+ års samlad erfarenhet
 
-## Tjanster
+## Tjänster
 
-1. Teknisk due diligence fore forvary - Vi hjalper kopare, investerare och family offices att forsta en fastighet innan de binder kapital.
-2. Arkitektur & landskap - Byggnader och miljoer som ett integrerat system, fran koncept till fardigstallande.
-3. Projektledning / nybyggnad / totalrenovering - Stark samordning, tydlig kommunikation och integrerade BIM-floden.
-4. Bostadsinteriorer - Inomhusmiljoer anpassade till vardagligt bruk med omsorg om ljus, material och atmosfar.
-5. Kommersiell strategi & interior - Hogpresterande miljoer for varumarken och investerare. Arbetsplatser, hospitality, showrooms och retail.
-6. Stadsplanering & masterplanning - Platser, stadsdelar och offentliga miljoer med tydlig rumslig strategi.
+1. Teknisk due diligence före förvärv - Vi hjälper köpare, investerare och family offices att förstå en fastighet innan de binder kapital.
+2. Arkitektur & landskap - Byggnader och miljöer som ett integrerat system, från koncept till färdigställande.
+3. Projektledning / nybyggnad / totalrenovering - Stark samordning, tydlig kommunikation och integrerade BIM-flöden.
+4. Bostadsinteriörer - Inomhusmiljöer anpassade till vardagligt bruk med omsorg om ljus, material och atmosfär.
+5. Kommersiell strategi & interiör - Högpresterande miljöer för varumärken och investerare. Arbetsplatser, hospitality, showrooms och retail.
+6. Stadsplanering & masterplanning - Platser, stadsdelar och offentliga miljöer med tydlig rumslig strategi.
 7. BIM-konsultation - Digital precision i varje fas. Samordning, riskreducering och smartare beslut.
-8. Valbefinnandekonsultation - WELL AP-konsulter som mater och optimerar luft, ljus, akustik och komfort.
-9. Arkitektonisk visualisering - Visuellt material for beslut, tillstand, forsaljning och investerarkommunikation.
+8. Välbefinnandekonsultation - WELL AP-konsulter som mäter och optimerar luft, ljus, akustik och komfort.
+9. Arkitektonisk visualisering - Visuellt material för beslut, tillstånd, försäljning och investerarkommunikation.
 
-## Specialiserade tjanster
+## Specialiserade tjänster
 
-- For investerare: Strategisk arkitektur for hogpresterande fastigheter. Matbart ROI.
-- For bostadsagare: Bostadsdesign och renovering med tydlig process.
-- Fritidshus: Fritidsbostader utformade med hansyn till landskap, material och hallbarhet.
+- För investerare och family offices: Strategisk arkitektur för högpresterande fastigheter, med teknisk due diligence och mätbar ROI.
+- För bostadsägare: Bostadsdesign och renovering med tydlig process.
+- Villor och fritidshus: Utformade med hänsyn till landskap, material och hållbarhet.
+- Hospitality och restaurang: Koncept, tillstånd och byggledning i en integrerad tjänst.
+- Retail och kommersiella varumärken: Varumärkesrum, flagship stores och kontor som översätter identitet till arkitektur.
+- Exploatörer och fonder: Omvandling av byggnader, ändrad användning och coliving, från analys till överlämning.
 
 ## Utvalda projekt
 
 - Horizon - Privat kustboende. Landskap, skugga och vardagsbruk som ett system.
-- K38 - Investeringslogik for lagenhet.
+- K38 - Investeringslogik för lägenhet.
 - Plato's Academy - Stadsdelsstrategi och urban studie.
-- A75 - Renovering med ljus och logik for aterforsaljning.
+- A75 - Renovering med ljus och logik för återförsäljning.
 - Norrsken - Nordisk precision i arbetsplatsdesign.
-- Selva - Hospitality-atmosfar.
+- Selva - Hospitality-atmosfär.
 - Boadilla - Bostaden som metod.
 - Nexus - Urban kontinuitet och kulturarv.
 - Granolita - Estetisk rumsupplevelse inom gastronomi.
-- Bistro Dterra - Varme genom restaurangdesign.
+- Bistro Dterra - Värme genom restaurangdesign.
 - K12 - Korttidsuthyrning.
-- Boutique Apt. V1 - Investeringslagenhet.
+- Boutique Apt. V1 - Investeringslägenhet.
 
-## Geografisk tackning
+## Geografisk täckning
 
-Stockholm, Goteborg, Malmo, Uppsala, Ostermalm, Djursholm, Lidingo, Nacka och Danderyd.
+Stockholm, Göteborg, Malmö, Uppsala, Östermalm, Djursholm, Lidingö, Nacka och Danderyd.
 
 ## Process
 
-1. Vi lyssnar - Forstar projektet, behoven, budgeten och mojligheterna.
+1. Vi lyssnar - Förstår projektet, behoven, budgeten och möjligheterna.
 2. Vi ritar - Utvecklar och visualiserar det arkitektoniska konceptet.
 3. Vi planerar i detalj - Tar fram ritningar, detaljer och byggnadsbeslut.
-4. Vi levererar - Foljer projektet till fardigstallande.
+4. Vi levererar - Följer projektet till färdigställande.
 
-## Sprak
+## Språk
 
-Vi kommunicerar pa svenska, engelska, spanska och grekiska.
+Vi kommunicerar på svenska, engelska, spanska och grekiska.
 
 ## Tjänster
 
@@ -150,10 +155,12 @@ Vi kommunicerar pa svenska, engelska, spanska och grekiska.
 
 ## Credentials
 
-- SAR/MSA registered (Swedish Association of Architects)
+- COAM N.25160 (Spain) - Official College of Architects of Madrid
+- TEE-TCG N.168011 (Greece) - Technical Chamber of Greece
+- SAR/MSA (Sweden) - Swedish Association of Architects
+- Leadership: CEO and registered architect (COAM N.25160)
 - WELL AP certified (design for human health and well-being)
-- Experience from large construction projects and leading construction companies
-- KTH (Royal Institute of Technology, Stockholm)
+- Education: ETSAM (Madrid), KTH (Stockholm), NTUA (Athens)
 - 20+ years of combined experience
 
 ## Services
@@ -170,9 +177,12 @@ Vi kommunicerar pa svenska, engelska, spanska och grekiska.
 
 ## Specialized services
 
-- For investors: Strategic architecture for high-performing real estate. Measurable ROI.
+- For investors and family offices: Strategic architecture for high-performing real estate, with technical due diligence and measurable ROI.
 - For homeowners: Residential design and renovation with a clear process.
-- Vacation homes: Designed around landscape, materials, and durability.
+- Villas and vacation homes: Designed around landscape, materials, and durability.
+- Hospitality and restaurants: Concept, licences, and site supervision as one integrated service.
+- Retail and commercial brands: Branded spaces, flagship stores and offices that translate identity into architecture.
+- Developers and funds: Building conversion, change of use and co-living, from analysis to handover.
 
 ## Selected projects
 
