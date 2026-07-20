@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://wolfblanc.se/</loc>
-    <lastmod>2026-06-24</lastmod>
+    <lastmod>2026-07-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -14,19 +14,19 @@
   </url>
   <url>
     <loc>https://wolfblanc.se/arkitektkontor-sverige/</loc>
-    <lastmod>2026-07-02</lastmod>
+    <lastmod>2026-07-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://wolfblanc.se/tjanster/</loc>
-    <lastmod>2026-07-04</lastmod>
+    <lastmod>2026-07-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://wolfblanc.se/vanliga-fragor/</loc>
-    <lastmod>2026-07-02</lastmod>
+    <lastmod>2026-07-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -175,56 +175,62 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://wolfblanc.se/tjanster/teknisk-due-diligence/</loc>
-    <lastmod>2026-06-26</lastmod>
+    <loc>https://wolfblanc.se/tjanster/arkitektur/</loc>
+    <lastmod>2026-07-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://wolfblanc.se/tjanster/arkitektur-landskap/</loc>
-    <lastmod>2026-06-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://wolfblanc.se/tjanster/totalrenovering-stockholm/</loc>
-    <lastmod>2026-06-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://wolfblanc.se/tjanster/bostadsinteriorer/</loc>
-    <lastmod>2026-06-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://wolfblanc.se/tjanster/kommersiell-strategi/</loc>
-    <lastmod>2026-06-26</lastmod>
+    <loc>https://wolfblanc.se/tjanster/landskapsarkitektur/</loc>
+    <lastmod>2026-07-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://wolfblanc.se/tjanster/stadsplanering/</loc>
-    <lastmod>2026-06-26</lastmod>
+    <lastmod>2026-07-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://wolfblanc.se/tjanster/bim-konsultation/</loc>
-    <lastmod>2026-06-26</lastmod>
+    <loc>https://wolfblanc.se/tjanster/bostadsinteriorer/</loc>
+    <lastmod>2026-07-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://wolfblanc.se/tjanster/valbefinnande/</loc>
-    <lastmod>2026-06-26</lastmod>
+    <loc>https://wolfblanc.se/tjanster/kommersiell-strategi/</loc>
+    <lastmod>2026-07-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://wolfblanc.se/tjanster/arkitektur-visualisering/</loc>
-    <lastmod>2026-06-26</lastmod>
+    <lastmod>2026-07-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wolfblanc.se/tjanster/teknisk-due-diligence/</loc>
+    <lastmod>2026-07-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wolfblanc.se/tjanster/bim-konsultation/</loc>
+    <lastmod>2026-07-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wolfblanc.se/tjanster/valbefinnande/</loc>
+    <lastmod>2026-07-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wolfblanc.se/tjanster/totalrenovering-stockholm/</loc>
+    <lastmod>2026-07-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

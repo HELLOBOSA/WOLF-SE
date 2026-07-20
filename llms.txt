@@ -1,6 +1,6 @@
 # Wolfblanc Architects - Sverige
 
-> Wolfblanc är ett arkitektur- och designkontor med kontor i Stockholm. Vi ritar bostäder, renoveringar, investeringsfastigheter och hospitality-projekt med internationell erfarenhet och nordisk precision. SAR/MSA-registrerad. WELL AP-certifierad.
+> Wolfblanc är ett arkitektur-, landskaps- och designkontor med kontor i Stockholm. Vi arbetar över tre rumsliga skalor: byggnad, landskap och stad, med internationell erfarenhet och nordisk precision. SAR/MSA-registrerad. WELL AP-certifierad.
 
 ## Webbplats
 
@@ -34,18 +34,19 @@
 
 ## Tjänster
 
-1. Teknisk due diligence före förvärv - Vi hjälper köpare, investerare och family offices att förstå en fastighet innan de binder kapital.
-2. Arkitektur & landskap - Byggnader och miljöer som ett integrerat system, från koncept till färdigställande.
-3. Projektledning / nybyggnad / totalrenovering - Stark samordning, tydlig kommunikation och integrerade BIM-flöden.
-4. Bostadsinteriörer - Inomhusmiljöer anpassade till vardagligt bruk med omsorg om ljus, material och atmosfär.
-5. Kommersiell strategi & interiör - Högpresterande miljöer för varumärken och investerare. Arbetsplatser, hospitality, showrooms och retail.
-6. Stadsplanering & masterplanning - Platser, stadsdelar och offentliga miljöer med tydlig rumslig strategi.
-7. BIM-konsultation - Digital precision i varje fas. Samordning, riskreducering och smartare beslut.
-8. Välbefinnandekonsultation - WELL AP-konsulter som mäter och optimerar luft, ljus, akustik och komfort.
-9. Arkitektonisk visualisering - Visuellt material för beslut, tillstånd, försäljning och investerarkommunikation.
+1. Arkitektur - Nybyggnad, ombyggnad och transformation från platsanalys och koncept till bygglov, projektering och färdig byggnad.
+2. Landskapsarkitektur - Tomter, trädgårdar och offentliga miljöer där topografi, vegetation, dagvatten och vardagsliv samverkar.
+3. Stadsplanering & masterplanning - Platser, stadsdelar och offentliga miljöer med tydlig rumslig strategi.
+4. Bostadsinteriörer - Inomhusmiljöer anpassade till vardagsbruk med omsorg om ljus, material och atmosfär.
+5. Kommersiella interiörer & hospitality - Högpresterande miljöer för varumärken och investerare: arbetsplatser, hospitality, showrooms och retail.
+6. Arkitektonisk visualisering - Visuellt material för beslut, tillstånd, försäljning och investerarkommunikation.
+7. Teknisk due diligence - Vi hjälper köpare och investerare att förstå en fastighet innan de binder kapital.
+8. BIM-konsultation - Digital precision i varje fas: samordning, riskreducering och smartare beslut.
+9. Välbefinnandekonsultation - WELL AP-konsulter som mäter och optimerar luft, ljus, akustik och komfort.
 
 ## Specialiserade tjänster
 
+- Projektledning och totalrenovering: specialiserad tjänst inom Arkitektur, från program och upphandling till byggskede och överlämning.
 - För investerare och family offices: Strategisk arkitektur för högpresterande fastigheter, med teknisk due diligence och mätbar ROI.
 - För bostadsägare: Bostadsdesign och renovering med tydlig process.
 - Villor och fritidshus: Utformade med hänsyn till landskap, material och hållbarhet.
@@ -85,15 +86,16 @@ Vi kommunicerar på svenska, engelska, spanska och grekiska.
 
 ## Tjänster
 
-- https://wolfblanc.se/tjanster/teknisk-due-diligence/
-- https://wolfblanc.se/tjanster/arkitektur-landskap/
-- https://wolfblanc.se/tjanster/totalrenovering-stockholm/
+- https://wolfblanc.se/tjanster/arkitektur/
+- https://wolfblanc.se/tjanster/landskapsarkitektur/
+- https://wolfblanc.se/tjanster/stadsplanering/
 - https://wolfblanc.se/tjanster/bostadsinteriorer/
 - https://wolfblanc.se/tjanster/kommersiell-strategi/
-- https://wolfblanc.se/tjanster/stadsplanering/
+- https://wolfblanc.se/tjanster/arkitektur-visualisering/
+- https://wolfblanc.se/tjanster/teknisk-due-diligence/
 - https://wolfblanc.se/tjanster/bim-konsultation/
 - https://wolfblanc.se/tjanster/valbefinnande/
-- https://wolfblanc.se/tjanster/arkitektur-visualisering/
+- Specialiserad arkitekturtjänst: https://wolfblanc.se/tjanster/totalrenovering-stockholm/
 
 ## Journal
 
@@ -165,18 +167,19 @@ Vi kommunicerar på svenska, engelska, spanska och grekiska.
 
 ## Services
 
-1. Pre-acquisition technical due diligence - We help buyers, investors, and family offices understand a property before committing capital.
-2. Architecture & landscape - Buildings and environments as one integrated system, from concept to completion.
-3. Project management / new build / total renovation - Strong coordination, clear communication, and integrated BIM workflows.
-4. Residential interiors - Interior environments tailored to daily use, with attention to light, material, and atmosphere.
-5. Commercial strategy & interiors - High-performance environments for brands and investors. Workspaces, hospitality, showrooms and retail.
-6. Urban design & masterplanning - Sites, districts, and public environments with clear spatial strategy.
-7. BIM consultancy - Digital precision at every stage. Coordination, risk reduction, and smarter decisions.
-8. Well-being consultancy - WELL AP consultants who measure and optimize air, light, acoustics, and comfort.
-9. Architectural visualization - Visual material for decisions, permits, sales, and investor communication.
+1. Architecture - New buildings, adaptations and transformations from site analysis and concept through permits, technical design and completion.
+2. Landscape Architecture - Sites, gardens and public environments where topography, planting, stormwater and everyday life work together.
+3. Urban Design & Masterplanning - Sites, districts and public environments with a clear spatial strategy.
+4. Residential Interiors - Interior environments tailored to everyday use, with attention to light, material and atmosphere.
+5. Commercial & Hospitality Interiors - High-performing environments for brands and investors: workplaces, hospitality, showrooms and retail.
+6. Architectural Visualisation - Visual material for decisions, permits, sales and investor communication.
+7. Technical Due Diligence - We help buyers and investors understand a property before committing capital.
+8. BIM Consultancy - Digital precision at every stage: coordination, risk reduction and smarter decisions.
+9. Well-being Consultancy - WELL AP consultants who measure and optimise air, light, acoustics and comfort.
 
 ## Specialized services
 
+- Project management and total renovation: a specialist service within Architecture, from brief and procurement through construction and handover.
 - For investors and family offices: Strategic architecture for high-performing real estate, with technical due diligence and measurable ROI.
 - For homeowners: Residential design and renovation with a clear process.
 - Villas and vacation homes: Designed around landscape, materials, and durability.
@@ -216,15 +219,16 @@ We communicate in Swedish, English, Spanish, and Greek.
 
 ## Services
 
-- https://wolfblanc.se/tjanster/teknisk-due-diligence/
-- https://wolfblanc.se/tjanster/arkitektur-landskap/
-- https://wolfblanc.se/tjanster/totalrenovering-stockholm/
+- https://wolfblanc.se/tjanster/arkitektur/
+- https://wolfblanc.se/tjanster/landskapsarkitektur/
+- https://wolfblanc.se/tjanster/stadsplanering/
 - https://wolfblanc.se/tjanster/bostadsinteriorer/
 - https://wolfblanc.se/tjanster/kommersiell-strategi/
-- https://wolfblanc.se/tjanster/stadsplanering/
+- https://wolfblanc.se/tjanster/arkitektur-visualisering/
+- https://wolfblanc.se/tjanster/teknisk-due-diligence/
 - https://wolfblanc.se/tjanster/bim-konsultation/
 - https://wolfblanc.se/tjanster/valbefinnande/
-- https://wolfblanc.se/tjanster/arkitektur-visualisering/
+- Specialist architecture service: https://wolfblanc.se/tjanster/totalrenovering-stockholm/
 
 ## Journal
 
