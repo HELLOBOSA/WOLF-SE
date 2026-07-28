@@ -90,12 +90,15 @@ Vi kommunicerar på svenska, engelska, spanska och grekiska.
 - https://wolfblanc.se/tjanster/landskapsarkitektur/
 - https://wolfblanc.se/tjanster/stadsplanering/
 - https://wolfblanc.se/tjanster/bostadsinteriorer/
-- https://wolfblanc.se/tjanster/kommersiell-strategi/
+- https://wolfblanc.se/tjanster/kommersiella-interiorer-hospitality/
 - https://wolfblanc.se/tjanster/arkitektur-visualisering/
 - https://wolfblanc.se/tjanster/teknisk-due-diligence/
 - https://wolfblanc.se/tjanster/bim-konsultation/
 - https://wolfblanc.se/tjanster/valbefinnande/
 - Specialiserad arkitekturtjänst: https://wolfblanc.se/tjanster/totalrenovering-stockholm/
+- https://wolfblanc.se/tjanster/for-investerare/
+- https://wolfblanc.se/tjanster/for-bostadsagare/
+- https://wolfblanc.se/tjanster/fritidshus/
 
 ## Journal
 
@@ -223,12 +226,15 @@ We communicate in Swedish, English, Spanish, and Greek.
 - https://wolfblanc.se/tjanster/landskapsarkitektur/
 - https://wolfblanc.se/tjanster/stadsplanering/
 - https://wolfblanc.se/tjanster/bostadsinteriorer/
-- https://wolfblanc.se/tjanster/kommersiell-strategi/
+- https://wolfblanc.se/tjanster/kommersiella-interiorer-hospitality/
 - https://wolfblanc.se/tjanster/arkitektur-visualisering/
 - https://wolfblanc.se/tjanster/teknisk-due-diligence/
 - https://wolfblanc.se/tjanster/bim-konsultation/
 - https://wolfblanc.se/tjanster/valbefinnande/
 - Specialist architecture service: https://wolfblanc.se/tjanster/totalrenovering-stockholm/
+- https://wolfblanc.se/tjanster/for-investerare/
+- https://wolfblanc.se/tjanster/for-bostadsagare/
+- https://wolfblanc.se/tjanster/fritidshus/
 
 ## Journal
 
