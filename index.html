@@ -473,7 +473,7 @@
       <a href="#process" class="nav-link" onclick="ss(event,'process')" data-s="process" data-sv="PROCESS" data-en="PROCESS">PROCESS</a>
       <a href="journal/" class="nav-link" data-sv="JOURNAL" data-en="JOURNAL">JOURNAL</a>
       <a href="/vanliga-fragor/" class="nav-link" data-sv="FAQ" data-en="FAQ">FAQ</a>
-      <a href="#kontakt" class="nav-link" onclick="ss(event,'kontakt')" data-s="kontakt" data-sv="KONTAKT" data-en="CONTACT">KONTAKT</a>
+      <a href="/kontakt/" class="nav-link" data-sv="KONTAKT" data-en="CONTACT">KONTAKT</a>
     </div>
     <div class="nav-mobile" style="display:none">
     </div>
@@ -498,7 +498,7 @@
     <a href="#process" onclick="ss(event,'process');closeMobMenu()" data-sv="PROCESS" data-en="PROCESS">PROCESS</a>
     <a href="journal/" data-sv="JOURNAL" data-en="JOURNAL">JOURNAL</a>
     <a href="/vanliga-fragor/" data-sv="FAQ" data-en="FAQ">FAQ</a>
-    <a href="#kontakt" onclick="ss(event,'kontakt');closeMobMenu()" data-sv="KONTAKT" data-en="CONTACT">KONTAKT</a>
+    <a href="/kontakt/" data-sv="KONTAKT" data-en="CONTACT">KONTAKT</a>
   </div>
 </nav>
 
@@ -515,7 +515,7 @@
     <p class="hm fade-in d2" data-sv="SAR/MSA Registrerad · WELL AP · Stockholm" data-en="SAR/MSA Registered · WELL AP · Stockholm">SAR/MSA Registrerad · WELL AP · Stockholm</p>
     <p class="hl fade-in d3" data-sv="Wolfblanc i Sverige. Vi ritar bostäder, renoveringar, investeringsfastigheter och hospitality-projekt med internationell erfarenhet och nordisk precision." data-en="Wolfblanc in Sweden. We design homes, renovations, investment properties and hospitality projects with international experience and Nordic precision.">Wolfblanc i Sverige. Vi ritar bostäder, renoveringar, investeringsfastigheter och hospitality-projekt med internationell erfarenhet och nordisk precision.</p>
     <div class="ha fade-in d4">
-      <a href="#kontakt" class="btn-outline" onclick="ss(event,'kontakt')" data-sv="BOKA KOSTNADSFRITT SAMTAL" data-en="BOOK A FREE CALL">BOKA KOSTNADSFRITT SAMTAL</a>
+      <a href="https://cal.com/wolfblanc/30min" class="btn-outline" data-cal-trigger data-sv="BOKA ETT 30-MINUTERSSAMTAL" data-en="BOOK A 30-MINUTE CALL">BOKA ETT 30-MINUTERSSAMTAL</a>
       <a href="#projekt" class="hlink" onclick="ss(event,'projekt')">
         <span data-sv="Se utvalda projekt" data-en="View selected work">Se utvalda projekt</span>
       </a>
@@ -793,7 +793,7 @@
   <div class="cta-bg" data-sv="PROJEKT" data-en="WORK">PROJEKT</div>
   <div class="cta-inner reveal">
     <p data-sv="Varje bra projekt börjar med ett samtal." data-en="Every good project starts with a conversation.">Varje bra projekt börjar med ett samtal.</p>
-    <a href="#kontakt" onclick="ss(event,'kontakt')" class="btn-outline" data-sv="PRATA MED OSS →" data-en="TALK TO US →">PRATA MED OSS →</a>
+    <a href="/kontakt/#projekt" class="btn-outline" data-sv="BERÄTTA OM DITT PROJEKT →" data-en="TELL US ABOUT YOUR PROJECT →">BERÄTTA OM DITT PROJEKT →</a>
   </div>
 </div>
 
@@ -823,7 +823,7 @@
       <h3 data-sv="Berätta om ditt projekt" data-en="Tell us about your project">Berätta om ditt projekt</h3>
       <p style="margin-top:0;margin-bottom:32px" data-sv='Eller skriv direkt till <a href="mailto:info@wolfblanc.com">info@wolfblanc.com</a>' data-en='Or write directly to <a href="mailto:info@wolfblanc.com">info@wolfblanc.com</a>'>Eller skriv direkt till <a href="mailto:info@wolfblanc.com">info@wolfblanc.com</a></p>
 
-      <form class="intake-form" id="intake-form" action="https://formspree.io/f/mdajwanb" method="POST" data-lead-site="wolfblanc.se" data-lead-market="sweden" data-lead-context="homepage_general_enquiry">
+      <form class="intake-form" id="intake-form" action="https://usebasin.com/f/7136956adf4c" method="POST" accept-charset="UTF-8" data-lead-site="wolfblanc.se" data-lead-market="sweden" data-lead-context="homepage_general_enquiry">
         <input type="hidden" name="_subject" value="Nytt projekt, wolfblanc.se">
         <input type="hidden" name="services" id="selected-services" value="">
         <div class="field"><label><span data-sv="Namn" data-en="Name">Namn</span><span class="ix">01</span></label><input type="text" name="name" placeholder="Anna Lindström" required></div>
@@ -836,6 +836,7 @@
           <p class="legal" data-sv="Vi använder detta enbart för att svara angående ditt projekt." data-en="We use this only to respond about your project.">Vi använder detta enbart för att svara angående ditt projekt.</p>
           <button type="submit" class="submit" id="intake-submit"><span data-sv="Skicka" data-en="Submit">Skicka</span><span class="arrow">→</span></button>
         </div>
+        <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px">
       </form>
 
       <div class="intake-confirmed" id="intake-confirmed" role="status" aria-live="polite">
@@ -977,7 +978,7 @@
       submitBtn.disabled = true;
       submitBtn.querySelector('span').textContent = '...';
       try {
-        const res = await fetch('https://formspree.io/f/mdajwanb', {
+        const res = await fetch(form.action, {
           method: 'POST', body: new FormData(form), headers: {'Accept':'application/json'}
         });
         if(res.ok){
@@ -997,6 +998,7 @@
     });
   })();
 </script>
+<script src="assets/cal-booking.js?v=20260729"></script>
 
 <div id="lb" onclick="if(event.target===this)closeLb()">
   <button id="lb-close" onclick="closeLb()" aria-label="Stäng">&#10005;</button>

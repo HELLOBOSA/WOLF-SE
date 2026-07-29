@@ -13,6 +13,7 @@
 - Arkitektkontor i Sverige: https://wolfblanc.se/arkitektkontor-sverige/
 - Arkitekttjänster i Sverige: https://wolfblanc.se/tjanster/
 - Vanliga frågor: https://wolfblanc.se/vanliga-fragor/
+- Kontakt och bokning: https://wolfblanc.se/kontakt/
 
 ## Kontor
 
@@ -128,6 +129,7 @@ Vi kommunicerar på svenska, engelska, spanska och grekiska.
 
 ## Kontakt
 
+- Kontaktformulär och 30-minutersbokning: https://wolfblanc.se/kontakt/
 - E-post: info@wolfblanc.com
 - Telefon: +46 73 656 64 89
 - Global webbplats: https://wolfblanc.com
@@ -149,6 +151,7 @@ Vi kommunicerar på svenska, engelska, spanska och grekiska.
 - Architecture studio in Sweden: https://wolfblanc.se/arkitektkontor-sverige/
 - Architecture services in Sweden: https://wolfblanc.se/tjanster/
 - Frequently asked questions: https://wolfblanc.se/vanliga-fragor/
+- Contact and booking: https://wolfblanc.se/kontakt/
 
 ## Office
 
@@ -264,6 +267,7 @@ We communicate in Swedish, English, Spanish, and Greek.
 
 ## Contact
 
+- Contact form and 30-minute booking: https://wolfblanc.se/kontakt/
 - Email: info@wolfblanc.com
 - Phone: +46 73 656 64 89
 - Global website: https://wolfblanc.com
