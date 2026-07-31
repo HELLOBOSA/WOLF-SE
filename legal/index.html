@@ -529,8 +529,9 @@
   }
   function setLanguage(lang){
     document.documentElement.lang = lang === 'en' ? 'en' : 'sv';
-    document.querySelectorAll('[data-sv][data-en]').forEach(el => {
-      el.innerHTML = el.dataset[lang];
+    document.querySelectorAll('[data-sv],[data-en]').forEach(el => {
+      var v = el.dataset[lang];
+      if (v !== undefined) el.innerHTML = v;
     });
     document.querySelectorAll('[data-sv-aria][data-en-aria]').forEach(el => {
       el.setAttribute('aria-label', el.dataset[lang + 'Aria']);

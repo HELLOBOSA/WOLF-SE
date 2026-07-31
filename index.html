@@ -926,8 +926,9 @@
   const langButtons = document.querySelectorAll('[data-lang-switch]');
   function setLanguage(lang){
     document.documentElement.lang = lang;
-    document.querySelectorAll('[data-sv][data-en]').forEach(el => {
-      el.innerHTML = el.dataset[lang];
+    document.querySelectorAll('[data-sv],[data-en]').forEach(el => {
+      var v = el.dataset[lang];
+      if (v !== undefined) el.innerHTML = v;
     });
     document.querySelectorAll('[data-sv-placeholder][data-en-placeholder]').forEach(el => {
       el.placeholder = el.dataset[lang+'Placeholder'] || '';
@@ -1233,7 +1234,7 @@
   function currentLang(){return localStorage.getItem('wb-se-lang')||localStorage.getItem('wb-lang')||document.documentElement.lang||'sv';}
   function setCookieLang(lang){
     lang=(lang||'sv').slice(0,2)==='en'?'en':'sv';
-    banner.querySelectorAll('[data-sv][data-en]').forEach(function(el){el.innerHTML=el.getAttribute('data-'+lang);});
+    banner.querySelectorAll('[data-sv],[data-en]').forEach(function(el){var v=el.getAttribute('data-'+lang);if(v!==null)el.innerHTML=v;});
     banner.querySelectorAll('[data-sv-aria][data-en-aria]').forEach(function(el){el.setAttribute('aria-label',el.getAttribute('data-'+lang+'-aria'));});
   }
   function closeBanner(choice){

@@ -302,7 +302,7 @@
     var langButtons=document.querySelectorAll('[data-lang-switch]');
     function setLanguage(lang){
       root.lang=lang;
-      document.querySelectorAll('[data-sv][data-en]').forEach(function(el){el.innerHTML=el.getAttribute('data-'+lang);});
+      document.querySelectorAll('[data-sv],[data-en]').forEach(function(el){var v=el.getAttribute('data-'+lang);if(v!==null)el.innerHTML=v;});
       document.querySelectorAll('[data-sv-placeholder][data-en-placeholder]').forEach(function(el){el.placeholder=el.getAttribute('data-'+lang+'-placeholder')||'';});
       document.querySelectorAll('[data-sv-aria][data-en-aria]').forEach(function(el){el.setAttribute('aria-label',el.getAttribute('data-'+lang+'-aria'));});
       langButtons.forEach(function(btn){btn.classList.toggle('active',btn.getAttribute('data-lang-switch')===lang);});
