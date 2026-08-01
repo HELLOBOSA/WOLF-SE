@@ -353,9 +353,9 @@
     @media(max-width:640px){.compact-cards{grid-template-columns:1fr}.compact-cards .gc{min-height:auto}}
 
     /* Contact */
-    .contact-grid{display:grid;grid-template-columns:1fr;gap:48px;margin-bottom:64px;max-width:560px}
+    .contact-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:40px;margin-bottom:64px;max-width:820px}@media(max-width:600px){.contact-grid{grid-template-columns:1fr;gap:32px}}
     .contact-col h3{font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;font-weight:400;margin-bottom:4px;color:var(--accent)}
-    .office-label{display:block;font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--text-secondary);margin-bottom:16px}
+    .office-block{border-top:1px solid var(--line,#e2ddd4);padding-top:14px;margin-top:14px}.office-block:first-of-type{margin-top:0;border-top:0;padding-top:0}.office-label{display:block;font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--text-secondary);margin-bottom:16px}
     .contact-col address{color:var(--text-secondary);line-height:1.8;margin-bottom:8px}
     .contact-col .ph{color:var(--text-secondary)}
     .contact-col .ph a:hover{color:var(--accent)}
@@ -847,19 +847,20 @@
     <span class="eyebrow" data-sv="KONTAKT" data-en="CONTACT">KONTAKT</span>
     <h2 style="font-size:clamp(1.2rem,2.5vw,1.875rem);margin-bottom:64px" data-sv="Kontakta oss" data-en="Contact">Kontakta oss</h2>
     <div class="contact-grid reveal">
-      <div class="contact-col">
-        <h3 data-sv="STOCKHOLM" data-en="STOCKHOLM">STOCKHOLM</h3>
-        <span class="office-label" data-sv="Stockholmsstudio" data-en="Stockholm Studio">Stockholmsstudio</span>
-        <address>Kungsgatan 9, 111 43<br>Stockholm, Sverige</address>
-        <p class="ph">Tel: <a href="tel:+46736566489">+46 73 656 64 89</a></p>
-        <div class="emails">
-          <a href="mailto:info@wolfblanc.com" class="em">info@wolfblanc.com</a>
+          <div class="contact-col">
+            <h3 data-en="GENERAL">ALLMÄNT</h3>
+            <div class="office-block"><span class="office-label" data-en="Enquiries">Förfrågningar</span><div class="emails"><a href="mailto:info@wolfblanc.com" class="em">info@wolfblanc.com</a></div></div>
+            <div class="office-block"><span class="office-label" data-en="Sweden phone">Telefon Sverige</span><p class="ph"><a href="tel:+46736566489">+46 73 656 64 89</a></p></div>
+            <div class="office-block"><span class="office-label" data-en="Languages">Språk</span><p class="lang" data-en="Swedish · English · Spanish · Greek">Svenska · Engelska · Spanska · Grekiska</p></div>
+            <div class="office-block"><span class="office-label" data-en="Careers">Lediga tjänster</span><p class="ph"><a href="/lediga-tjanster/" data-en="Join Wolfblanc">Jobba med oss</a></p></div>
+          </div>
+          <div class="contact-col">
+            <h3 data-en="STOCKHOLM">STOCKHOLM</h3>
+            <div class="office-block"><span class="office-label" data-en="Stockholm Studio">Stockholmsstudio</span><address>Kungsgatan 9, 111 43<br>Stockholm, Sverige</address></div>
+          </div>
         </div>
-        <p class="lang" data-sv="Vi kommunicerar på svenska, engelska, spanska och grekiska." data-en="We communicate in Swedish, English, Spanish and Greek.">Vi kommunicerar på svenska, engelska, spanska och grekiska.</p>
-      </div>
-    </div>
 
-    <div class="map reveal">
+        <div class="map reveal">
       <iframe src="https://maps.google.com/maps?q=Kungsgatan+9,+Stockholm+11143,+Sweden&t=&z=16&ie=UTF8&iwloc=&output=embed" allowfullscreen loading="lazy" decoding="async" referrerpolicy="no-referrer-when-downgrade" title="Wolfblanc Architects - Stockholm"></iframe>
     </div>
 
