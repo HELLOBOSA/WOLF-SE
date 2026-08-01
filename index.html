@@ -353,7 +353,7 @@
     @media(max-width:640px){.compact-cards{grid-template-columns:1fr}.compact-cards .gc{min-height:auto}}
 
     /* Contact */
-    .contact-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:40px;margin-bottom:64px;max-width:820px}@media(max-width:600px){.contact-grid{grid-template-columns:1fr;gap:32px}}
+    .contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;margin-bottom:64px;max-width:1040px}@media(max-width:600px){.contact-grid{grid-template-columns:1fr;gap:32px}}
     .contact-col h3{font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;font-weight:400;margin-bottom:4px;color:var(--accent)}
     .office-block{border-top:1px solid var(--line,#e2ddd4);padding-top:14px;margin-top:14px}.office-block:first-of-type{margin-top:0;border-top:0;padding-top:0}.office-label{display:block;font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--text-secondary);margin-bottom:16px}
     .contact-col address{color:var(--text-secondary);line-height:1.8;margin-bottom:8px}
@@ -845,22 +845,73 @@
 <section id="kontakt">
   <div class="si">
     <span class="eyebrow" data-sv="KONTAKT" data-en="CONTACT">KONTAKT</span>
-    <h2 style="font-size:clamp(1.2rem,2.5vw,1.875rem);margin-bottom:64px" data-sv="Kontakta oss" data-en="Contact">Kontakta oss</h2>
+    <h2 style="font-size:clamp(1.2rem,2.5vw,1.875rem);margin-bottom:64px" data-sv="Studio i Stockholm, uppdrag i hela Sverige" data-en="Stockholm studio, projects across Sweden">Studio i Stockholm, uppdrag i hela Sverige</h2>
     <div class="contact-grid reveal">
-          <div class="contact-col">
-            <h3 data-en="GENERAL">ALLMÄNT</h3>
-            <div class="office-block"><span class="office-label" data-en="Enquiries">Förfrågningar</span><div class="emails"><a href="mailto:info@wolfblanc.com" class="em">info@wolfblanc.com</a></div></div>
-            <div class="office-block"><span class="office-label" data-en="Sweden phone">Telefon Sverige</span><p class="ph"><a href="tel:+46736566489">+46 73 656 64 89</a></p></div>
-            <div class="office-block"><span class="office-label" data-en="Languages">Språk</span><p class="lang" data-en="Swedish · English · Spanish · Greek">Svenska · Engelska · Spanska · Grekiska</p></div>
-            <div class="office-block"><span class="office-label" data-en="Careers">Lediga tjänster</span><p class="ph"><a href="/lediga-tjanster/" data-en="Join Wolfblanc">Jobba med oss</a></p></div>
-          </div>
-          <div class="contact-col">
-            <h3 data-en="STOCKHOLM">STOCKHOLM</h3>
-            <div class="office-block"><span class="office-label" data-en="Stockholm Studio">Stockholmsstudio</span><address>Kungsgatan 9, 111 43<br>Stockholm, Sverige</address></div>
-          </div>
+        <div class="contact-col">
+          <h3 data-sv="ALLMÄNT" data-en="GENERAL">ALLMÄNT</h3>
+          <div class="office-block"><span class="office-label" data-sv="Förfrågningar" data-en="Enquiries">Förfrågningar</span><div class="emails"><a href="mailto:info@wolfblanc.com" class="em">info@wolfblanc.com</a></div></div>
+          <div class="office-block"><span class="office-label" data-sv="Telefon Sverige" data-en="Sweden phone">Telefon Sverige</span><p class="ph"><a href="tel:+46736566489">+46 73 656 64 89</a></p></div>
+          <div class="office-block"><span class="office-label" data-sv="Lediga tjänster" data-en="Careers">Lediga tjänster</span><p class="ph"><a href="/lediga-tjanster/" data-sv="Jobba med oss" data-en="Join Wolfblanc">Jobba med oss</a></p></div>
         </div>
+        <div class="contact-col">
+          <h3>STOCKHOLM</h3>
+          <span class="office-label" data-sv="Studio" data-en="Studio">Studio</span>
+          <address>Kungsgatan 9<br>111 43 Stockholm, Sverige</address>
+        </div>
+        <div class="contact-col">
+          <h3 data-sv="SPRÅK" data-en="LANGUAGES">SPRÅK</h3>
+          <span class="office-label" data-sv="Vi arbetar på" data-en="We work in">Vi arbetar på</span>
+          <p class="lang" data-sv="Svenska · Engelska · Spanska · Grekiska" data-en="Swedish · English · Spanish · Greek">Svenska · Engelska · Spanska · Grekiska</p>
+        </div>
+      </div>
+    </div>
 
-        <div class="map reveal">
+    <div class="cal-wrap">
+      <div class="cal-inner">
+        <h3 data-sv="Boka ett samtal" data-en="Book a call">Boka ett samtal</h3>
+        <p data-sv="Välj en tid för ett första 30-minuterssamtal med en senior partner." data-en="Choose a time for a first 30-minute conversation with a senior partner.">Välj en tid för ett första 30-minuterssamtal med en senior partner.</p>
+        <div class="cal-placeholder" id="cal-placeholder">
+          <p data-sv="Kalendern laddas först när du öppnar den, vilket skyddar din integritet." data-en="The calendar loads only when you request it, protecting your privacy.">Kalendern laddas först när du öppnar den, vilket skyddar din integritet.</p>
+          <button class="cal-load-btn" id="cal-load-btn" type="button" data-sv="ÖPPNA KALENDERN" data-en="OPEN BOOKING CALENDAR">ÖPPNA KALENDERN</button>
+          <p class="cal-direct"><span data-sv="Föredrar du e-post?" data-en="Prefer email?">Föredrar du e-post?</span> <a href="mailto:info@wolfblanc.com">info@wolfblanc.com</a></p>
+        </div>
+        <div id="my-cal-inline-30min" aria-label="Wolfblanc bokningskalender" hidden></div>
+      </div>
+    </div>
+
+    <div class="contact-wrap" style="padding-bottom:104px">
+      <div class="sp" id="projekt">
+        <h3 data-sv="Berätta om ditt projekt" data-en="Tell us about your project">Berätta om ditt projekt</h3>
+        <p data-sv='Eller skriv direkt till <a href="mailto:info@wolfblanc.com">info@wolfblanc.com</a>' data-en='Or write directly to <a href="mailto:info@wolfblanc.com">info@wolfblanc.com</a>'>Eller skriv direkt till <a href="mailto:info@wolfblanc.com">info@wolfblanc.com</a></p>
+        <form class="intake-form" id="intake-form" action="https://usebasin.com/f/7136956adf4c" method="POST" accept-charset="UTF-8" data-lead-site="wolfblanc.se" data-lead-market="sweden" data-lead-context="contact_page_general_enquiry">
+          <input type="hidden" name="_subject" value="Nytt projekt, wolfblanc.se kontakt">
+          <input type="hidden" name="services" id="selected-services" value="">
+          <div class="field"><label><span data-sv="Namn" data-en="Name">Namn</span><span class="ix">01</span></label><input type="text" name="name" placeholder="Anna Lindström" required></div>
+          <div class="field"><label><span data-sv="E-post" data-en="Email">E-post</span><span class="ix">02</span></label><input type="email" name="email" placeholder="anna@example.com" required></div>
+          <div class="field"><label><span data-sv="Telefon" data-en="Phone">Telefon</span><span class="ix">03</span></label><input type="tel" name="phone" placeholder="+46 70 123 45 67"></div>
+          <div class="field"><label><span data-sv="Plats" data-en="Location">Plats</span><span class="ix">04</span></label><input type="text" name="location" placeholder="Stockholm" required></div>
+          <div class="field full"><label><span data-sv="Typ av projekt" data-en="Project type">Typ av projekt</span><span class="ix">05</span></label><div class="chip-row">
+            <button type="button" class="chip" aria-pressed="false" data-sv="Bostad" data-en="Residential">Bostad</button>
+            <button type="button" class="chip" aria-pressed="false" data-sv="Kommersiellt" data-en="Commercial">Kommersiellt</button>
+            <button type="button" class="chip" aria-pressed="false" data-sv="Hospitality" data-en="Hospitality">Hospitality</button>
+            <button type="button" class="chip" aria-pressed="false" data-sv="Kontor" data-en="Office">Kontor</button>
+            <button type="button" class="chip" aria-pressed="false" data-sv="Butik" data-en="Retail">Butik</button>
+            <button type="button" class="chip" aria-pressed="false" data-sv="Renovering" data-en="Renovation">Renovering</button>
+            <button type="button" class="chip" aria-pressed="false" data-sv="Vet ej ännu" data-en="Not sure yet">Vet ej ännu</button>
+          </div></div>
+          <div class="field full"><label><span data-sv="Beskriv projektet" data-en="Tell us more">Beskriv projektet</span><span class="ix">06</span></label><textarea name="brief" rows="3" required data-sv-placeholder="Vad handlar projektet om och var är du i processen?" data-en-placeholder="What's the project about and where are you in the process?"></textarea></div>
+          <div class="form-actions">
+            <p class="legal" data-sv='Din förfrågan behandlas konfidentiellt. Vi använder dina uppgifter endast för att bedöma den och svara dig. <a href="../legal/#personuppgifter">Information om dataskydd →</a>' data-en='Your enquiry is treated confidentially. We use your details only to assess and respond to it. <a href="../legal/#personuppgifter">Privacy information →</a>'>Din förfrågan behandlas konfidentiellt. Vi använder dina uppgifter endast för att bedöma den och svara dig. <a href="../legal/#personuppgifter">Information om dataskydd →</a></p>
+            <button type="submit" class="submit" id="intake-submit"><span data-sv="Skicka" data-en="Submit">Skicka</span><span>→</span></button>
+          </div>
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px">
+        </form>
+        <div class="intake-confirmed" id="intake-confirmed" role="status" aria-live="polite">
+          <h3 data-sv="Tack. Vi återkommer inom två arbetsdagar." data-en="Thank you. We'll be in touch within two working days.">Tack. Vi återkommer inom två arbetsdagar.</h3>
+          <p data-sv="En senior partner läser varje förfrågan." data-en="A senior partner reads every enquiry.">En senior partner läser varje förfrågan.</p>
+        </div>
+      </div>
+      <div class="map reveal">
       <iframe src="https://maps.google.com/maps?q=Kungsgatan+9,+Stockholm+11143,+Sweden&t=&z=16&ie=UTF8&iwloc=&output=embed" allowfullscreen loading="lazy" decoding="async" referrerpolicy="no-referrer-when-downgrade" title="Wolfblanc Architects - Stockholm"></iframe>
     </div>
 
