@@ -603,6 +603,7 @@
     document.querySelectorAll('[data-lang-switch]').forEach(function(b){
       b.classList.toggle('active',b.getAttribute('data-lang-switch')===lang);
     });
+    document.documentElement.setAttribute('lang',lang);
     localStorage.setItem('wb-se-lang',lang);
   }
   applyLang();

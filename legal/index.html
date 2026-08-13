@@ -556,12 +556,12 @@
     setMeta('meta[property="og:description"]', copy.ogDescription);
     setMeta('meta[name="twitter:title"]', copy.title);
     setMeta('meta[name="twitter:description"]', copy.ogDescription);
-    localStorage.setItem('wb-lang', lang);
+    localStorage.setItem('wb-se-lang', lang);
   }
   langButtons.forEach(btn => {
     btn.addEventListener('click', () => setLanguage(btn.dataset.langSwitch));
   });
-  setLanguage(localStorage.getItem('wb-lang') || 'sv');
+  setLanguage(localStorage.getItem('wb-se-lang') || localStorage.getItem('wb-lang') || 'sv');
 
   const cookieChoiceKey = 'wb-cookie-choice';
   const cookieConsentDays = 180;
